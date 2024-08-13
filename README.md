@@ -1,19 +1,52 @@
-# README
+# LocalJson Toolset
+
+## A lightweight cross-platform toolset based on Wails, supporting both web and desktop platforms including Mac, Windows, and Linux.
 
 ## About
 
-This is the official Wails Vue-TS template.
-
-You can configure the project by editing `wails.json`. More information about the project settings can be found
-here: https://wails.io/docs/reference/project-config
-
-## Live Development
-
-To run in live development mode, run `wails dev` in the project directory. This will run a Vite development
-server that will provide very fast hot reload of your frontend changes. If you want to develop in a browser
-and have access to your Go methods, there is also a dev server that runs on http://localhost:34115. Connect
-to this in your browser, and you can call your Go code from devtools.
+This project is a frontend implementation of [It-Tools](https://github.com/CorentinTh/it-tools) using [Vue3](https://github.com/vuejs/vue), 
+[Vite](https://github.com/vitejs/vite), [Naive-UI](https://github.com/tusen-ai/naive-ui), 
+and TypeScript. The desktop version is implemented using [Wails](https://github.com/wailsapp/wails) with Go. 
+Special thanks to other open-source projects.
 
 ## Building
 
-To build a redistributable, production mode package, use `wails build`.
+### Requirements
+
+* Go（latest version）
+* Node.js >= 16
+* NPM >= 9
+
+### Install Wails
+
+```bash
+go install github.com/wailsapp/wails/v2/cmd/wails@latest
+```
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/inRemark/localjson.git
+```
+
+### Build Frontend Code
+
+```bash
+pnpm install --prefix ./frontend
+
+# or
+
+cd frontend
+pnpm install
+```
+
+### Run
+
+```bash
+wails dev
+```
+
+## License
+
+This project is under the [GNU GPLv3](LICENSE).
+
