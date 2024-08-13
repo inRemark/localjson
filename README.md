@@ -1,5 +1,7 @@
 # LocalJson Toolset
 
+[English](README.md) | [中文](README_zh.md)
+
 ## A lightweight cross-platform toolset based on Wails, supporting both web and desktop platforms including Mac, Windows, and Linux.
 
 ## About

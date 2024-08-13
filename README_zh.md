@@ -1,5 +1,7 @@
 # LocalJson Toolset
 
+[English](README.md) | [中文](README_zh.md)
+
 ## 一个基于Wails实现的轻量化跨平台工具集，支持Web端和Mac、Windows和Linux等桌面端。
 
 ## 关于
