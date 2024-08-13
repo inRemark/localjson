@@ -7,8 +7,8 @@ home:
   toggleMenu: 'Перемикання меню'
   home: Головна
   uiLib: 'UI Бібліотека'
-  support: 'Підтримка розробки IT Tools'
-  buyMeACoffee: 'Купи мені каву'
+  support: 'Download desktop version'
+  buyMeACoffee: 'Download'
   follow:
     title: 'Вам подобаються інструменти IT?'
     p1: 'Додайте нам зірку на'
@@ -21,7 +21,7 @@ home:
     githubRepository: 'GitHub-репозиторій IT-Tools'
     twitter: 'Твіттер'
     twitterAccount: 'Твіттер-акаунт IT-Tools'
-    about: 'Про IT-Tools'
+    about: 'Про'
     aboutLabel: 'Про нас'
     darkMode: 'Темний режим'
     lightMode: 'Світлий режим'

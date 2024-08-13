@@ -39,7 +39,7 @@ const tools = computed<ToolCategory[]>(() => [
         <HeroGradient class="gradient" />
         <div class="text-wrapper">
           <div class="title">
-            IT - TOOLS
+            { LocalJson }
           </div>
           <div class="divider" />
           <div class="subtitle">
@@ -61,28 +61,21 @@ const tools = computed<ToolCategory[]>(() => [
 
         <div class="footer">
           <div>
-            IT-Tools
-
-            <c-link target="_blank" rel="noopener" :href="`https://github.com/CorentinTh/it-tools/tree/v${version}`">
+            LocalJson Tools
+            <c-link target="_blank" rel="noopener" href="https://github.com/inRemark/localjson">
               v{{ version }}
             </c-link>
-
-            <template v-if="commitSha && commitSha.length > 0">
-              -
-              <c-link
-                target="_blank"
-                rel="noopener"
-                type="primary"
-                :href="`https://github.com/CorentinTh/it-tools/tree/${commitSha}`"
-              >
-                {{ commitSha }}
-              </c-link>
-            </template>
+          </div>
+          <div>
+            Based on
+            <c-link target="_blank" rel="noopener" href="https://github.com/CorentinTh/it-tools">
+              IT Tools
+            </c-link>
           </div>
           <div>
             © {{ new Date().getFullYear() }}
-            <c-link target="_blank" rel="noopener" href="https://github.com/CorentinTh">
-              Corentin Thomasset
+            <c-link target="_blank" rel="noopener" href="https://github.com/inRemark">
+              inRemark
             </c-link>
           </div>
         </div>
@@ -123,15 +116,14 @@ const tools = computed<ToolCategory[]>(() => [
         <c-tooltip position="bottom" :tooltip="$t('home.support')">
           <c-button
             round
-            href="https://www.buymeacoffee.com/cthmsst"
+            to="/download"
             rel="noopener"
-            target="_blank"
             class="support-button"
             :bordered="false"
             @click="() => tracker.trackEvent({ eventName: 'Support button clicked' })"
           >
             {{ $t('home.buyMeACoffee') }}
-            <NIcon v-if="!styleStore.isSmallScreen" :component="Heart" ml-2 />
+            <!-- <NIcon v-if="!styleStore.isSmallScreen" :component="Heart" ml-2 /> -->
           </c-button>
         </c-tooltip>
       </div>
@@ -209,9 +201,11 @@ const tools = computed<ToolCategory[]>(() => [
       background-color: v-bind('themeVars.primaryColor');
       margin: 0 auto 5px;
     }
-
+    .title {
+      font-style: italic;
+    }
     .subtitle {
-      font-size: 16px;
+      font-size: 12px;
     }
   }
 }

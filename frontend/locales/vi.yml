@@ -7,8 +7,8 @@ home:
   toggleMenu: 'Chuyển đổi menu'
   home: Trang chủ
   uiLib: 'Thư viện UI'
-  support: 'Hỗ trợ phát triển IT Tools'
-  buyMeACoffee: 'Ủng hộ tác giả'
+  support: 'Download desktop version'
+  buyMeACoffee: 'Download'
   follow:
     title: 'Bạn thích IT-tools?'
     p1: 'Hãy cho chúng tôi một ngôi sao trên'
@@ -21,7 +21,7 @@ home:
     githubRepository: 'Kho GitHub IT-Tools'
     twitter: 'Tài khoản Twitter'
     twitterAccount: 'Tài khoản Twitter IT Tools'
-    about: 'Về IT-Tools'
+    about: 'Về'
     aboutLabel: 'Giới thiệu'
     darkMode: 'Chế độ tối'
     lightMode: 'Chế độ sáng'

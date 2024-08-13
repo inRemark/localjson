@@ -10,12 +10,12 @@ home:
     newestTools: Neueste Tools
     favoriteTools: Deine Lieblingstools
     allTools: Alle Tools
-  subtitle: Praktische Tools für Entwickler
+  subtitle: Local macht private Daten sicher
   toggleMenu: Menü umschalten
   home: Startseite
   uiLib: UI-Bibliothek
-  support: Unterstütze die Entwicklung von IT-Tools
-  buyMeACoffee: Kauf mir einen Kaffee
+  support: Download desktop version
+  buyMeACoffee: Download
   follow:
     title: Magst du IT-Tools?
     p1: Gib uns einen Stern auf
@@ -28,7 +28,7 @@ home:
     githubRepository: IT-Tools GitHub-Repository
     twitter: Twitter-Konto
     twitterAccount: IT-Tools Twitter-Konto
-    about: Über IT-Tools
+    about: Über
     aboutLabel: Über
     darkMode: Dunkelmodus
     lightMode: Hellmodus
