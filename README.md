@@ -16,7 +16,7 @@ Special thanks to other open-source projects.
 ### Requirements
 
 * Go（latest version）
-* Node.js >= 16
+* Node.js >= 18
 * NPM >= 9
 
 ### Install Wails

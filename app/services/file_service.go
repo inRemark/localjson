@@ -10,23 +10,23 @@ import (
 	"sync"
 )
 
-type FileService struct {
+type fileService struct {
 	ctx context.Context
 }
 
-var file *FileService
+var file *fileService
 var onceFile sync.Once
 
-func File() *FileService {
+func FileService() *fileService {
 	if file == nil {
 		onceFile.Do(func() {
-			file = &FileService{}
+			file = &fileService{}
 		})
 	}
 	return file
 }
 
-func (f *FileService) SaveBase64File(base64Data, fileName string) error {
+func (f *fileService) SaveBase64File(base64Data, fileName string) error {
 	if idx := strings.Index(base64Data, "base64,"); idx != -1 {
 		base64Data = base64Data[idx+len("base64,"):]
 	}
@@ -44,6 +44,6 @@ func (f *FileService) SaveBase64File(base64Data, fileName string) error {
 	return os.WriteFile(savePath, data, 0644)
 }
 
-func (f *FileService) Startup(ctx context.Context) {
+func (f *fileService) Startup(ctx context.Context) {
 	f.ctx = ctx
 }

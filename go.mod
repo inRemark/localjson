@@ -1,12 +1,19 @@
-module hello
+module localjson
 
 go 1.21
 
 toolchain go1.22.6
 
-require github.com/wailsapp/wails/v2 v2.9.1
+require (
+	github.com/adrg/sysfont v0.1.2
+	github.com/vrischmann/userdir v0.0.0-20151206171402-20f291cebd68
+	github.com/wailsapp/wails/v2 v2.9.1
+	gopkg.in/yaml.v3 v3.0.1
+)
 
 require (
+	github.com/adrg/strutil v0.2.2 // indirect
+	github.com/adrg/xdg v0.3.0 // indirect
 	github.com/bep/debounce v1.2.1 // indirect
 	github.com/go-ole/go-ole v1.2.6 // indirect
 	github.com/godbus/dbus/v5 v5.1.0 // indirect

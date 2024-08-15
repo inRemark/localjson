@@ -1,6 +1,6 @@
 {
   "$schema": "https://wails.io/schemas/config.v2.json",
-  "name": "localjson-desktop",
+  "name": "LocalJson",
   "outputfilename": "LocalJson",
   "frontend:install": "pnpm install",
   "frontend:build": "pnpm run build",
@@ -8,6 +8,6 @@
   "frontend:dev:serverUrl": "auto",
   "author": {
     "name": "remark",
-    "email": "about.remark@outlook.com"
+    "email": "inremark@outlook.com"
   }
 }

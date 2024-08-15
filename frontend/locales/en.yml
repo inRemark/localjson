@@ -142,7 +142,7 @@ tools:
 
   git-memo:
     title: Git cheatsheet
-    description: Git is a decentralized version management software. With this cheatsheet, you will have quick access to the most common git commands.
+    description: Git is a decentralized version management software. With this cheatsheet, you will have quick access to the most common.go git commands.
 
   slugify-string:
     title: Slugify string
