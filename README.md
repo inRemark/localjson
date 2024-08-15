@@ -11,6 +11,8 @@ This project is a frontend implementation of [It-Tools](https://github.com/Coren
 and TypeScript. The desktop version is implemented using [Wails](https://github.com/wailsapp/wails) with Go. 
 Special thanks to other open-source projects.
 
+![Screenshot](./screen/screen-desktop.png)
+
 ## Building
 
 ### Requirements

@@ -9,6 +9,8 @@
 该项目前端基于[Vue3](https://github.com/vuejs/vue)、[Vite](https://github.com/vitejs/vite)、[Naive-UI](https://github.com/tusen-ai/naive-ui)和TypeScript实现的[It-Tools](https://github.com/CorentinTh/it-tools)，
 桌面端基于Go实现的[Wails](https://github.com/wailsapp/wails), 同时感谢其他开源项目。
 
+![Screenshot](./screen/screen-desktop.png)
+
 ## 构建
 
 ### 运行环境要求
