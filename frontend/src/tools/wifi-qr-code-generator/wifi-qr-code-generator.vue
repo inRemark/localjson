@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import useFileStore from '@/stores/fileUtils';
 import {
   EAPMethods,
   EAPPhase2Methods,
@@ -32,7 +33,13 @@ const { qrcode, encryption } = useWifiQRCode({
   options: { width: 1024 },
 });
 
-const { download } = useDownloadFileFromBase64({ source: qrcode, filename: 'qr-code.png' });
+// const { download } = useDownloadFileFromBase64({ source: qrcode, filename: 'qr-code.png' });
+const fileStore = useFileStore()
+const downloadFile = () => {
+  const urlSSID = ssid.value;
+  const filename = `wifi-qrcode-${urlSSID}.png`;
+  fileStore.saveFile(filename, qrcode);
+};
 </script>
 
 <template>
@@ -143,8 +150,8 @@ const { download } = useDownloadFileFromBase64({ source: qrcode, filename: 'qr-c
       <div v-if="qrcode">
         <div flex flex-col items-center gap-3>
           <img alt="wifi-qrcode" :src="qrcode" width="200">
-          <c-button @click="download">
-            Download qr-code
+          <c-button @click="downloadFile">
+            Save
           </c-button>
         </div>
       </div>
