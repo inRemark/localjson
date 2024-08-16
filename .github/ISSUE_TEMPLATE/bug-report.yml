@@ -2,7 +2,7 @@ name: 🐞 Bug Report
 description: File a bug report.
 labels: ['bug', 'triage']
 assignees:
-  - CorentinTh
+  - inRemark
 body:
   - type: markdown
     attributes:

@@ -102,7 +102,6 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
-      stores:  './src/stores',
       'wailsjs': fileURLToPath(new URL('./wailsjs', import.meta.url)),
     },
   },
