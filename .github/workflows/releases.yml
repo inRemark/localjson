@@ -38,14 +38,14 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
-          file: ./Dockerfile
+          file: ./frontend/Dockerfile
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            corentinth/it-tools:latest
-            corentinth/it-tools:${{ env.RELEASE_VERSION }}
-            ghcr.io/corentinth/it-tools:latest
-            ghcr.io/corentinth/it-tools:${{ env.RELEASE_VERSION}}
+            inRemark/localjson-web:latest
+            inRemark/localjson-web:${{ env.RELEASE_VERSION }}
+            ghcr.io/inRemark/localjson-web:latest
+            ghcr.io/inRemark/localjson-web:${{ env.RELEASE_VERSION}}
 
   github-release:
     runs-on: ubuntu-latest
@@ -66,9 +66,11 @@ jobs:
 
       - name: Install dependencies
         run: pnpm i
+        working-directory: ./frontend
 
       - name: Build the app
         run: pnpm build
+        working-directory: ./frontend
 
       - name: Zip the app
         run: zip -r it-tools-${{ env.RELEASE_VERSION }}.zip dist/*
@@ -78,14 +80,14 @@ jobs:
         run: |
           EOF=$(openssl rand -hex 8)
           echo "changelog<<$EOF" >> $GITHUB_OUTPUT
-          node ./scripts/getLatestChangelog.mjs >> $GITHUB_OUTPUT
+          node ./frontend/scripts/getLatestChangelog.mjs >> $GITHUB_OUTPUT
           echo "$EOF" >> $GITHUB_OUTPUT
 
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          files: it-tools-${{ env.RELEASE_VERSION }}.zip
+          files: localjson-web-${{ env.RELEASE_VERSION }}.zip
           tag_name: v${{ env.RELEASE_VERSION }}
           draft: true
           prerelease: false
@@ -93,11 +95,11 @@ jobs:
             ## Docker images
 
             - Docker Hub
-              - `corentinth/it-tools:latest`
-              - `corentinth/it-tools:${{ env.RELEASE_VERSION }}`
+              - `inRemark/localjson-web:latest`
+              - `inRemark/localjson-web:${{ env.RELEASE_VERSION }}`
             - GitHub Container Registry
-              - `ghcr.io/corentinth/it-tools:latest`
-              - `ghcr.io/corentinth/it-tools:${{ env.RELEASE_VERSION}}`
+              - `ghcr.io/inRemark/localjson-web:latest`
+              - `ghcr.io/inRemark/localjson-web:${{ env.RELEASE_VERSION}}`
 
             ## Changelog
 

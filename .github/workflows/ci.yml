@@ -20,15 +20,20 @@ jobs:
 
       - name: Install dependencies
         run: pnpm i
+        working-directory: ./frontend
 
       - name: Run linters
         run: pnpm lint
+        working-directory: ./frontend
 
       - name: Run unit test
         run: pnpm test
+        working-directory: ./frontend
 
       - name: Type check
         run: pnpm typecheck
+        working-directory: ./frontend
 
       - name: Build the app
         run: pnpm build
+        working-directory: ./frontend

@@ -78,10 +78,10 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v5
         with:
-          context: .
-          file: ./Dockerfile
+          context: ./frontend
+          file: ./frontend/Dockerfile
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            corentinth/it-tools:nightly
-            ghcr.io/corentinth/it-tools:nightly
+            inRemark/localjson-web:nightly
+            ghcr.io/inRemark/localjson-web:nightly
