@@ -1,7 +1,6 @@
 import { HmacSHA1, enc } from 'crypto-js';
 import _ from 'lodash';
 import { createToken } from '../token-generator/token-generator.service';
-
 export {
   generateHOTP,
   hexToBytes,
@@ -107,7 +106,7 @@ function verifyTOTP({
 
 function buildKeyUri({
   secret,
-  app = 'IT-Tools',
+  app = 'LocalJson',
   account = 'demo-user',
   algorithm = 'SHA1',
   digits = 6,

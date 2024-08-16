@@ -2,6 +2,7 @@
 import TextareaCopyable from '@/components/TextareaCopyable.vue';
 import { useCopy } from '@/composable/copy';
 import { useDownloadFileFromBase64 } from '@/composable/downloadBase64';
+import useFileStore from '@/stores/fileUtils';
 import { textToBase64 } from '@/utils/base64';
 
 const width = ref(600);
@@ -28,7 +29,11 @@ const base64 = computed(() => `data:image/svg+xml;base64,${textToBase64(svgStrin
 
 const { copy: copySVG } = useCopy({ source: svgString });
 const { copy: copyBase64 } = useCopy({ source: base64 });
-const { download } = useDownloadFileFromBase64({ source: base64 });
+// const { download } = useDownloadFileFromBase64({ source: base64 });
+const fileStore = useFileStore()
+const downloadFile = () => {
+  fileStore.saveFile("file.svg", base64);
+};
 </script>
 
 <template>
@@ -84,7 +89,7 @@ const { download } = useDownloadFileFromBase64({ source: base64 });
       <c-button @click="copyBase64()">
         Copy base64
       </c-button>
-      <c-button @click="download()">
+      <c-button @click="downloadFile()">
         Download svg
       </c-button>
     </div>

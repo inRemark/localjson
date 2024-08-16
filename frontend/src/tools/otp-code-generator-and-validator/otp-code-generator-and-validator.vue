@@ -7,7 +7,8 @@ import TokenDisplay from './token-display.vue';
 import { useStyleStore } from '@/stores/style.store';
 import InputCopyable from '@/components/InputCopyable.vue';
 import { computedRefreshable } from '@/composable/computedRefreshable';
-
+import { BrowserOpenURL } from 'wailsjs/runtime/runtime.js'
+import {isBrowser, isWebView} from "@/utils/runtime.type";
 const now = useTimestamp();
 const interval = computed(() => (now.value / 1000) % 30);
 const theme = useThemeVars();
@@ -29,7 +30,14 @@ const [tokens] = computedRefreshable(
 );
 
 const keyUri = computed(() => buildKeyUri({ secret: secret.value }));
-
+function openKeyUri() {
+  let uri = keyUri.value
+  if (isWebView()) {
+    BrowserOpenURL(uri);
+  } else {
+    window.open(uri, '_blank');
+  }
+}
 const { qrcode } = useQRCode({
   text: keyUri,
   color: {
@@ -79,7 +87,7 @@ const secretValidationRules = [
     </div>
     <div mt-4 flex flex-col items-center justify-center gap-3>
       <n-image :src="qrcode" />
-      <c-button :href="keyUri" target="_blank">
+      <c-button @click="openKeyUri">
         Open Key URI in new tab
       </c-button>
     </div>

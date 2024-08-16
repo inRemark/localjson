@@ -5,16 +5,17 @@ import { useCopy } from '@/composable/copy';
 import { getExtensionFromMimeType, getMimeTypeFromBase64, previewImageFromBase64, useDownloadFileFromBase64Refs } from '@/composable/downloadBase64';
 import { useValidation } from '@/composable/validation';
 import { isValidBase64 } from '@/utils/base64';
+import useFileStore from '@/stores/fileUtils';
 
 const fileName = ref('file');
 const fileExtension = ref('');
 const base64Input = ref('');
-const { download } = useDownloadFileFromBase64Refs(
-  {
-    source: base64Input,
-    filename: fileName,
-    extension: fileExtension,
-  });
+// const { download } = useDownloadFileFromBase64Refs(
+//   {
+//     source: base64Input,
+//     filename: fileName,
+//     extension: fileExtension,
+//   });
 const base64InputValidation = useValidation({
   source: base64Input,
   rules: [
@@ -54,18 +55,13 @@ function previewImage() {
   }
 }
 
-function downloadFile() {
+const fileStore = useFileStore()
+const downloadFile = () => {
   if (!base64InputValidation.isValid) {
     return;
   }
-
-  try {
-    download();
-  }
-  catch (_) {
-    //
-  }
-}
+  fileStore.saveFile(fileName.value + "." + fileExtension.value, base64Input);
+};
 
 const fileInput = ref() as Ref<File>;
 const { base64: fileBase64 } = useBase64(fileInput);

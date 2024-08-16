@@ -4,6 +4,7 @@ import { withDefaultOnError } from '@/utils/defaults';
 import { useDownloadFileFromBase64 } from '@/composable/downloadBase64';
 import { textToBase64 } from '@/utils/base64';
 import TextareaCopyable from '@/components/TextareaCopyable.vue';
+import useFileStore from '@/stores/fileUtils';
 
 const dockerRun = ref(
   'docker run -p 80:80 -v /var/run/docker.sock:/tmp/docker.sock:ro --restart always --log-opt max-size=1g nginx',
@@ -25,7 +26,11 @@ const errors = computed(() =>
     .map(msg => msg.value),
 );
 const dockerComposeBase64 = computed(() => `data:application/yaml;base64,${textToBase64(dockerCompose.value)}`);
-const { download } = useDownloadFileFromBase64({ source: dockerComposeBase64, filename: 'docker-compose.yml' });
+// const { download } = useDownloadFileFromBase64({ source: dockerComposeBase64, filename: 'docker-compose.yml' });
+const fileStore = useFileStore()
+const downloadFile = () => {
+  fileStore.saveFile("docker-compose.yml", dockerComposeBase64);
+};
 </script>
 
 <template>
@@ -46,7 +51,7 @@ const { download } = useDownloadFileFromBase64({ source: dockerComposeBase64, fi
     <TextareaCopyable :value="dockerCompose" language="yaml" />
 
     <div mt-5 flex justify-center>
-      <c-button :disabled="dockerCompose === ''" secondary @click="download">
+      <c-button :disabled="dockerCompose === ''" secondary @click="downloadFile">
         Download docker-compose.yml
       </c-button>
     </div>
