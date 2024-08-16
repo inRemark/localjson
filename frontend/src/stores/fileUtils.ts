@@ -1,5 +1,5 @@
 import {defineStore} from 'pinia';
-import {SaveBase64File} from 'wailsjs/go/services/fileService.js';
+import {SaveBase64File} from 'wailsjs/go/services/fileService';
 import {isBrowser, isWebView} from "@/utils/runtime.type";
 import {useDownloadFileFromBase64} from "@/composable/downloadBase64";
 
