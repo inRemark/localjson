@@ -102,7 +102,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
-      'wailsjs': fileURLToPath(new URL('./wailsjs', import.meta.url)),
+      'wailsjs': './wailsjs',
     },
   },
   define: {
@@ -113,8 +113,5 @@ export default defineConfig({
   },
   build: {
     target: 'esnext',
-    rollupOptions: {
-      external: ['wailsjs']
-    },
   },
 });
