@@ -7,7 +7,7 @@ import TokenDisplay from './token-display.vue';
 import { useStyleStore } from '@/stores/style.store';
 import InputCopyable from '@/components/InputCopyable.vue';
 import { computedRefreshable } from '@/composable/computedRefreshable';
-import { BrowserOpenURL } from 'wailsjs/runtime/runtime'
+import { BrowserOpenURL } from '../../../wailsjs/runtime/runtime'
 import {isBrowser, isWebView} from "@/utils/runtime.type";
 const now = useTimestamp();
 const interval = computed(() => (now.value / 1000) % 30);

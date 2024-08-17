@@ -1,5 +1,4 @@
 import {defineStore} from 'pinia';
-import {SaveBase64File} from 'wailsjs/go/services/fileService';
 import {isBrowser, isWebView} from "@/utils/runtime.type";
 import {useDownloadFileFromBase64} from "@/composable/downloadBase64";
 
@@ -11,11 +10,9 @@ export const useFileStore = defineStore('file', {
     actions: {
         async saveFile(filename: string, data: any) {
             if (isWebView()) {
-                try {
-                    await SaveBase64File(data.value, filename);
-                } catch (err) {
-                    console.error(err);
-                }
+                import('wailsjs/go/services/fileService.js').then(({SaveBase64File}) => {
+                    SaveBase64File(data.value, filename);
+                });
             } else {
                 console.log("is not WebView");
                 const {download} = useDownloadFileFromBase64({
