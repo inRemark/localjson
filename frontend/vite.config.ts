@@ -1,4 +1,4 @@
-import { resolve } from 'node:path';
+import path, { resolve } from 'node:path';
 import { URL, fileURLToPath } from 'node:url';
 
 import VueI18n from '@intlify/unplugin-vue-i18n/vite';
@@ -103,7 +103,7 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
       'stores': './src/stores',
-      'wailsjs': './wailsjs',
+      '@wailsjs': path.resolve(__dirname, 'wailsjs')
     },
   },
   define: {
