@@ -103,7 +103,7 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
       'stores': './src/stores',
-      '@wailsjs': path.resolve(__dirname, 'wailsjs')
+      '@wailsjs': path.resolve(__dirname, './wailsjs')
     },
   },
   define: {
