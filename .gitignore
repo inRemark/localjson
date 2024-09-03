@@ -35,3 +35,4 @@ coverage
 salt
 build/bin/
 .DS_Store
+rsync.sh
