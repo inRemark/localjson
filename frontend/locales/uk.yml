@@ -28,6 +28,18 @@ home:
     mode: 'Перемикання темного/світлого режиму'
 about:
   content: >
+    # About LocalJson
+
+    A lightweight cross-platform toolset based on Wails, supporting both web and desktop platforms including Mac, Windows, and Linux.
+
+    ## Desktop version Technologies
+
+    This project is a frontend implementation of It-Tools using Vue3, Vite, Naive-UI, and TypeScript. The desktop version is implemented using Wails with Go. Special thanks to other open-source projects.
+
+    ## Found a bug in the desktop version?
+
+    And if you found a bug in LocalJson-Desktop, or something doesn't work as expected, please file a bug report in the [issues section](https://github.com/inRemark/localjson/issues/new/choose) in the GitHub repository.
+
     # Про IT-Tools
 
     Цей чудовий вебсайт, створений з ❤ [Corentin Thomasset](https://github.com/CorentinTh), агрегує корисні інструменти для розробників і людей, які працюють в сфері IT. Якщо вам це корисно, будь ласка, поділіться цим з людьми, які, на вашу думку, також можуть знайти його корисним, і не забудьте додати його до закладок у вашій панелі швидкого доступу!

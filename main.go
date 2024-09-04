@@ -52,7 +52,7 @@ func main() {
 		MinWidth:                 consts.MinWindowWidth,
 		MinHeight:                consts.MinWindowHeight,
 		WindowStartState:         windowStartState,
-		Frameless:                !isMacOS,
+		Frameless:                false,
 		Menu:                     appMenu,
 		EnableDefaultContextMenu: true,
 		AssetServer: &assetserver.Options{

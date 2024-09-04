@@ -28,6 +28,18 @@ home:
     mode: 'Alternar modo oscuro/claro'
 about:
   content: >
+    # About LocalJson
+
+    A lightweight cross-platform toolset based on Wails, supporting both web and desktop platforms including Mac, Windows, and Linux.
+
+    ## Desktop version Technologies
+
+    This project is a frontend implementation of It-Tools using Vue3, Vite, Naive-UI, and TypeScript. The desktop version is implemented using Wails with Go. Special thanks to other open-source projects.
+
+    ## Found a bug in the desktop version?
+
+    And if you found a bug in LocalJson-Desktop, or something doesn't work as expected, please file a bug report in the [issues section](https://github.com/inRemark/localjson/issues/new/choose) in the GitHub repository.
+
     # Sobre IT-Tools
 
     Este maravilloso sitio web, hecho con ❤ por [Corentin Thomasset](https://github.com/CorentinTh) , agrega herramientas útiles para desarrolladores y personas que trabajan en IT. Si lo encuentra útil, no dude en compartirlo con las personas que crea que también pueden encontrarlo útil y ¡no olvide marcarlo como favorito en su barra de accesos directos!

@@ -1,3 +1,39 @@
+about:
+  content: >
+    # About LocalJson
+    
+    A lightweight cross-platform toolset based on Wails, supporting both web and desktop platforms including Mac, Windows, and Linux.
+    
+    ## Desktop version Technologies
+    
+    This project is a frontend implementation of It-Tools using Vue3, Vite, Naive-UI, and TypeScript. The desktop version is implemented using Wails with Go. Special thanks to other open-source projects.
+    
+    ## Found a bug in the desktop version?
+    
+    And if you found a bug in LocalJson-Desktop, or something doesn't work as expected, please file a bug report in the [issues section](https://github.com/inRemark/localjson/issues/new/choose) in the GitHub repository.
+    
+    
+    # About IT-Tools
+
+    This wonderful website, made with ❤ by [Corentin Thomasset](https://github.com/CorentinTh) , aggregates useful tools for developer and people working in IT. If you find it useful, please feel free to share it to people you think may find it useful too and don't forget to bookmark it in your shortcut bar!
+
+    IT Tools is open-source (under the MIT license) and free, and will always be, but it costs me money to host and renew the domain name. If you want to support my work, and encourage me to add more tools, please consider supporting by [sponsoring me](https://www.buymeacoffee.com/cthmsst).
+
+    ## Technologies
+
+    IT Tools is made in Vue.js (Vue 3) with the the Naive UI component library and is hosted and continuously deployed by Vercel. Third-party open-source libraries are used in some tools, you may find the complete list in the [package.json](https://github.com/CorentinTh/it-tools/blob/main/package.json) file of the repository.
+
+    ## Found a bug? A tool is missing?
+
+    If you need a tool that is currently not present here, and you think can be useful, you are welcome to submit a feature request in the [issues section](https://github.com/CorentinTh/it-tools/issues/new/choose) in the GitHub repository.
+    And if you found a bug, or something doesn't work as expected, please file a bug report in the [issues section](https://github.com/CorentinTh/it-tools/issues/new/choose) in the GitHub repository.
+
+404:
+  notFound: '404 Not Found'
+
+  sorry: 'Sorry, this page does not seem to exist'
+  maybe: 'Maybe the cache is doing tricky things, try force-refreshing?'
+  backHome: 'Back home'
 home:
   categories:
     newestTools: Newest tools
@@ -26,29 +62,6 @@ home:
     darkMode: 'Dark mode'
     lightMode: 'Light mode'
     mode: 'Toggle dark/light mode'
-about:
-  content: >
-    # About IT-Tools
-
-    This wonderful website, made with ❤ by [Corentin Thomasset](https://github.com/CorentinTh) , aggregates useful tools for developer and people working in IT. If you find it useful, please feel free to share it to people you think may find it useful too and don't forget to bookmark it in your shortcut bar!
-
-    IT Tools is open-source (under the MIT license) and free, and will always be, but it costs me money to host and renew the domain name. If you want to support my work, and encourage me to add more tools, please consider supporting by [sponsoring me](https://www.buymeacoffee.com/cthmsst).
-
-    ## Technologies
-
-    IT Tools is made in Vue.js (Vue 3) with the the Naive UI component library and is hosted and continuously deployed by Vercel. Third-party open-source libraries are used in some tools, you may find the complete list in the [package.json](https://github.com/CorentinTh/it-tools/blob/main/package.json) file of the repository.
-
-    ## Found a bug? A tool is missing?
-
-    If you need a tool that is currently not present here, and you think can be useful, you are welcome to submit a feature request in the [issues section](https://github.com/CorentinTh/it-tools/issues/new/choose) in the GitHub repository.
-
-    And if you found a bug, or something doesn't work as expected, please file a bug report in the [issues section](https://github.com/CorentinTh/it-tools/issues/new/choose) in the GitHub repository.
-
-404:
-  notFound: '404 Not Found'
-  sorry: 'Sorry, this page does not seem to exist'
-  maybe: 'Maybe the cache is doing tricky things, try force-refreshing?'
-  backHome: 'Back home'
 favoriteButton:
   remove: 'Remove from favorites'
   add: 'Add to favorites'
