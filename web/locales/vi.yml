@@ -7,6 +7,7 @@ home:
   toggleMenu: 'Chuyển đổi menu'
   home: Trang chủ
   uiLib: 'Thư viện UI'
+  apps: 'Apps'
   support: 'Download desktop version'
   buyMeACoffee: 'Download'
   follow:
@@ -28,6 +29,19 @@ home:
     mode: 'Chuyển đổi chế độ tối/sáng'
 about:
   content: >
+    # About LocalJson
+
+    A lightweight cross-platform toolset based on Wails, supporting both web and desktop platforms including Mac, Windows, and Linux.
+
+    ## Desktop version Technologies
+
+    This project is a frontend implementation of It-Tools using Vue3, Vite, Naive-UI, and TypeScript. The desktop version is implemented using Wails with Go. Special thanks to other open-source projects.
+
+    ## Found a bug in the desktop version?
+
+    And if you found a bug in LocalJson-Desktop, or something doesn't work as expected, please file a bug report in the [issues section](https://github.com/inRemark/localjson/issues/new/choose) in the GitHub repository.
+
+
     # Về IT-Tools
 
     Website tuyệt vời này, được tạo ra bằng ❤ bởi [Corentin Thomasset](https://github.com/CorentinTh), tổng hợp các công cụ hữu ích cho nhà phát triển và những người làm việc trong lĩnh vực IT. Nếu bạn thấy nó hữu ích, xin đừng ngần ngại chia sẻ cho những người mà bạn nghĩ sẽ thấy nó hữu ích và đừng quên đánh dấu nó trong thanh lối tắt của bạn!

@@ -32,6 +32,11 @@ const router = createRouter({
       component: () => import('./pages/About.vue'),
     },
     {
+      path: '/apps',
+      name: 'apps',
+      component: () => import('./pages/Apps.vue'),
+    },
+    {
       path: '/download',
       name: 'download',
       component: () => import('./pages/Download.vue'),

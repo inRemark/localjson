@@ -105,6 +105,12 @@ const tools = computed<ToolCategory[]>(() => [
           </c-button>
         </c-tooltip>
 
+        <c-tooltip :tooltip="$t('home.apps')" position="bottom">
+          <c-button v-if="config.app.env === 'production'" to="/apps" circle variant="text" :aria-label="$t('home.apps')">
+            <icon-mdi:octagram-outline text-20px />
+          </c-button>
+        </c-tooltip>
+
         <command-palette />
 
         <locale-selector v-if="!styleStore.isSmallScreen" />
