@@ -22,13 +22,16 @@ type Encoding = keyof typeof enc | 'Bin';
 const algoNames = Object.keys(algos) as AlgoNames[];
 const encoding = useQueryParam<Encoding>({ defaultValue: 'Hex', name: 'encoding' });
 const clearText = ref('');
+const isUpperCase = ref(false);
 
 function formatWithEncoding(words: lib.WordArray, encoding: Encoding) {
+  let result;
   if (encoding === 'Bin') {
-    return convertHexToBin(words.toString(enc.Hex));
+    result = convertHexToBin(words.toString(enc.Hex));
+  } else {
+    result = words.toString(enc[encoding]);
   }
-
-  return words.toString(enc[encoding]);
+  return isUpperCase.value ? result.toUpperCase() : result.toLowerCase();
 }
 
 const hashText = (algo: AlgoNames, value: string) => formatWithEncoding(algos[algo](value), encoding.value);
@@ -64,7 +67,13 @@ const hashText = (algo: AlgoNames, value: string) => formatWithEncoding(algos[al
           },
         ]"
       />
-
+      
+      <div style="display: flex; align-items: center;">
+        <span style="margin-right: 8px;">Uppercase</span>
+        <n-switch v-model:value="isUpperCase" />
+      </div>
+      <n-divider />
+      
       <div v-for="algo in algoNames" :key="algo" style="margin: 5px 0">
         <n-input-group>
           <n-input-group-label style="flex: 0 0 120px">

@@ -36,7 +36,7 @@ const tools = computed<ToolCategory[]>(() => [
   <MenuLayout class="menu-layout" :class="{ isSmallScreen: styleStore.isSmallScreen }">
     <template #sider>
       <RouterLink to="/" class="hero-wrapper">
-        <HeroGradient class="gradient" />
+        <HeroGradient class="gradient" />  
         <div class="text-wrapper">
           <div class="title">
             { LocalJson }
@@ -182,11 +182,9 @@ const tools = computed<ToolCategory[]>(() => [
   width: 100%;
   z-index: 10;
   overflow: hidden;
-
   .gradient {
     margin-top: -65px;
   }
-
   .text-wrapper {
     position: absolute;
     left: 0;
@@ -211,7 +209,7 @@ const tools = computed<ToolCategory[]>(() => [
       font-style: italic;
     }
     .subtitle {
-      font-size: 12px;
+      font-size: 11px;
     }
   }
 }
