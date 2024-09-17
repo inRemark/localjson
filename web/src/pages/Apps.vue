@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { ref } from 'vue';
-import { NButton, NGrid, NGi, NIcon } from 'naive-ui'; // 请根据实际情况导入 Naive UI 组件
-import { BrandApple, BrandWindows, BrandUbuntu } from '@vicons/tabler'; // 请根据实际情况导入图标
+import { NButton, NGrid, NGi, NIcon } from 'naive-ui';
+import { BrandApple, BrandWindows, BrandUbuntu } from '@vicons/tabler'; 
 
 let current = ref('LocalJson');
 function select(v: string) {
@@ -11,18 +11,14 @@ const apps = [
   {
     name: 'LocalJson',
   },
-  {
-    name: 'LocalDocs',
-  },
 ];
 
 const downloads = [
-  { os: 'macOS', arch: 'arm', icon: BrandApple, link: '/downloads/macos-arm', enabled: true },
-  { os: 'macOS', arch: 'x64', icon: BrandApple, link: '/downloads/macos-x64', enabled: false },
-  { os: 'Windows', arch: 'arm', icon: BrandWindows, link: '/downloads/windows-arm', enabled: false },
-  { os: 'Windows', arch: 'x64', icon: BrandWindows, link: '/downloads/windows-x64', enabled: false },
-  { os: 'Linux', arch: 'arm', icon: BrandUbuntu, link: '/downloads/linux-arm', enabled: false },
-  { os: 'Linux', arch: 'x64', icon: BrandUbuntu, link: '/downloads/linux-x64', enabled: false },
+  { os: 'macOS', arch: 'ARM', icon: BrandApple, link: '/downloads/macos-arm', enabled: true },
+  { os: 'Windows', arch: 'AMD64', icon: BrandWindows, link: '/downloads/windows-x64', enabled: false },
+  { os: 'Windows', arch: 'ARM', icon: BrandWindows, link: '/downloads/windows-arm', enabled: false },
+  { os: 'Linux', arch: 'ARM', icon: BrandUbuntu, link: '/downloads/linux-arm', enabled: false },
+  { os: 'Linux', arch: 'AMD64', icon: BrandUbuntu, link: '/downloads/linux-x64', enabled: false },
 ];
 </script>
 
@@ -45,16 +41,13 @@ const downloads = [
           {{ item.name }}
         </c-button>
       </div>
-
       <div flex-1 pl-4>
-        <h1>{{ current }}</h1>
-
         <div class="flex-1 pl-4 flex flex-col">
-          <div class="intro">简介内容</div>
+          <div class="title"> {{ current }} </div>
+          <div class="intro">A lightweight cross-platform toolset desktop app.</div>
           <div class="download-list flex-1">
             <div class="download-page">
-              <h2>Download Desktop Version</h2>
-              <n-grid cols="2" x-gap="12" y-gap="12" justify-content="center">
+              <n-grid cols="1" x-gap="12" y-gap="12" justify-content="center">
                 <n-gi v-for="download in downloads" :key="download.link" span="1">
                   <n-button
                     :href="download.enabled ? download.link : null"
@@ -77,6 +70,15 @@ const downloads = [
 </template>
 
 <style scoped>
+
+.title {
+  display: block;
+    font-size: 2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
 .download-page {
   display: flex;
   flex-direction: column;
@@ -95,7 +97,7 @@ h2 {
 }
 
 .download-button {
-  background-color: #f0f0f0; /* 浅灰色背景 */
-  color: #000; /* 黑色文字 */
+  background-color: #f0f0f0; 
+  color: #000;
 }
 </style>

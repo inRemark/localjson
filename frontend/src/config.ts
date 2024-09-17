@@ -24,7 +24,7 @@ export const config = figue({
       doc: 'Application current env',
       format: 'enum',
       values: ['production', 'development', 'preview', 'test'],
-      default: 'development',
+      default: 'production',
       env: 'VITE_VERCEL_ENV',
     },
   },
