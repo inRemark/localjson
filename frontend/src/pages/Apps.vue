@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { ref } from 'vue';
-import { NButton, NGrid, NGi, NIcon } from 'naive-ui'; 
-import { BrandApple, BrandWindows, BrandUbuntu } from '@vicons/tabler'; 
+import { NButton, NGrid, NGi, NIcon } from 'naive-ui';
+import { BrandApple, BrandWindows, BrandUbuntu } from '@vicons/tabler';
 
 let current = ref('LocalJson');
 function select(v: string) {
@@ -14,11 +14,21 @@ const apps = [
 ];
 
 const downloads = [
-  { os: 'macOS', arch: 'ARM', icon: BrandApple, link: '/downloads/macos-arm', enabled: true },
-  { os: 'Windows', arch: 'AMD64', icon: BrandWindows, link: '/downloads/windows-x64', enabled: false },
-  { os: 'Windows', arch: 'ARM', icon: BrandWindows, link: '/downloads/windows-arm', enabled: false },
-  { os: 'Linux', arch: 'ARM', icon: BrandUbuntu, link: '/downloads/linux-arm', enabled: false },
-  { os: 'Linux', arch: 'AMD64', icon: BrandUbuntu, link: '/downloads/linux-x64', enabled: false },
+  {
+    os: 'macOS',
+    arch: 'Universal',
+    icon: BrandApple,
+    link: 'https://github.com/inRemark/localjson/releases',
+    enabled: true,
+  },
+  {
+    os: 'Windows',
+    arch: '',
+    icon: BrandWindows,
+    link: 'https://github.com/inRemark/localjson/releases',
+    enabled: false,
+  },
+  { os: 'Linux', arch: '', icon: BrandUbuntu, link: 'https://github.com/inRemark/localjson/releases', enabled: false },
 ];
 </script>
 
@@ -43,22 +53,25 @@ const downloads = [
       </div>
       <div flex-1 pl-4>
         <div class="flex-1 pl-4 flex flex-col">
-          <div class="title"> {{ current }} </div>
+          <div class="title">{{ current }}</div>
           <div class="intro">A lightweight cross-platform toolset</div>
           <div class="download-list flex-1">
             <div class="download-page">
               <n-grid cols="1" x-gap="12" y-gap="12" justify-content="center">
                 <n-gi v-for="download in downloads" :key="download.link" span="1">
-                  <n-button
+                  <c-link
+                    target="_blank"
                     :href="download.enabled ? download.link : null"
                     :disabled="!download.enabled"
                     type="primary"
                     block
                     class="download-button"
                   >
-                    <n-icon :size="25" :component="download.icon" class="icon" />
-                    {{ download.os }} ({{ download.arch }})
-                  </n-button>
+                    <div class="download-content">
+                      <n-icon :size="25" :component="download.icon" class="icon" />
+                      <span>{{ download.os }} {{ download.arch }}</span>
+                    </div>
+                  </c-link>
                 </n-gi>
               </n-grid>
             </div>
@@ -70,14 +83,13 @@ const downloads = [
 </template>
 
 <style scoped>
-
 .title {
   display: block;
-    font-size: 2em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    unicode-bidi: isolate;
+  font-size: 2em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
 }
 .download-page {
   display: flex;
@@ -97,7 +109,13 @@ h2 {
 }
 
 .download-button {
-  background-color: #f0f0f0; 
-  color: #000;
+  display: flex;
+  align-items: center;
+}
+
+.download-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 </style>
