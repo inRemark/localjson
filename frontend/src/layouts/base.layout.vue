@@ -33,13 +33,15 @@ const tools = computed<ToolCategory[]>(() => [
 </script>
 
 <template>
-  <MenuLayout class="menu-layout" :class="{ isSmallScreen: styleStore.isSmallScreen }">
+  <MenuLayout class="menu-layout" style="--wails-draggable:drag" :class="{ isSmallScreen: styleStore.isSmallScreen }">
     <template #sider>
+      <div class="sider">
+      <!--
       <RouterLink to="/" class="hero-wrapper">
         <HeroGradient class="gradient" />  
         <div class="text-wrapper">
           <div class="title">
-            { LocalJson }
+            LocalJson
           </div>
           <div class="divider" />
           <div class="subtitle">
@@ -47,7 +49,7 @@ const tools = computed<ToolCategory[]>(() => [
           </div>
         </div>
       </RouterLink>
-
+    -->
       <div class="sider-content">
         <div v-if="styleStore.isSmallScreen" flex flex-col items-center>
           <locale-selector w="90%" />
@@ -80,6 +82,7 @@ const tools = computed<ToolCategory[]>(() => [
           </div>
         </div>
       </div>
+    </div>
     </template>
 
     <template #content>
@@ -151,8 +154,8 @@ const tools = computed<ToolCategory[]>(() => [
 // }
 
 .support-button {
-  background: rgb(37, 99, 108);
-  background: linear-gradient(48deg, rgba(37, 99, 108, 1) 0%, rgba(59, 149, 111, 1) 60%, rgba(20, 160, 88, 1) 100%);
+  background: rgb(87, 159, 241);
+  background: linear-gradient(48deg, rgba(87, 159, 241, 1) 0%, rgb(61, 161, 243) 60%, rgb(64, 115, 245) 100%);
   color: #fff !important;
   transition: padding ease 0.2s !important;
 
@@ -170,13 +173,19 @@ const tools = computed<ToolCategory[]>(() => [
   padding: 20px 0;
 }
 
+.menu-layout{
+  // padding: 30px auto
+}
+
 .sider-content {
-  padding-top: 160px;
-  padding-bottom: 200px;
+  // padding-top: 160px;
+  padding-top: 24px;
+  padding-bottom: 100px;
+
 }
 
 .hero-wrapper {
-  position: absolute;
+  // position: absolute;
   display: block;
   left: 0;
   width: 100%;
@@ -190,9 +199,10 @@ const tools = computed<ToolCategory[]>(() => [
     left: 0;
     width: 100%;
     text-align: center;
-    top: 16px;
-    color: #fff;
-
+    // top: 16px;
+    // color: #fff;
+    top: 8px;
+    color: v-bind('themeVars.primaryColor');
     .title {
       font-size: 25px;
       font-weight: 600;

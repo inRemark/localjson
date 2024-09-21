@@ -4,13 +4,14 @@ import (
 	"context"
 	"embed"
 	"fmt"
+	"localjson/app/consts"
+	"localjson/app/services"
+	"runtime"
+
 	"github.com/wailsapp/wails/v2/pkg/menu"
 	"github.com/wailsapp/wails/v2/pkg/options/linux"
 	"github.com/wailsapp/wails/v2/pkg/options/mac"
 	"github.com/wailsapp/wails/v2/pkg/options/windows"
-	"localjson/app/consts"
-	"localjson/app/services"
-	"runtime"
 
 	"github.com/wailsapp/wails/v2"
 	"github.com/wailsapp/wails/v2/pkg/options"
@@ -21,7 +22,7 @@ import (
 var assets embed.FS
 
 const appName = "LocalJson"
-const version = "0.0.1"
+const version = "3.0.1"
 
 var icon []byte
 
@@ -67,7 +68,7 @@ func main() {
 			fileService,
 		},
 		Mac: &mac.Options{
-			//TitleBar: mac.TitleBarHiddenInset(),
+			TitleBar: mac.TitleBarHiddenInset(),
 			About: &mac.AboutInfo{
 				Title:   fmt.Sprintf("%s %s", appName, version),
 				Message: "A modern lightweight cross-platform devTools desktop client.\n\nCopyright © 2024",
