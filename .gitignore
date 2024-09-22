@@ -39,6 +39,5 @@ build/darwin/Info.plist
 rsync.sh
 entitlements.plist
 appstore
-appself
-mac-appstore-build.sh
-mac-appself-build.sh
+mac-store-build.sh
+mac-dmg-build.sh
