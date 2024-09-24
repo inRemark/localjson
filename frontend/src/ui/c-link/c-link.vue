@@ -1,13 +1,25 @@
 <script lang="ts" setup>
 import { type RouteLocationRaw, RouterLink } from 'vue-router';
 import { useTheme } from './c-link.theme';
+import { BrowserOpenURL } from '../../../wailsjs/runtime/runtime'; // 导入 BrowserOpenURL 函数
 
-const props = defineProps<{
+const props = withDefaults(defineProps<{
   href?: string
   to?: RouteLocationRaw
-}>();
+  openUrl?: string
+}>(),{
+  href: undefined,
+  to: undefined,
+  openUrl: '',
+});
 
-const { href, to } = toRefs(props);
+const { href, to, openUrl } = toRefs(props);
+
+function handleClick(event: MouseEvent) {
+  if(openUrl.value.length > 0){
+    BrowserOpenURL(openUrl.value);
+  }
+}
 
 const theme = useTheme();
 const tag = computed(() => {
@@ -19,10 +31,11 @@ const tag = computed(() => {
   }
   return 'span';
 });
+
 </script>
 
 <template>
-  <component :is="tag" :href="href ?? to" class="c-link" :to="to">
+  <component :is="tag" :href="href ?? to" class="c-link" :to="to" @click="handleClick">
     <slot />
   </component>
 </template>

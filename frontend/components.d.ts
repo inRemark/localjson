@@ -93,7 +93,6 @@ declare module '@vue/runtime-core' {
     'IconMdi:brushVariant': typeof import('~icons/mdi/brush-variant')['default']
     'IconMdi:contentCopy': typeof import('~icons/mdi/content-copy')['default']
     'IconMdi:kettleSteamOutline': typeof import('~icons/mdi/kettle-steam-outline')['default']
-    'IconMdi:octagramOutline': typeof import('~icons/mdi/octagram-outline')['default']
     IconMdiArrowDown: typeof import('~icons/mdi/arrow-down')['default']
     IconMdiArrowRightBottom: typeof import('~icons/mdi/arrow-right-bottom')['default']
     IconMdiCamera: typeof import('~icons/mdi/camera')['default']

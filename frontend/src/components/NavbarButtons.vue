@@ -11,7 +11,7 @@ const { isDarkTheme } = toRefs(styleStore);
     <c-button
       circle
       variant="text"
-      href="https://github.com/inRemark/localjson"
+      openUrl="https://github.com/inRemark/localjson"
       target="_blank"
       rel="noopener noreferrer"
       :aria-label="$t('home.nav.githubRepository')"
@@ -24,7 +24,7 @@ const { isDarkTheme } = toRefs(styleStore);
     <c-button
       circle
       variant="text"
-      href="https://twitter.com/youdayly"
+      openUrl="https://twitter.com/inReamrk"
       rel="noopener"
       target="_blank"
       :aria-label="$t('home.nav.twitterAccount')"

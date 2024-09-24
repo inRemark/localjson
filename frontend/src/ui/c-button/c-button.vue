@@ -2,6 +2,8 @@
 import type { RouteLocationRaw } from 'vue-router';
 import { useAppTheme } from '../theme/themes';
 import { useTheme } from './c-button.theme';
+import { BrowserOpenURL } from '../../../wailsjs/runtime/runtime'; // 导入 BrowserOpenURL 函数
+
 
 const props = withDefaults(
   defineProps<{
@@ -12,6 +14,7 @@ const props = withDefaults(
     circle?: boolean
     href?: string
     to?: RouteLocationRaw
+    openUrl: string
     size?: 'small' | 'medium' | 'large'
   }>(),
   {
@@ -22,15 +25,19 @@ const props = withDefaults(
     circle: false,
     href: undefined,
     to: undefined,
+    openUrl: '',
     size: 'medium',
   },
 );
 const emits = defineEmits(['click']);
 
-const { variant, disabled, round, circle, href, type, to, size: sizeName } = toRefs(props);
+const { variant, disabled, round, circle, href, type, to, openUrl, size: sizeName } = toRefs(props);
 
 function handleClick(event: MouseEvent) {
   if (!disabled.value) {
+    if(openUrl.value.length > 0){
+      BrowserOpenURL(openUrl.value);
+    }
     emits('click', event);
   }
 }

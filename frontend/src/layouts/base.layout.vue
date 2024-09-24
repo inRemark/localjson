@@ -64,19 +64,19 @@ const tools = computed<ToolCategory[]>(() => [
         <div class="footer">
           <div>
             LocalJson Tools
-            <c-link target="_blank" rel="noopener" href="https://github.com/inRemark/localjson">
+            <c-link target="_blank" rel="noopener" openUrl="https://github.com/inRemark/localjson">
               v{{ version }}
             </c-link>
           </div>
           <div>
             Based on
-            <c-link target="_blank" rel="noopener" href="https://github.com/CorentinTh/it-tools">
+            <c-link target="_blank" rel="noopener" openUrl="https://github.com/CorentinTh/it-tools">
               IT Tools
             </c-link>
           </div>
           <div>
             © {{ new Date().getFullYear() }}
-            <c-link target="_blank" rel="noopener" href="https://github.com/inRemark">
+            <c-link target="_blank" rel="noopener" openUrl="https://github.com/inRemark">
               inRemark
             </c-link>
           </div>
@@ -108,11 +108,11 @@ const tools = computed<ToolCategory[]>(() => [
           </c-button>
         </c-tooltip>
 
-        <c-tooltip :tooltip="$t('home.apps')" position="bottom">
+        <!-- <c-tooltip :tooltip="$t('home.apps')" position="bottom">
           <c-button v-if="config.app.env === 'production'" to="/apps" circle variant="text" :aria-label="$t('home.apps')">
             <icon-mdi:octagram-outline text-20px />
           </c-button>
-        </c-tooltip>
+        </c-tooltip> -->
 
         <command-palette />
 
@@ -122,7 +122,7 @@ const tools = computed<ToolCategory[]>(() => [
           <NavbarButtons v-if="!styleStore.isSmallScreen" />
         </div>
 
-        <c-tooltip position="bottom" :tooltip="$t('home.support')">
+        <!-- <c-tooltip position="bottom" :tooltip="$t('home.support')">
           <c-button
             round
             to="/download"
@@ -131,10 +131,10 @@ const tools = computed<ToolCategory[]>(() => [
             :bordered="false"
             @click="() => tracker.trackEvent({ eventName: 'Support button clicked' })"
           >
-            {{ $t('home.buyMeACoffee') }}
+            {{ $t('home.buyMeACoffee') }} -->
             <!-- <NIcon v-if="!styleStore.isSmallScreen" :component="Heart" ml-2 /> -->
-          </c-button>
-        </c-tooltip>
+          <!-- </c-button>
+        </c-tooltip> -->
       </div>
       <slot />
     </template>
