@@ -41,6 +41,11 @@ const router = createRouter({
       name: 'download',
       component: () => import('./pages/Download.vue'),
     },
+    {
+      path: '/privacy',
+      name: 'Privacy',
+      component: () => import('./pages/Terms.vue'),
+    },
     ...toolsRoutes,
     ...toolsRedirectRoutes,
     ...(config.app.env === 'development' ? demoRoutes : []),

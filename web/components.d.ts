@@ -196,6 +196,7 @@ declare module '@vue/runtime-core' {
     StringObfuscator: typeof import('./src/tools/string-obfuscator/string-obfuscator.vue')['default']
     SvgPlaceholderGenerator: typeof import('./src/tools/svg-placeholder-generator/svg-placeholder-generator.vue')['default']
     TemperatureConverter: typeof import('./src/tools/temperature-converter/temperature-converter.vue')['default']
+    Terms: typeof import('./src/pages/Terms.vue')['default']
     TextareaCopyable: typeof import('./src/components/TextareaCopyable.vue')['default']
     TextDiff: typeof import('./src/tools/text-diff/text-diff.vue')['default']
     TextStatistics: typeof import('./src/tools/text-statistics/text-statistics.vue')['default']
