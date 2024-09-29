@@ -41,3 +41,4 @@ entitlements.plist
 appstore
 mac-store-build.sh
 mac-dmg-build.sh
+windows-exe-build.bat
