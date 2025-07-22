@@ -3,10 +3,11 @@ import { defineTool } from '../tool';
 import { translate } from '@/plugins/i18n.plugin';
 
 export const tool = defineTool({
-  name: translate('tools.ipv4-subnet-calculator.title'),
+  name: translate('tools.ipv4-subnet-calculator.name'),
+  title: translate('tools.ipv4-subnet-calculator.title'),
   path: '/ipv4-subnet-calculator',
   description: translate('tools.ipv4-subnet-calculator.description'),
-  keywords: ['ipv4', 'subnet', 'calculator', 'mask', 'network', 'cidr', 'netmask', 'bitmask', 'broadcast', 'address'],
+  keywords: translate('tools.ipv4-subnet-calculator.keywords'),//['ipv4', 'subnet', 'calculator', 'mask', 'network', 'cidr', 'netmask', 'bitmask', 'broadcast', 'address'],
   component: () => import('./ipv4-subnet-calculator.vue'),
   icon: RouterOutlined,
 });

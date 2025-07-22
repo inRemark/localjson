@@ -3,10 +3,12 @@ import { defineTool } from '../tool';
 import { translate } from '@/plugins/i18n.plugin';
 
 export const tool = defineTool({
-  name: translate('tools.token-generator.title'),
+  name: translate('tools.token-generator.name'),
+  title: translate('tools.token-generator.title'),
   path: '/token-generator',
   description: translate('tools.token-generator.description'),
-  keywords: ['token', 'random', 'string', 'alphanumeric', 'symbols', 'number', 'letters', 'lowercase', 'uppercase', 'password'],
+  keywords: translate('tools.token-generator.keywords'),
+  // ['token', 'random', 'string', 'alphanumeric', 'symbols', 'number', 'letters', 'lowercase', 'uppercase', 'password'],
   component: () => import('./token-generator.tool.vue'),
   icon: ArrowsShuffle,
 });

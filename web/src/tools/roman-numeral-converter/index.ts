@@ -3,10 +3,12 @@ import { defineTool } from '../tool';
 import { translate } from '@/plugins/i18n.plugin';
 
 export const tool = defineTool({
-  name: translate('tools.roman-numeral-converter.title'),
+  name: translate('tools.roman-numeral-converter.name'),
+  title: translate('tools.roman-numeral-converter.title'),
   path: '/roman-numeral-converter',
   description: translate('tools.roman-numeral-converter.description'),
-  keywords: ['roman', 'arabic', 'converter', 'X', 'I', 'V', 'L', 'C', 'D', 'M'],
+  keywords: translate('tools.roman-numeral-converter.keywords'),
+  // ['roman', 'arabic', 'converter', 'X', 'I', 'V', 'L', 'C', 'D', 'M'],
   component: () => import('./roman-numeral-converter.vue'),
   icon: LetterX,
 });

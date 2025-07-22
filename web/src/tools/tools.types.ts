@@ -3,8 +3,9 @@ import type { Component } from 'vue';
 export interface Tool {
   name: string
   path: string
+  title: string
   description: string
-  keywords: string[]
+  keywords: string
   component: () => Promise<Component>
   icon: Component
   redirectFrom?: string[]

@@ -6,11 +6,12 @@ import type { HeadObject } from '@vueuse/head';
 import BaseLayout from './base.layout.vue';
 import FavoriteButton from '@/components/FavoriteButton.vue';
 import type { Tool } from '@/tools/tools.types';
+import { translate } from '@/plugins/i18n.plugin';
 
 const route = useRoute();
 
 const head = computed<HeadObject>(() => ({
-  title: `${route.meta.name} - LocalJson Tools`,
+  title: `${route.meta.title} | ` + translate('home.info'),
   meta: [
     {
       name: 'description',
@@ -18,7 +19,8 @@ const head = computed<HeadObject>(() => ({
     },
     {
       name: 'keywords',
-      content: ((route.meta.keywords ?? []) as string[]).join(','),
+      content: route.meta?.keywords as string,
+      // ((route.meta.keywords ?? []) as string[]).join(','),
     },
   ],
 }));
@@ -26,7 +28,7 @@ useHead(head);
 const { t } = useI18n();
 
 const i18nKey = computed<string>(() => route.path.trim().replace('/', ''));
-const toolTitle = computed<string>(() => t(`tools.${i18nKey.value}.title`, String(route.meta.name)));
+const toolTitle = computed<string>(() => t(`tools.${i18nKey.value}.name`, String(route.meta.name)));
 const toolDescription = computed<string>(() => t(`tools.${i18nKey.value}.description`, String(route.meta.description)));
 </script>
 

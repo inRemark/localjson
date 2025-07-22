@@ -3,10 +3,11 @@ import { defineTool } from '../tool';
 import { translate } from '@/plugins/i18n.plugin';
 
 export const tool = defineTool({
-  name: translate('tools.html-entities.title'),
+  name: translate('tools.html-entities.name'),
+  title: translate('tools.html-entities.title'),
   path: '/html-entities',
   description: translate('tools.html-entities.description'),
-  keywords: ['html', 'entities', 'escape', 'unescape', 'special', 'characters', 'tags'],
+  keywords: translate('tools.html-entities.keywords'),//['html', 'entities', 'escape', 'unescape', 'special', 'characters', 'tags'],
   component: () => import('./html-entities.vue'),
   icon: Code,
 });

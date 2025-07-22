@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+x<script lang="ts" setup>
 import { NIcon, useThemeVars } from 'naive-ui';
 
 import { RouterLink } from 'vue-router';
@@ -36,10 +36,10 @@ const tools = computed<ToolCategory[]>(() => [
   <MenuLayout class="menu-layout" :class="{ isSmallScreen: styleStore.isSmallScreen }">
     <template #sider>
       <RouterLink to="/" class="hero-wrapper">
-        <!-- <HeroGradient class="gradient" /> -->
+        <HeroGradient class="gradient" />
         <div class="text-wrapper">
           <div class="title">
-            LocalJson
+            {{ $t('home.title') }}
           </div>
           <div class="divider" />
           <div class="subtitle">
@@ -171,31 +171,32 @@ const tools = computed<ToolCategory[]>(() => [
 }
 
 .sider-content {
-  padding-top: 160px;
-  padding-bottom: 200px;
+  // padding-top: 160px;
+  // padding-bottom: 200px;
+  padding-top: 140px;
+  // padding-top: 24px;
+  padding-bottom: 100px;
 }
 
 .hero-wrapper {
-  // position: absolute;
+  position: absolute;
   display: block;
   left: 0;
   width: 100%;
   z-index: 10;
   overflow: hidden;
-
   .gradient {
-    margin-top: -65px;
+    margin-top: -85px;
   }
-
   .text-wrapper {
     position: absolute;
     left: 0;
     width: 100%;
     text-align: center;
     // top: 16px;
-    // color: #fff;
+    color: #fff;
     top: 8px;
-    color: v-bind('themeVars.primaryColor');
+    // color: v-bind('themeVars.primaryColor');
 
     .title {
       font-size: 25px;

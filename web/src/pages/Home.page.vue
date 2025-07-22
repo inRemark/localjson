@@ -1,14 +1,32 @@
 <script setup lang="ts">
 import { Heart } from '@vicons/tabler';
-import { useHead } from '@vueuse/head';
+import { useHead, type HeadObject } from '@vueuse/head';
 import ColoredCard from '../components/ColoredCard.vue';
 import ToolCard from '../components/ToolCard.vue';
 import { useToolStore } from '@/tools/tools.store';
 import { config } from '@/config';
+import { translate } from '@/plugins/i18n.plugin';
 
 const toolStore = useToolStore();
 
-useHead({ title: 'LocalJson Tools - Handy online tools for developers' });
+
+const head = computed<HeadObject>(() => ({
+  title: translate('home.info'),
+  meta: [
+    {
+      name: 'description',
+      content: translate('home.description'),
+    },
+    {
+      name: 'keywords',
+      content: translate('home.keywords'),
+      // ((route.meta.keywords ?? []) as string[]).join(','),
+    },
+  ],
+}));
+// useHead({ title: 'LocalJson Tools - Handy online tools for developers' });
+useHead(head);
+
 const { t } = useI18n();
 </script>
 

@@ -1,4 +1,7 @@
 home:
+  title: LocalJson Tools
+  info: LocalJson Tools - Online tools for developers.
+  keywords: tools, developer, online, handy, LocalJson Tools, LocalJson, tools, developer tools, online tools, handy tools
   categories:
     newestTools: Newest tools
     favoriteTools: 'Your favorite tools'
@@ -84,17 +87,29 @@ tools:
     text: Text
     data: Data
 
+  ascii-text-drawer:
+    name: ASCII text drawer
+    title: ASCII text drawer
+    description: Draw ASCII art with your text. You can choose the font, the size, and the color of the text.
+    keywords: ASCII, text, drawer, draw, art, font, size, color, ASCII text, ASCII drawer, ASCII draw, ASCII art, ASCII font, ASCII size, ASCII color, ASCII text tool, ASCII drawer tool, ASCII draw tool, ASCII art tool, ASCII font tool, ASCII size tool, ASCII color tool
+
   password-strength-analyser:
+    name: Password strength analyser
     title: Password strength analyser
     description: Discover the strength of your password with this client-side-only password strength analyser and crack time estimation tool.
+    keywords: password, strength, analyse, crack, time, estimation, security, secure, safe, strong, weak, strength, password strength, password crack, password time, password estimation
 
   chronometer:
+    name: Chronometer
     title: Chronometer
     description: Monitor the duration of a thing. Basically a chronometer with simple chronometer features.
-
+    keywords: chronometer, timer, stopwatch, duration, time, monitor, watch, clock, chronometer tool, timer tool, stopwatch tool, duration tool, time tool, monitor tool, watch tool, clock tool
+  
   token-generator:
+    name: Token generator
     title: Token generator
     description: Generate random string with the chars you want, uppercase or lowercase letters, numbers and/or symbols.
+    keywords: token, generator, random, string, chars, uppercase, lowercase, letters, numbers, symbols, random string, token generator, random token, string generator, random string generator, token generator tool, random token tool, string generator tool, random string generator tool
 
     uppercase: Uppercase (ABC...)
     lowercase: Lowercase (abc...)
@@ -107,301 +122,470 @@ tools:
       copy: Copy
       refresh: Refresh
   percentage-calculator:
+    name: Percentage calculator
     title: Percentage calculator
     description: Easily calculate percentages from a value to another value, or from a percentage to a value.
+    keywords: percentage, calculator, calculate, value, percentage calculator, percentage calculate, value calculator, value calculate
+
 
   svg-placeholder-generator:
+    name: SVG placeholder generator
     title: SVG placeholder generator
     description: Generate svg images to use as a placeholder in your applications.
+    keywords: svg, placeholder, generator, svg placeholder, svg generator, placeholder generator, svg placeholder generator
 
   json-to-csv:
+    name: JSON to CSV
     title: JSON to CSV
     description: Convert JSON to CSV with automatic header detection.
+    keywords: json, csv, convert, json to csv, json convert, csv convert, json to csv convert, json to csv tool, json convert tool, csv convert tool, json to csv convert tool
 
   camera-recorder:
+    name: Camera recorder
     title: Camera recorder
     description: Take a picture or record a video from your webcam or camera.
+    keywords: camera, recorder, picture, record, video, webcam, camera recorder, picture recorder, record video, webcam recorder, camera tool, recorder tool, picture tool, record tool, video tool, webcam tool
 
   keycode-info:
+    name: Keycode info
     title: Keycode info
     description: Find the javascript keycode, code, location and modifiers of any pressed key.
+    keywords: keycode, info, key, code, location, modifiers, javascript, keycode info, key info, code info, location info, modifiers info, javascript keycode, keycode tool, info tool, key tool, code tool, location tool, modifiers tool
 
   emoji-picker:
+    name: Emoji picker
     title: Emoji picker
     description: Copy and paste emojis easily and get the unicode and code points value of each emoji.
+    keywords: emoji, picker, copy, paste, unicode, code points, emoji picker, emoji copy, emoji paste, emoji unicode, emoji code points, emoji tool, picker tool, copy tool, paste tool, unicode tool, code points tool
 
   color-converter:
+    name: Color converter
     title: Color converter
     description: Convert color between the different formats (hex, rgb, hsl and css name)
+    keywords: color, converter, convert, hex, rgb, hsl, css, name, color converter, color convert, hex convert, rgb convert, hsl convert, css convert, name convert, color converter tool, color convert tool, hex convert tool, rgb convert tool, hsl convert tool, css convert tool, name convert tool
 
   bcrypt:
+    name: Bcrypt
     title: Bcrypt
     description: Hash and compare text string using bcrypt. Bcrypt is a password-hashing function based on the Blowfish cipher.
+    keywords: bcrypt, hash, compare, text, string, bcrypt hash, bcrypt compare, bcrypt text, bcrypt string, bcrypt tool, hash tool, compare tool, text tool, string tool
 
   crontab-generator:
+    name: Crontab generator
     title: Crontab generator
     description: Validate and generate crontab and get the human-readable description of the cron schedule.
+    keywords: crontab, generator, validate, generate, crontab generator, crontab validate, crontab generate, crontab tool, generator tool, validate tool, generate tool
 
   http-status-codes:
+    name: HTTP status codes
     title: HTTP status codes
     description: The list of all HTTP status codes, their name, and their meaning.
+    keywords: http, status, codes, list, name, meaning, http status, http codes, http list, http name, http meaning, http status codes, http codes list, http codes name, http codes meaning, http status codes list, http status codes name, http status codes meaning
 
   sql-prettify:
+    name: SQL prettify and format
     title: SQL prettify and format
     description: Format and prettify your SQL queries online (it supports various SQL dialects).
+    keywords: sql, prettify, format, sql prettify, sql format, sql prettify tool, sql format tool
 
   benchmark-builder:
+    name: Benchmark builder
     title: Benchmark builder
     description: Easily compare execution time of tasks with this very simple online benchmark builder.
+    keywords: benchmark, builder, compare, execution, time, tasks, benchmark builder, benchmark compare, benchmark execution, benchmark time, benchmark tasks, benchmark builder tool, benchmark compare tool, benchmark execution tool, benchmark time tool, benchmark tasks tool
 
   git-memo:
+    name: Git cheatsheet
     title: Git cheatsheet
     description: Git is a decentralized version management software. With this cheatsheet, you will have quick access to the most common.go git commands.
+    keywords: git, cheatsheet, decentralized, version, management, software, git cheatsheet, git decentralized, git version, git management, git software, git tool, cheatsheet tool, decentralized tool, version tool, management tool, software tool
 
   slugify-string:
+    name: Slugify string
     title: Slugify string
     description: Make a string url, filename and id safe.
+    keywords: slugify, string, url, filename, id, safe, slugify string, string url, string filename, string id, string safe, slugify tool, string url tool, string filename tool, string id tool, string safe tool
 
   encryption:
+    name: Encrypt / decrypt text
     title: Encrypt / decrypt text
     description: Encrypt clear text and decrypt ciphertext using crypto algorithms like AES, TripleDES, Rabbit or RC4.
+    keywords: encrypt, decrypt, text, clear, crypto, algorithms, AES, TripleDES, Rabbit, RC4, encrypt text, decrypt text, clear text, crypto text, algorithms text, AES text, TripleDES text, Rabbit text, RC4 text, encrypt tool, decrypt tool, clear tool, crypto tool, algorithms tool
 
   random-port-generator:
+    name: Random port generator
     title: Random port generator
     description: Generate random port numbers outside of the range of "known" ports (0-1023).
+    keywords: random, port, generator, random port, random generator, port generator, random port generator, random port tool, random generator tool, port generator tool, random port generator tool
 
   yaml-prettify:
+    name: YAML prettify and format
     title: YAML prettify and format
     description: Prettify your YAML string into a friendly, human-readable format.
+    keywords: yaml, prettify, format, yaml prettify, yaml format, yaml prettify tool, yaml format tool
 
   eta-calculator:
+    name: ETA calculator
     title: ETA calculator
     description: An ETA (Estimated Time of Arrival) calculator to determine the approximate end time of a task, for example, the end time and duration of a file download.
+    keywords: ETA, calculator, estimated, time, arrival, end, task, approximate, end time, file, download, ETA calculator, ETA time, ETA arrival, ETA end, ETA task, ETA approximate, ETA end time, ETA file, ETA download, ETA calculator tool, ETA time tool, ETA arrival tool, ETA end tool, ETA task tool, ETA approximate tool, ETA end time tool, ETA file tool, ETA download tool
 
   roman-numeral-converter:
+    name: Roman numeral converter
     title: Roman numeral converter
     description: Convert Roman numerals to numbers and convert numbers to Roman numerals.
+    keywords: roman, numeral, converter, convert, numbers, roman numerals, numbers roman, roman converter, numeral converter, convert roman, convert numbers, roman numerals tool, numbers roman tool, roman converter tool, numeral converter tool, convert roman tool, convert numbers tool
 
   hmac-generator:
+    name: Hmac generator
     title: Hmac generator
     description: Computes a hash-based message authentication code (HMAC) using a secret key and your favorite hashing function.
+    keywords: hmac, generator, computes, hash-based, message, authentication, code, secret, key, hashing, function, hmac generator, hmac computes, hmac hash-based, hmac message, hmac authentication, hmac code, hmac secret, hmac key, hmac hashing, hmac function, hmac generator tool, hmac computes tool, hmac hash-based tool, hmac message tool, hmac authentication tool, hmac code tool, hmac secret tool, hmac key tool, hmac hashing tool, hmac function tool
 
   bip39-generator:
+    name: BIP39 passphrase generator
     title: BIP39 passphrase generator
     description: Generate a BIP39 passphrase from an existing or random mnemonic, or get the mnemonic from the passphrase.
+    keywords: BIP39, passphrase, generator, generate, mnemonic, random, mnemonic, BIP39 passphrase, BIP39 generator, BIP39 generate, BIP39 mnemonic, BIP39 random, BIP39 mnemonic, BIP39 passphrase generator, BIP39 mnemonic generator, BIP39 passphrase tool, BIP39 generate tool, BIP39 mnemonic tool, BIP39 random tool, BIP39 mnemonic tool, BIP39 passphrase generator tool, BIP39 mnemonic generator tool
 
   base64-file-converter:
+    name: Base64 file converter
     title: Base64 file converter
     description: Convert a string, file, or image into its base64 representation.
+    keywords: base64, file, converter, convert, string, image, base64 file, base64 converter, base64 convert, base64 string, base64 image, base64 file converter, base64 converter tool, base64 convert tool, base64 string tool, base64 image tool
 
   list-converter:
+    name: List converter
     title: List converter
     description: This tool can process column-based data and apply various changes (transpose, add prefix and suffix, reverse list, sort list, lowercase values, truncate values) to each row.
+    keywords: list, converter, process, column-based, data, apply, changes, transpose, add, prefix, suffix, reverse, sort, lowercase, values, truncate, list converter, list process, list column-based, list data, list apply, list changes, list transpose, list add, list prefix, list suffix, list reverse, list sort, list lowercase, list values, list truncate, list converter tool, list process tool, list column-based tool, list data tool, list apply tool, list changes tool, list transpose tool, list add tool, list prefix tool, list suffix tool, list reverse tool, list sort tool, list lowercase tool, list values tool, list truncate tool
 
   base64-string-converter:
+    name: Base64 string encoder/decoder
     title: Base64 string encoder/decoder
     description: Simply encode and decode strings into their base64 representation.
+    keywords: base64, string, encode, decode, strings, base64 string, base64 encode, base64 decode, base64 strings, base64 string encoder, base64 string decoder, base64 encode tool, base64 decode tool, base64 strings tool, base64 string encoder tool, base64 string decoder tool
 
   toml-to-yaml:
+    name: TOML to YAML
     title: TOML to YAML
     description: Parse and convert TOML to YAML.
+    keywords: TOML, YAML, parse, convert, TOML YAML, TOML parse, TOML convert, YAML convert, TOML to YAML, TOML to YAML tool, TOML parse tool, TOML convert tool, YAML convert tool
 
   math-evaluator:
+    name: Math evaluator
     title: Math evaluator
     description: A calculator for evaluating mathematical expressions. You can use functions like sqrt, cos, sin, abs, etc.
+    keywords: math, evaluator, calculator, evaluate, mathematical, expressions, functions, sqrt, cos, sin, abs, math evaluator, math calculator, math evaluate, math mathematical, math expressions, math functions, math sqrt, math cos, math sin, math abs, math evaluator tool, math calculator tool, math evaluate tool, math mathematical tool, math expressions tool, math functions tool, math sqrt tool, math cos tool, math sin tool, math abs tool
 
   json-to-yaml-converter:
+    name: JSON to YAML converter
     title: JSON to YAML converter
     description: Simply convert JSON to YAML with this online live converter.
+    keywords: JSON, YAML, convert, JSON YAML, JSON convert, YAML convert, JSON to YAML, JSON to YAML tool, JSON convert tool, YAML convert tool
+
+  json-to-xml:
+    name: JSON to XML
+    title: JSON to XML
+    description: Convert JSON to XML with automatic header detection.
+    keywords: JSON, XML, convert, JSON XML, JSON convert, XML convert, JSON to XML, JSON to XML tool, JSON convert tool, XML convert tool
 
   url-parser:
+    name: URL parser
     title: URL parser
     description: Parse a URL into its separate constituent parts (protocol, origin, params, port, username-password, ...)
+    keywords: URL, parser, parse, URL parser, URL parse, URL tool, parser tool, parse tool
 
   iban-validator-and-parser:
+    name: IBAN validator and parser
     title: IBAN validator and parser
     description: Validate and parse IBAN numbers. Check if an IBAN is valid and get the country, BBAN, if it is a QR-IBAN and the IBAN friendly format.
+    keywords: IBAN, validator, parser, validate, parse, numbers, check, valid, country, BBAN, QR-IBAN, friendly, format, IBAN validator, IBAN parser, IBAN validate, IBAN parse, IBAN numbers, IBAN check, IBAN valid, IBAN country, IBAN BBAN, IBAN QR-IBAN, IBAN friendly, IBAN format, IBAN validator tool, IBAN parser tool, IBAN validate tool, IBAN parse tool
 
   user-agent-parser:
+    name: User-agent parser
     title: User-agent parser
     description: Detect and parse Browser, Engine, OS, CPU, and Device type/model from an user-agent string.
+    keywords: user-agent, parser, detect, parse, browser, engine, OS, CPU, device, type, model, user-agent parser, user-agent detect, user-agent parse, user-agent browser, user-agent engine, user-agent OS, user-agent CPU, user-agent device, user-agent type, user-agent model, user-agent parser tool, user-agent detect tool, user-agent parse tool
 
   numeronym-generator:
+    name: Numeronym generator
     title: Numeronym generator
     description: A numeronym is a word where a number is used to form an abbreviation. For example, "i18n" is a numeronym of "internationalization" where 18 stands for the number of letters between the first i and the last n in the word.
+    keywords: numeronym, generator, word, number, abbreviation, numeronym generator, numeronym word, numeronym number, numeronym abbreviation, numeronym generator tool, numeronym word tool, numeronym number tool, numeronym abbreviation tool
 
   case-converter:
+    name: Case converter
     title: Case converter
     description: Transform the case of a string and choose between different formats
+    keywords: case, converter, transform, string, choose, formats, case converter, case transform, case string, case choose, case formats, case converter tool, case transform tool, case string tool, case choose tool, case formats tool
 
   html-entities:
+    name: Escape HTML entities
     title: Escape HTML entities
     description: Escape or unescape HTML entities (replace characters like <,>, &, " and \' with their HTML version)
+    keywords: escape, HTML, entities, unescape, replace, characters, HTML entities, escape HTML, escape entities, escape unescape, escape replace, escape characters, HTML entities tool, escape HTML tool, escape entities tool, escape unescape tool, escape replace tool, escape characters tool
 
   json-prettify:
+    name: JSON prettify and format
     title: JSON prettify and format
     description: Prettify your JSON string into a friendly, human-readable format.
+    keywords: JSON, prettify, format, JSON prettify, JSON format, JSON prettify tool, JSON format tool
 
   docker-run-to-docker-compose-converter:
+    name: Docker run to Docker compose converter
     title: Docker run to Docker compose converter
     description: Transforms "docker run" commands into docker-compose files!
+    keywords: Docker, run, compose, converter, transforms, docker run, docker compose, docker converter, run converter, compose converter, transforms converter, docker run tool, docker compose tool, docker converter tool, run converter tool, compose converter tool, transforms converter tool
 
   mac-address-lookup:
+    name: MAC address lookup
     title: MAC address lookup
     description: Find the vendor and manufacturer of a device by its MAC address.
+    keywords: MAC, address, lookup, vendor, manufacturer, device, MAC address, MAC lookup, MAC vendor, MAC manufacturer, MAC device, MAC address tool, MAC lookup tool, MAC vendor tool, MAC manufacturer tool, MAC device tool
 
   mime-types:
+    name: MIME types
     title: MIME types
     description: Convert MIME types to file extensions and vice-versa.
+    keywords: MIME, types, convert, file, extensions, MIME types, MIME convert, MIME file, MIME extensions, MIME types tool, MIME convert tool, MIME file tool, MIME extensions tool
 
   toml-to-json:
+    name: TOML to JSON
     title: TOML to JSON
     description: Parse and convert TOML to JSON.
+    keywords: TOML, JSON, parse, convert, TOML JSON, TOML parse, TOML convert, JSON convert, TOML to JSON, TOML to JSON tool, TOML parse tool, TOML convert tool, JSON convert tool
 
   lorem-ipsum-generator:
+    name: Lorem ipsum generator
     title: Lorem ipsum generator
     description: Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content
+    keywords: lorem, ipsum, generator, placeholder, text, commonly, used, demonstrate, visual, form, document, typeface, meaningful, content, lorem ipsum, lorem generator, ipsum generator, lorem placeholder, lorem text, lorem commonly, lorem used, lorem demonstrate, lorem visual, lorem form, lorem document, lorem typeface, lorem meaningful, lorem content, lorem ipsum tool, lorem generator tool, ipsum generator tool, lorem placeholder tool, lorem text tool, lorem commonly tool, lorem used tool, lorem demonstrate tool, lorem visual tool, lorem form tool, lorem document tool, lorem typeface tool, lorem meaningful tool, lorem content tool
 
   qrcode-generator:
+    name: QR Code generator
     title: QR Code generator
     description: Generate and download a QR code for a URL (or just plain text), and customize the background and foreground colors.
+    keywords: QR, Code, generator, generate, download, URL, plain, text, customize, background, foreground, colors, QR Code, QR generator, QR generate, QR download, QR URL, QR plain, QR text, QR customize, QR background, QR foreground, QR colors, QR Code tool, QR generator tool, QR generate tool, QR download tool, QR URL tool, QR plain tool, QR text tool, QR customize tool, QR background tool, QR foreground tool, QR colors tool
 
   wifi-qrcode-generator:
+    name: WiFi QR Code generator
     title: WiFi QR Code generator
     description: Generate and download QR codes for quick connections to WiFi networks.
+    keywords: WiFi, QR, Code, generator, generate, download, QR codes, quick, connections, WiFi QR, WiFi generator, WiFi generate, WiFi download, WiFi QR codes, WiFi quick, WiFi connections, WiFi QR tool, WiFi generator tool, WiFi generate tool, WiFi download tool, WiFi QR codes tool, WiFi quick tool, WiFi connections tool
 
   xml-formatter:
+    name: XML formatter
     title: XML formatter
     description: Prettify your XML string into a friendly, human-readable format.
+    keywords: XML, formatter, prettify, format, XML formatter, XML prettify, XML format, XML formatter tool, XML prettify tool, XML format tool
+
+  xml-to-json:
+    name: XML to JSON
+    title: XML to JSON
+    description: Convert XML to JSON with automatic header detection.
+    keywords: XML, JSON, convert, XML JSON, XML convert, JSON convert, XML to JSON, XML to JSON tool, XML convert tool, JSON convert tool
 
   temperature-converter:
+    name: Temperature converter
     title: Temperature converter
     description: Degrees temperature conversions for Kelvin, Celsius, Fahrenheit, Rankine, Delisle, Newton, Réaumur, and Rømer.
+    keywords: Temperature, converter, degrees, conversions, Kelvin, Celsius, Fahrenheit, Rankine, Delisle, Newton, Réaumur, Rømer, Temperature converter, Temperature degrees, Temperature conversions, Temperature Kelvin, Temperature Celsius, Temperature Fahrenheit, Temperature Rankine, Temperature Delisle, Temperature Newton, Temperature Réaumur, Temperature Rømer, Temperature converter tool, Temperature degrees tool, Temperature conversions tool, Temperature Kelvin tool, Temperature Celsius tool, Temperature Fahrenheit tool, Temperature Rankine tool, Temperature Delisle tool, Temperature Newton tool, Temperature Réaumur tool, Temperature Rømer tool
 
   chmod-calculator:
+    name: Chmod calculator
     title: Chmod calculator
     description: Compute your chmod permissions and commands with this online chmod calculator.
+    keywords: chmod, calculator, compute, permissions, commands, chmod permissions, chmod commands, chmod calculator, chmod compute, chmod permissions tool, chmod commands tool, chmod calculator tool
 
   rsa-key-pair-generator:
+    name: RSA key pair generator
     title: RSA key pair generator
     description: Generate a new random RSA private and public pem certificate key pair.
+    keywords: RSA, key, pair, generator, generate, random, private, public, pem, certificate, key pair, RSA key, RSA pair, RSA generator, RSA generate, RSA random, RSA private, RSA public, RSA pem, RSA certificate, RSA key pair, RSA key tool, RSA pair tool, RSA generator tool, RSA generate tool, RSA random tool, RSA private tool, RSA public tool, RSA pem tool, RSA certificate tool, RSA key pair tool
 
   html-wysiwyg-editor:
+    name: HTML WYSIWYG editor
     title: HTML WYSIWYG editor
     description: Online, feature-rich WYSIWYG HTML editor which generates the source code of the content immediately.
+    keywords: HTML, WYSIWYG, editor, online, feature-rich, generates, source, code, content, immediately, HTML WYSIWYG, HTML editor, WYSIWYG editor, HTML online, WYSIWYG online, HTML feature-rich, WYSIWYG feature-rich, HTML generates, WYSIWYG generates, HTML source, WYSIWYG source, HTML code, WYSIWYG code, HTML content, WYSIWYG content, HTML immediately, WYSIWYG immediately, HTML WYSIWYG tool, HTML editor tool, WYSIWYG editor tool, HTML online tool, WYSIWYG online tool, HTML feature-rich tool, WYSIWYG feature-rich tool, HTML generates tool, WYSIWYG generates tool, HTML source tool, WYSIWYG source tool, HTML code tool, WYSIWYG code tool, HTML content tool, WYSIWYG content tool, HTML immediately tool, WYSIWYG immediately tool
 
   yaml-to-toml:
+    name: YAML to TOML
     title: YAML to TOML
     description: Parse and convert YAML to TOML.
+    keywords: YAML, TOML, parse, convert, YAML TOML, YAML parse, YAML convert, TOML convert, YAML to TOML, YAML to TOML tool, YAML parse tool, YAML convert tool, TOML convert tool
 
   mac-address-generator:
+    name: MAC address generator
     title: MAC address generator
     description: Enter the quantity and prefix. MAC addresses will be generated in your chosen case (uppercase or lowercase)
+    keywords: MAC, address, generator, enter, quantity, prefix, MAC addresses, generated, chosen, case, uppercase, lowercase, MAC address, MAC generator, MAC enter, MAC quantity, MAC prefix, MAC addresses, MAC generated, MAC chosen, MAC case, MAC uppercase, MAC lowercase, MAC address tool, MAC generator tool, MAC enter tool, MAC quantity tool, MAC prefix tool, MAC addresses tool, MAC generated tool, MAC chosen tool, MAC case tool, MAC uppercase tool, MAC lowercase tool
 
   json-diff:
+    name: JSON diff
     title: JSON diff
     description: Compare two JSON objects and get the differences between them.
+    keywords: JSON, diff, compare, objects, differences, JSON diff, JSON compare, JSON objects, JSON differences, JSON diff tool, JSON compare tool, JSON objects tool, JSON differences tool
 
   jwt-parser:
+    name: JWT parser
     title: JWT parser
     description: Parse and decode your JSON Web Token (jwt) and display its content.
+    keywords: JWT, parser, parse, decode, JSON, Web, Token, jwt, display, content, JWT parser, JWT parse, JWT decode, JWT JSON, JWT Web, JWT Token, JWT jwt, JWT display, JWT content, JWT parser tool, JWT parse tool, JWT decode tool, JWT JSON tool, JWT Web tool, JWT Token tool, JWT jwt tool, JWT display tool, JWT content tool
 
   date-converter:
+    name: Date-time converter
     title: Date-time converter
     description: Convert date and time into the various different formats
+    keywords: date, time, converter, convert, date time, date converter, time converter, date convert, time convert, date-time converter, date-time convert, date-time tool, date time tool, time converter tool, date convert tool, time convert tool, date-time converter tool, date-time convert tool
 
   phone-parser-and-formatter:
+    name: Phone parser and formatter
     title: Phone parser and formatter
     description: Parse, validate and format phone numbers. Get information about the phone number, like the country code, type, etc.
+    keywords: phone, parser, formatter, parse, validate, format, numbers, information, country, code, type, phone parser, phone formatter, phone parse, phone validate, phone format, phone numbers, phone information, phone country, phone code, phone type, phone parser tool, phone formatter tool, phone parse tool, phone validate tool, phone format tool, phone numbers tool, phone information tool, phone country tool, phone code tool, phone type tool
 
   ipv4-subnet-calculator:
+    name: IPv4 subnet calculator
     title: IPv4 subnet calculator
     description: Parse your IPv4 CIDR blocks and get all the info you need about your subnet.
+    keywords: IPv4, subnet, calculator, parse, CIDR, blocks, info, subnet calculator, IPv4 subnet, IPv4 calculator, IPv4 parse, IPv4 CIDR, IPv4 blocks, IPv4 info, IPv4 subnet tool, IPv4 calculator tool, IPv4 parse tool, IPv4 CIDR tool, IPv4 blocks tool, IPv4 info tool
 
   og-meta-generator:
+    name: Open graph meta generator
     title: Open graph meta generator
     description: Generate open-graph and socials HTML meta tags for your website.
+    keywords: Open, graph, meta, generator, generate, open-graph, socials, HTML, meta, tags, website, Open graph, Open meta, Open generator, Open generate, Open open-graph, Open socials, Open HTML, Open meta, Open tags, Open website, Open graph tool, Open meta tool, Open generator tool, Open generate tool, Open open-graph tool, Open socials tool, Open HTML tool, Open meta tool, Open tags tool, Open website tool
 
   ipv6-ula-generator:
+    name: IPv6 ULA generator
     title: IPv6 ULA generator
     description: Generate your own local, non-routable IP addresses for your network according to RFC4193.
+    keywords: IPv6, ULA, generator, generate, local, non-routable, addresses, network, RFC4193, IPv6 ULA, IPv6 generator, IPv6 generate, IPv6 local, IPv6 non-routable, IPv6 addresses, IPv6 network, IPv6 RFC4193, IPv6 ULA tool, IPv6 generator tool, IPv6 generate tool, IPv6 local tool, IPv6 non-routable tool, IPv6 addresses tool, IPv6 network tool, IPv6 RFC4193 tool
 
   hash-text:
+    name: Hash text
     title: Hash text
     description: 'Hash a text string using the function you need : MD5, SHA1, SHA256, SHA224, SHA512, SHA384, SHA3 or RIPEMD160'
+    keywords: hash, text, string, function, MD5, SHA1, SHA256, SHA224, SHA512, SHA384, SHA3, RIPEMD160, hash text, hash string, hash function, MD5 hash, SHA1 hash, SHA256 hash, SHA224 hash, SHA512 hash, SHA384 hash, SHA3 hash, RIPEMD160 hash, hash text tool, hash string tool, hash function tool, MD5 hash tool, SHA1 hash tool, SHA256 hash tool, SHA224 hash tool, SHA512 hash tool, SHA384 hash tool, SHA3 hash tool, RIPEMD160 hash tool
 
   json-to-toml:
+    name: JSON to TOML
     title: JSON to TOML
     description: Parse and convert JSON to TOML.
+    keywords: JSON, TOML, parse, convert, JSON TOML, JSON parse, JSON convert, TOML convert, JSON to TOML, JSON to TOML tool, JSON parse tool, JSON convert tool, TOML convert tool
 
   device-information:
+    name: Device information
     title: Device information
     description: Get information about your current device (screen size, pixel-ratio, user agent, ...)
+    keywords: device, information, screen, size, pixel-ratio, user, agent, device information, device screen, device size, device pixel-ratio, device user, device agent, device information tool, device screen tool, device size tool, device pixel-ratio tool, device user tool, device agent tool
 
   pdf-signature-checker:
+    name: PDF signature checker
     title: PDF signature checker
     description: Verify the signatures of a PDF file. A signed PDF file contains one or more signatures that may be used to determine whether the contents of the file have been altered since the file was signed.
+    keywords: PDF, signature, checker, verify, signatures, file, signed, PDF signature, PDF checker, PDF verify, PDF signatures, PDF file, PDF signed, PDF signature tool, PDF checker tool, PDF verify tool, PDF signatures tool, PDF file tool, PDF signed tool
 
   json-minify:
+    name: JSON minify
     title: JSON minify
     description: Minify and compress your JSON by removing unnecessary whitespace.
+    keywords: JSON, minify, compress, minify JSON, compress JSON, JSON minify, JSON compress, JSON minify tool, JSON compress tool
 
   ulid-generator:
+    name: ULID generator
     title: ULID generator
     description: Generate random Universally Unique Lexicographically Sortable Identifier (ULID).
+    keywords: ULID, generator, generate, random, Universally, Unique, Lexicographically, Sortable, Identifier, ULID generator, ULID generate, ULID random, ULID Universally, ULID Unique, ULID Lexicographically, ULID Sortable, ULID Identifier, ULID generator tool, ULID generate tool, ULID random tool, ULID Universally tool, ULID Unique tool, ULID Lexicographically tool, ULID Sortable tool, ULID Identifier tool
 
   string-obfuscator:
+    name: String obfuscator
     title: String obfuscator
     description: Obfuscate a string (like a secret, an IBAN, or a token) to make it shareable and identifiable without revealing its content.
+    keywords: string, obfuscator, obfuscate, secret, IBAN, token, shareable, identifiable, revealing, content, string obfuscator, string obfuscate, string secret, string IBAN, string token, string shareable, string identifiable, string revealing, string content, string obfuscator tool, string obfuscate tool, string secret tool, string IBAN tool, string token tool, string shareable tool, string identifiable tool, string revealing tool, string content tool
 
   base-converter:
+    name: Integer base converter
     title: Integer base converter
     description: Convert a number between different bases (decimal, hexadecimal, binary, octal, base64, ...)
+    keywords: Integer, base, converter, convert, number, bases, decimal, hexadecimal, binary, octal, base64, Integer base, Integer converter, Integer convert, Integer number, Integer bases, Integer decimal, Integer hexadecimal, Integer binary, Integer octal, Integer base64, Integer base tool, Integer converter tool, Integer convert tool, Integer number tool, Integer bases tool, Integer decimal tool, Integer hexadecimal tool, Integer binary tool, Integer octal tool, Integer base64 tool
 
   yaml-to-json-converter:
+    name: YAML to JSON converter
     title: YAML to JSON converter
     description: Simply convert YAML to JSON with this online live converter.
+    keywords: YAML, JSON, convert, YAML JSON, YAML convert, JSON convert, YAML to JSON, YAML to JSON tool, YAML convert tool, JSON convert tool
 
   uuid-generator:
+    name: UUIDs generator
     title: UUIDs generator
     description: A Universally Unique Identifier (UUID) is a 128-bit number used to identify information in computer systems. The number of possible UUIDs is 16^32, which is 2^128 or about 3.4x10^38 (which is a lot!).
+    keywords: UUIDs, generator, Universally, Unique, Identifier, UUID, number, identify, information, computer, systems, UUIDs generator, UUIDs Universally, UUIDs Unique, UUIDs Identifier, UUIDs UUID, UUIDs number, UUIDs identify, UUIDs information, UUIDs computer, UUIDs systems, UUIDs generator tool, UUIDs Universally tool, UUIDs Unique tool, UUIDs Identifier tool, UUIDs UUID tool, UUIDs number tool, UUIDs identify tool, UUIDs information tool, UUIDs computer tool, UUIDs systems tool
 
   ipv4-address-converter:
+    name: IPv4 address converter
     title: IPv4 address converter
     description: Convert an IP address into decimal, binary, hexadecimal, or even an IPv6 representation of it.
+    keywords: IPv4, address, converter, convert, IP, decimal, binary, hexadecimal, IPv6, representation, IPv4 address, IPv4 converter, IPv4 convert, IPv4 IP, IPv4 decimal, IPv4 binary, IPv4 hexadecimal, IPv4 IPv6, IPv4 representation, IPv4 address tool, IPv4 converter tool, IPv4 convert tool, IPv4 IP tool, IPv4 decimal tool, IPv4 binary tool, IPv4 hexadecimal tool, IPv4 IPv6 tool, IPv4 representation tool
 
   text-statistics:
+    name: Text statistics
     title: Text statistics
     description: Get information about a text, the number of characters, the number of words, its size in bytes, ...
+    keywords: text, statistics, information, number, characters, words, size, bytes, text statistics, text information, text number, text characters, text words, text size, text bytes, text statistics tool, text information tool, text number tool, text characters tool, text words tool, text size tool, text bytes tool
 
   text-to-nato-alphabet:
+    name: Text to NATO alphabet
     title: Text to NATO alphabet
     description: Transform text into the NATO phonetic alphabet for oral transmission.
+    keywords: text, NATO, alphabet, transform, text NATO, text alphabet, text transform, text to NATO, text to alphabet, text to NATO tool, text to alphabet tool
 
   basic-auth-generator:
+    name: Basic auth generator
     title: Basic auth generator
     description: Generate a base64 basic auth header from a username and password.
+    keywords: Basic, auth, generator, generate, base64, basic, auth, header, username, password, Basic auth, Basic generator, Basic generate, Basic base64, Basic basic, Basic auth, Basic header, Basic username, Basic password, Basic auth tool, Basic generator tool, Basic generate tool, Basic base64 tool, Basic basic tool, Basic auth tool, Basic header tool, Basic username tool, Basic password tool
 
   text-to-unicode:
+    name: Text to Unicode
     title: Text to Unicode
     description: Parse and convert text to unicode and vice-versa
+    keywords: text, unicode, parse, convert, text unicode, text parse, text convert, unicode convert, text to unicode, text to unicode tool, text parse tool, text convert tool, unicode convert tool
 
   ipv4-range-expander:
+    name: IPv4 range expander
     title: IPv4 range expander
     description: Given a start and an end IPv4 address, this tool calculates a valid IPv4 subnet along with its CIDR notation.
+    keywords: IPv4, range, expander, start, end, address, calculates, valid, subnet, CIDR, notation, IPv4 range, IPv4 expander, IPv4 start, IPv4 end, IPv4 address, IPv4 calculates, IPv4 valid, IPv4 subnet, IPv4 CIDR, IPv4 notation, IPv4 range tool, IPv4 expander tool, IPv4 start tool, IPv4 end tool, IPv4 address tool, IPv4 calculates tool, IPv4 valid tool, IPv4 subnet tool, IPv4 CIDR tool, IPv4 notation tool
 
   text-diff:
+    name: Text diff
     title: Text diff
     description: Compare two texts and see the differences between them.
+    keywords: text, diff, compare, texts, differences, text diff, text compare, text texts, text differences, text diff tool, text compare tool, text texts tool, text differences tool
 
   otp-generator:
+    name: OTP code generator
     title: OTP code generator
     description: Generate and validate time-based OTP (one time password) for multi-factor authentication.
+    keywords: OTP, code, generator, generate, validate, time-based, OTP code, OTP generator, OTP generate, OTP validate, OTP time-based, OTP code tool, OTP generator tool, OTP generate tool, OTP validate tool, OTP time-based tool
 
   url-encoder:
+    name: URL encoder
     title: Encode/decode URL-formatted strings
     description: Encode text to URL-encoded format (also known as "percent-encoded"), or decode from it.
+    keywords: URL, encoder, encode, decode, URL-formatted, strings, URL encoder, URL encode, URL decode, URL-formatted strings, URL encoder tool, URL encode tool, URL decode tool, URL-formatted strings tool
 
   text-to-binary:
+    name: Text to ASCII binary
     title: Text to ASCII binary
     description: Convert text to its ASCII binary representation and vice-versa.
+    keywords: text, ASCII, binary, convert, text ASCII, text binary, text convert, ASCII binary, text to ASCII, text to binary, text to ASCII tool, text to binary tool
+
+  safelink-decoder:
+    name: Safelink decoder
+    title: Safelink decoder
+    description: Decode a safelink URL to its original URL.
+    keywords: Safelink, decoder, decode, safelink URL, original, URL, Safelink decoder, Safelink decode, Safelink URL, Safelink original, Safelink URL tool, Safelink decoder tool, Safelink decode tool, Safelink URL tool, Safelink original tool

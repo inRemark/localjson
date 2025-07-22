@@ -1,4 +1,8 @@
 home:
+  title: 乐扣在线工具
+  info: 乐扣在线工具 - 开发者、程序员和互联网从业者工具集
+  description: 乐扣工具集是一个免费的在线工具集，汇集了对开发人员和 IT 从业者有用的工具。包括密码强度分析仪、计时器、Token 生成器、百分比计算器、SVG 占位符生成器、JSON 转 CSV、摄像机记录器、Keycode 信息、Emoji 选择器、颜色转换器、加密、Crontab 生成器、HTTP 状态码、SQL 美化和格式化、基准生成器、Git 备忘录、打乱字符串、加密/解密文本、随机端口生成、YAML 美化和格式化、ETA 计算器、罗马数字转换器、Hmac 生成器、BIP39 密码生成器、Base64 文件转换器、List 转换器、Base64 字符串编码/解码、TOML 转 YAML、数学计算器、JSON 转 YAML、URL 解析器、IBAN 验证器和解析器、用户代理解析器、数字名称生成器、大小写转换、HTML 实体转义、JSON 美化和格式化、Docker Run 转 docker-compose 转换器、MAC 地址查找、MIME 类型、TOML 转 JSON、Lorem ipsum生成器、二维码生成器、WiFi 二维码生成器、XML 格式化、温度转换器、Chmod 计算器、RSA 密钥对生成器、HTML 所见即所得编辑器、YAML 转 TOML、MAC 地址生成器、JSON 差异比较、JWT 解析器、日期时间转换器、电话解析器和格式化程序、IPv4 子网计算器、开放式图形元生成器、IPv6 ULA 生成器、Hash 文本、JSON 转 TOML、设备信息、PDF 签名检查器、JSON 压缩、ULID 生成器、字符串
+  keywords: 乐扣在线工具、乐扣工具集、密码强度分析仪、计时器、Token 生成器、百分比计算器、SVG 占位符生成器、JSON 转 CSV、摄像机记录器、Keycode 信息、Emoji 选择器、颜色转换器、加密、Crontab 生成器、HTTP 状态码、SQL 美化和格式化、基准生成器、Git 备忘录、打乱字符串、加密/解密文本、随机端口生成、YAML 美化和格式化、ETA 计算器、罗马数字转换器、Hmac 生成器、BIP39 密码生成器、Base64 文件转换器、List 转换器、Base64 字符串编码/解码、TOML 转 YAML、数学计算器、JSON 转 YAML、URL 解析器、IBAN 验证器和解析器、用户代理解析器、数字名称生成器、大小写转换、HTML 实体转义、JSON 美化和格式化、Docker Run 转 docker-compose 转换器、MAC 地址查找、MIME 类型、TOML 转 JSON、Lorem ipsum生成器、二维码生成器、WiFi 二维码生成器、XML 格式化、温度转换器、Chmod 计算器、RSA 密钥对生成器、HTML 所见即所得编辑器、YAML 转 TOML、MAC 地址生成器、JSON 差异比较、JWT 解析器、日期时间转换器、电话解析器和格式化程序、IPv4 子网计算器、开放式图形元生成器、IPv6 ULA 生成器、Hash 文本、JSON 转 TOML、设备信息、PDF 签名检查器、JSON 压缩、ULID 生成器、字符串
   categories:
     newestTools: '最新工具'
     favoriteTools: '我的收藏'
@@ -44,13 +48,13 @@ about:
 
     # 关于 IT-Tools
 
-    IT-Tools 由 [Corentin Thomasset](https://github.com/CorentinTh) 用 ❤ 开发，汇集了对开发人员和 IT 从业者有用的工具。如果对您有帮助，请将其分享给您的朋友，并且添加到收藏夹中！
+    IT-Tools 由 [Corentin Thomasset](https://github.com/CorentinTh) 用 ❤ 开发，汇集了对开发人员和 IT 从业者有用的工具。如果对您有帮助，请将其分享给您的朋友，并且添加转收藏夹中！
 
     IT-Tools 永久免费且开源（MIT 许可证），但需要资金用于托管和续订域名。如果您想支持我的工作，并鼓励我添加更多工具，请考虑通过 [赞助我](https://www.buymeacoffee.com/cthmsst) 进行支持。
 
     ## 技术
 
-    IT-Tools 采用 Vue.js（Vue 3）和 Naive UI 组件库开发，并由 Vercel 托管和持续部署。某些工具使用了第三方开源库，您可以在仓库的 [package.json](https://github.com/CorentinTh/it-tools/blob/main/package.json) 文件中找到完整的列表。
+    IT-Tools 采用 Vue.js（Vue 3）和 Naive UI 组件库开发，并由 Vercel 托管和持续部署。某些工具使用了第三方开源库，您可以在仓库的 [package.json](https://github.com/CorentinTh/it-tools/blob/main/package.json) 文件中找转完整的列表。
 
     ## 发现了 Bug？缺少工具？
 
@@ -84,16 +88,29 @@ tools:
     text: '文本'
     data: '数据'
 
+  ascii-text-drawer:
+    name: 'ASCII 文本绘制器'
+    title: ASCII 文本绘制器
+    description: 使用 ASCII 字符绘制文本。
+    keywords: ascii 文本绘制器、ascii 文本绘制器在线、在线 ascii 文本绘制器
+
   password-strength-analyser:
+    name: '密码强度分析仪'
     title: 密码强度分析仪
     description: 使用此密码强度分析器和破解时间估计工具来发现密码的强度。
+    keywords: '密码强度、密码破解、密码安全、密码强度分析、密码强度测试、密码强度检查、密码强度计算器、密码强度评估、密码强度评分、密码强度等级'
 
   chronometer:
+    name: '计时器'
     title: 计时器
     description: 监控事物的持续时间。基本上是一种具有简单计时器功能的计时器。
+    keywords: 计时器、计时器在线、在线计时器、在线秒表、秒表、在线秒表
+
   token-generator:
+    name: 'Token 生成器'
     title: Token 生成器
     description: 使用您想要的字符、大写或小写字母、数字和/或符号生成随机字符串。
+    keywords: 令牌生成器、令牌生成器在线
 
     uppercase: '大写 (ABC...)'
     lowercase: '小写 (abc...)'
@@ -101,303 +118,475 @@ tools:
     symbols: '符号 (!-;...)'
     length: '长度'
     tokenPlaceholder: '令牌...'
-    copied: 复制到剪贴板
+    copied: 复制转剪贴板
     button:
       copy: 复制
       refresh: 刷新
+
   percentage-calculator:
+    name: '百分比计算器'
     title: 百分比计算器
-    description: 轻松计算从一个值到另一个值的百分比，或从百分比到值的百分比。
+    description: 轻松计算从一个值转另一个值的百分比，或从百分比转值的百分比。
+    keywords: 百分比计算器、百分比计算器在线、在线百分比计算器
 
   svg-placeholder-generator:
+    name: 'SVG 占位符生成器'
     title: SVG 占位符生成器
     description: 生成 svg 图像以用作应用程序中的占位符。
+    keywords: svg 占位符、svg 占位符生成器、svg 占位符在线
 
   json-to-csv:
-    title: JSON 转 CSV
+    name: 'JSON 转 CSV'
+    title: JSON 转 CSV 
     description: 使用自动标头检测将JSON转换为CSV。
+    keywords: json 转 csv、json 转 csv 在线、json 转 csv 工具
 
   camera-recorder:
+    name: '摄像机记录器'
     title: 摄像机记录器
     description: 从网络摄像头或照相机拍摄照片或录制视频。
+    keywords: 摄像机记录器、摄像机记录器在线、在线摄像机记录器
 
   keycode-info:
+    name: 'Keycode 信息'
     title: Keycode 信息
     description: 查找任何按下的键的javascript键代码、代码、位置和修饰符。
+    keywords: keycode 信息、keycode 信息在线、在线 keycode 信息
 
   emoji-picker:
+    name: 'Emoji 选择器'
     title: Emoji 选择器
-    description: 轻松复制和粘贴Emoji表情符号，并获得每个表情符号的unicode和code points值.
+    description: 轻松复制和粘贴Emoji表情符号，并获得每个表情符号的unicode和code points值。
+    keywords: emoji 选择器、emoji 选择器在线、在线 emoji 选择器
 
   color-converter:
-    title: Color 选择器
-    description: 在不同格式（十六进制、rgb、hsl和css名称）之间转换颜色
+    name: '颜色转换器'
+    title: 颜色选择器
+    description:  颜色选择器， 颜色在线在不同格式（十六进制、rgb、hsl和css名称）之间转换颜色。
+    keywords: 颜色转换器、颜色转换器在线、在线颜色转换器
+  
   bcrypt:
+    name: '加密'
     title: 加密
     description: 使用bcrypt对文本字符串进行哈希和比较。Bcrypt是一个基于Blowfish密码的密码哈希函数。
+    keywords: bcrypt、bcrypt在线、bcrypt加密、bcrypt解密
 
   crontab-generator:
+    name: 'Crontab 生成器'
     title: Crontab 表达式生成
     description: 验证并生成crontab，并获取cron调度的可读描述。
+    keywords: crontab 生成器、crontab 生成器在线、在线 crontab 生成器
 
   http-status-codes:
+    name: 'HTTP 状态码'
     title: HTTP 状态码
     description: 所有HTTP状态的列表对其名称和含义解释。
+    keywords: http 状态码、http 状态码在线、在线 http 状态码
 
   sql-prettify:
+    name: 'SQL 美化和格式化'
     title: SQL 美化和格式化
     description: 在线格式化和美化您的 SQL 查询（它支持各种 SQL 方言）。
+    keywords: sql 美化、sql 美化在线、在线 sql 美化
 
   benchmark-builder:
+    name: '基准生成器'
     title: 基准生成器
     description: 简单的在线基准构建器可以轻松比较任务的执行时间。
+    keywords: 基准生成器、基准生成器在线、在线基准生成器
 
   git-memo:
+    name: 'Git 备忘录'
     title: Git 备忘录
-    description: Git是一种去中心化的版本管理软件。使用此备忘单，您可以快速访问最常见的git命令.
+    description: Git是一种去中心化的版本管理软件。使用此备忘单，您可以快速访问最常见的git命令。
+    keywords: git 备忘录、git 备忘录在线、在线 git 备忘录
 
   slugify-string:
+    name: '打乱字符串'
     title: 打乱字符串
     description: 确保字符串 url、文件名和 id 安全。
+    keywords: 打乱字符串、打乱字符串在线、在线打乱字符串
 
   encryption:
+    name: '加密/解密文本'
     title: 加密/解密文本
     description: 使用加密算法（如AES、TripleDES、Rabbit或RC4）加密和解密文本明文。
+    keywords: 加密、解密、加密解密、加密解密在线
 
   random-port-generator:
+    name: '随机端口生成'
     title: 随机端口生成
     description: 生成“已知”端口范围（0-1023）之外的随机端口号。
+    keywords: 随机端口生成、随机端口生成在线、在线随机端口生成
 
   yaml-prettify:
+    name: 'YAML 美化和格式化'
     title: YAML美化和格式化
     description: 将YAML字符串修饰为友好的可读格式。
+    keywords: yaml 美化、yaml 美化在线、在线 yaml 美化
 
   eta-calculator:
+    name: 'ETA 计算器'
     title: ETA 计算器
-    description: ETA（估计到达时间）计算器，用于知道任务的近似结束时间，例如下载的结束时刻。
+    description: ETA（估计转达时间）计算器，用于知道任务的近似结束时间，例如下载的结束时刻。
+    keywords: eta 计算器、eta 计算器在线、在线 eta 计算器
 
   roman-numeral-converter:
+    name: '罗马数字转换器'
     title: 罗马数字转换器
     description: 将罗马数字转换为数字，并将数字转换为罗马数字。
+    keywords: 罗马数字转换器、罗马数字转换器在线、在线罗马数字转换器
 
   hmac-generator:
+    name: 'Hmac 生成器'
     title: Hmac 生成器
     description: 使用密钥和您喜欢的哈希函数计算基于哈希的消息身份验证代码（HMAC）。
+    keywords: hmac 生成器、hmac 生成器在线、在线 hmac 生成器
 
   bip39-generator:
+    name: 'BIP39 密码生成器'
     title: BIP39密码生成器
     description: 从现有或随机助记符生成BIP39密码短语，或从密码短语获取助记符。
+    keywords: bip39 密码生成器、bip39 密码生成器在线、在线 bip39 密码生成器
 
   base64-file-converter:
+    name: 'Base64 文件转换器'
     title: Base64 文件转换器
     description: 将字符串、文件或图像转换为其 Base64 表示形式。
+    keywords: base64 文件转换器、base64 文件转换器在线、在线 base64 文件转换器
+  
   list-converter:
+    name: 'List 转换器'
     title: List 转换器
     description: 该工具可以处理基于数组的数据，并将各种更改（转置、添加前缀和后缀、反向列表、排序列表、小写值、截断值）应用于每一行。
+    keywords: list 转换器、list 转换器在线、在线 list 转换器
 
   base64-string-converter:
+    name: 'Base64 字符串编码/解码'
     title: Base64 字符串编码/解码
     description: 将字符串编码和解码为其 Base64 格式表示形式即可。
+    keywords: base64 字符串编码、base64 字符串编码在线、在线 base64 字符串编码
 
   toml-to-yaml:
-    title: TOML 到 YAML
-    description: Parse and convert TOML to YAML.
+    name: 'TOML 转 YAML'
+    title: TOML 转 YAML
+    description: Parse and convert TOML to YAML。
+    keywords: toml 转 yaml、toml 转 yaml 在线、在线 toml 转 yaml
 
   math-evaluator:
+    name: '数学计算器'
     title: 数学计算器
     description: 计算数学表达式的计算器。您可以使用sqrt、cos、sin、abs等函数。
+    keywords: 数学计算器、数学计算器在线、在线数学计算器
 
   json-to-yaml-converter:
-    title: JSON到YAML转换器
+    name: 'JSON 转 YAML'
+    title: JSON转YAML转换器
     description: 在线转换将JSON转换为YAML。
+    keywords: json 转 yaml、json 转 yaml 在线、在线 json 转 yaml
+
+  json-to-xml:
+    name: 'JSON 转 XML'
+    title: JSON 转 XML
+    description: 将JSON转换为XML。
+    keywords: json 转 xml、json 转 xml 在线、在线 json 转 xml
 
   url-parser:
+    name: 'URL 解析器'
     title: Url分析器
-    description: 解析url字符串以获取所有不同的部分（协议、来源、参数、端口、用户名密码…）
+    description: 解析url字符串以获取所有不同的部分（协议、来源、参数、端口、用户名密码…）。
+    keywords: url 解析器、url 解析器在线、在线 url 解析器
 
   iban-validator-and-parser:
+    name: 'IBAN 验证器和解析器'
     title: IBAN验证器和解析器
     description: 验证和分析IBAN编号。检查IBAN是否有效，并获取国家BBAN，如果它是QR-IBAN和IBAN友好格式。
+    keywords: iban 验证器、iban 验证器在线、在线 iban 验证器
 
   user-agent-parser:
+    name: '用户代理解析器'
     title: 用户代理分析器
     description: 从用户代理字符串中检测和分析浏览器、引擎、操作系统、CPU和设备类型/型号。
+    keywords: 用户代理解析器、用户代理解析器在线、在线用户代理解析器
 
   numeronym-generator:
+    name: '数字名称生成器'
     title: 数字名称生成器
     description: 数字名是一个用数字构成缩写的词。例如，“i18n”是“国际化”的名词，其中18表示单词中第一个i和最后一个n之间的字母数。
+    keywords: 数字名称生成器、数字名称生成器在线、在线数字名称生成器
 
   case-converter:
+    name: '大小写转换'
     title: 大小写转换
-    description: 更改字符串的大小写并在不同格式之间进行选择
+    description: 更改字符串的大小写并在不同格式之间进行选择。
+    keywords: 大小写转换、大小写转换在线、在线大小写转换
 
   html-entities:
+    name: 'HTML 实体转义'
     title: 转义html实体
-    description: 转义或unescape html实体（将<、>、&、“和\'替换为其html版本）
+    description: 转义或unescape html实体（将<、>、&、“和\'替换为其html版本）。
+    keywords: html 实体转义、html 实体转义在线、在线 html 实体转义
 
   json-prettify:
+    name: 'JSON 美化和格式化'
     title: JSON美化和格式化
     description: 将JSON字符串修饰为友好的可读格式。
+    keywords: json 美化、json 美化在线、在线 json 美化
 
   docker-run-to-docker-compose-converter:
-    title: Docker Run 到 docker-compose 转换器
-    description: 将 docker run 命令行转换为 docker-compose 文件!
+    name: 'Docker Run 转 docker-compose 转换器'
+    title: Docker Run 转 docker-compose 转换器
+    description: 将 docker run 命令行转换为 docker-compose 文件。
+    keywords: docker run 转 docker-compose 转换器、docker run 转 docker-compose 转换器在线、在线 docker run 转 docker-compose 转换器
 
   mac-address-lookup:
+    name: 'MAC 地址查找'
     title: MAC地址查找
     description: 通过设备的MAC地址查找设备的供应商和制造商。
+    keywords: mac 地址查找、mac 地址查找在线、在线 mac 地址查找
 
   mime-types:
+    name: 'MIME 类型'
     title: mime类型
     description: 将mime类型转换为扩展，反之亦然。
+    keywords: mime 类型、mime 类型在线、在线 mime 类型
 
   toml-to-json:
-    title: TOML 到 JSON
+    name: 'TOML 转 JSON'
+    title: TOML 转 JSON
     description: 解析TOML并将其转换为JSON。
+    keywords: toml 转 json、toml 转 json 在线、在线 toml 转 json
 
   lorem-ipsum-generator:
+    name: 'Lorem ipsum生成器'
     title: Lorem ipsum生成器
-    description: Lorem ipsum是一种占位符文本，通常用于演示文档或字体的视觉形式，而不依赖于有意义的内容
+    description: Lorem ipsum是一种占位符文本，通常用于演示文档或字体的视觉形式，而不依赖于有意义的内容。
+    keywords: lorem ipsum 生成器、lorem ipsum 生成器在线、在线 lorem ipsum 生成器
 
   qrcode-generator:
+    name: '二维码生成器'
     title: 二维码生成器
     description: 生成并下载url或文本的QR代码，并自定义背景和前景颜色。
+    keywords: 二维码生成器、二维码生成器在线、在线二维码生成器
 
   wifi-qrcode-generator:
+    name: 'WiFi 二维码生成器'
     title: WiFi 二维码生成器
-    description: 生成和下载QR码以快速连接到WiFi网络。
+    description: 生成和下载QR码以快速连接转WiFi网络。
+    keywords: wifi 二维码生成器、wifi 二维码生成器在线、在线 wifi 二维码生成器
 
   xml-formatter:
+    name: 'XML 格式化'
     title: XML 格式化
     description: 将XML字符串修饰为友好的可读格式。
+    keywords: xml 格式化、xml 格式化在线、在线 xml 格式化
+  
+  xml-to-json:
+    name: 'XML 转 JSON'
+    title: XML 转 JSON
+    description: 将XML转换为JSON。
+    keywords: xml 转 json、xml 转 json 在线、在线 xml 转 json
 
   temperature-converter:
+    name: '温度转换器'
     title: 温度转换器
     description: 开尔文、摄氏度、华氏度、兰金、德莱尔、牛顿、雷奥穆尔和罗默温度度数转换。
+    keywords: 温度转换器、温度转换器在线、在线温度转换器
 
   chmod-calculator:
+    name: 'Chmod 计算器'
     title: Chmod 计算器
     description: 使用此在线的chmod计算器计算chmod权限和命令。
+    keywords: chmod 计算器、chmod 计算器在线、在线 chmod 计算器
 
   rsa-key-pair-generator:
+    name: 'RSA 密钥对生成器'
     title: RSA密钥对生成器
     description: 生成新的随机RSA私钥和公钥pem证书。
+    keywords: rsa 密钥对生成器、rsa 密钥对生成器在线、在线 rsa 密钥对生成器
 
   html-wysiwyg-editor:
+    name: 'HTML 所见即所得编辑器'
     title: HTML所见即所得编辑器
     description: 在线HTML编辑器具有功能丰富的所见即所得编辑器，立即获得内容的源代码。
+    keywords: html 所见即所得编辑器、html 所见即所得编辑器在线、在线 html 所见即所得编辑器
 
   yaml-to-toml:
-    title: YAML 到 TOML
+    name: 'YAML 转 TOML'
+    title: YAML 转 TOML
     description: 解析YAML并将其转换为TOML。
+    keywords: yaml 转 toml、yaml 转 toml 在线、在线 yaml 转 toml
 
   mac-address-generator:
+    name: 'MAC 地址生成器'
     title: MAC 地址生成器
-    description: 输入数量和前缀。MAC地址将以您选择的大小写（大写或小写）生成
+    description: 输入数量和前缀。MAC地址将以您选择的大小写（大写或小写）生成。
+    keywords: mac 地址生成器、mac 地址生成器在线、在线 mac 地址生成器
 
   json-diff:
+    name: 'JSON 差异比较'
     title: JSON 差异比较
     description: 比较两个JSON对象并获得它们之间的差异。
+    keywords: json 差异比较、json 差异比较在线、在线 json 差异比较
+
   jwt-parser:
+    name: 'JWT 解析器'
     title: JWT 解析器
     description: 解析和解码JSON Web Token（jwt）并显示其内容。
+    keywords: jwt 解析器、jwt 解析器在线、在线 jwt 解析器
 
   date-converter:
+    name: '日期时间转换器'
     title: 日期时间转换器
-    description: 将日期和时间转换为各种不同的格式
+    description: 将日期和时间转换为各种不同的格式。
+    keywords: 日期时间转换器、日期时间转换器在线、在线日期时间转换器
 
   phone-parser-and-formatter:
+    name: '电话解析器和格式化程序'
     title: 电话分析器和格式化程序
     description: 解析、验证和格式化电话号码。获取有关电话号码的信息，如国家/地区代码、类型等。
+    keywords: 电话解析器、电话解析器在线、在线电话解析器
 
   ipv4-subnet-calculator:
+    name: 'IPv4 子网计算器'
     title: IPv4子网计算器
     description: 解析IPv4 CIDR块，并获取有关子网络的所有所需信息。
+    keywords: ipv4 子网计算器、ipv4 子网计算器在线、在线 ipv4 子网计算器
 
   og-meta-generator:
+    name: '开放式图形元生成器'
     title: 开放式图形元生成器
     description: 为您的网站生成开放式图形和社交html元标记。
+    keywords: 开放式图形元生成器、开放式图形元生成器在线、在线开放式图形元生成器
 
   ipv6-ula-generator:
+    name: 'IPv6 ULA 生成器'
     title: IPv6 ULA生成器
     description: 根据RFC4193在网络上生成您自己的本地不可路由IP地址。
+    keywords: ipv6 ula 生成器、ipv6 ula 生成器在线、在线 ipv6 ula 生成器
 
   hash-text:
+    name: 'Hash 文本'
     title: Hash 文本
-    description: '使用所需的函数哈希文本字符串：MD5、SHA1、SHA256、SHA224、SHA512、SHA384、SHA3或RIPEMD160'
+    description: 使用所需的函数哈希文本字符串：MD5、SHA1、SHA256、SHA224、SHA512、SHA384、SHA3或RIPEMD160。
+    keywords: hash 文本、hash 文本在线、在线 hash 文本
 
   json-to-toml:
+    name: 'JSON 转 TOML'
     title: JSON 转 TOML
     description: 解析JSON并将其转换为TOML。
+    keywords: json 转 toml、json 转 toml 在线、在线 json 转 toml
 
   device-information:
+    name: '设备信息'
     title: 设备信息
-    description: 获取有关当前设备的信息（屏幕大小、像素比率、用户代理…）
+    description: 获取有关当前设备的信息（屏幕大小、像素比率、用户代理…）。
+    keywords: 设备信息、设备信息在线、在线设备信息
 
   pdf-signature-checker:
+    name: 'PDF 签名检查器'
     title: PDF签名检查器
     description: '验证PDF文件的签名。签名的PDF文件包含一个或多个签名，可用于确定文件的内容在签名后是否已被更改。'
+    keywords: pdf 签名检查器、pdf 签名检查器在线、在线 pdf 签名检查器
 
   json-minify:
+    name: 'JSON 压缩'
     title: JSON 压缩
     description: 通过删除不必要的空白来缩小和压缩JSON。
+    keywords: json 压缩、json 压缩在线、在线 json 压缩
 
   ulid-generator:
+    name: 'ULID 生成器'
     title: ULID 生成器
     description: 生成随机的通用唯一词典可排序标识符（ULID）。
+    keywords: ulid 生成器、ulid 生成器在线、在线 ulid 生成器
 
   string-obfuscator:
+    name: '字符串混淆器'
     title: 字符串混淆器
     description: 混淆字符串（如秘密、IBAN 或令牌），使其可共享和可识别，而不泄露其内容。
+    keywords: 字符串混淆器、字符串混淆器在线、在线字符串混淆器
 
   base-converter:
+    name: '整数基转换器'
     title: 整数基转换器
-    description: 在不同的基数（十进制、十六进制、二进制、八进制、base64…）之间转换数字
+    description: 在不同的基数（十进制、十六进制、二进制、八进制、base64…）之间转换数字。
+    keywords: 整数基转换器、整数基转换器在线、在线整数基转换器
 
   yaml-to-json-converter:
-    title: YAML到JSON转换器
+    name: 'YAML 转 JSON'
+    title: YAML转JSON转换器
     description: 使用此在线转换器将YAML转换为JSON。
+    keywords: yaml 转 json、yaml 转 json 在线、在线 yaml 转 json
 
   uuid-generator:
+    name: 'UUID 生成器'
     title: UUIDs 生成器
     description: 通用唯一标识符（UUID）是一个128位数字，用于标识计算机系统中的信息。可能的UUID数量为16^32，即2^128或约3.4x10^38（这是一个很大的数字！）。
+    keywords: uuid 生成器、uuid 生成器在线、在线 uuid 生成器
 
   ipv4-address-converter:
+    name: 'IPv4 地址转换器'
     title: Ipv4地址转换器
-    description: 在ipv6中，将ip地址转换为十进制、二进制、十六进制或事件
+    description: 在ipv6中，将ip地址转换为十进制、二进制、十六进制或事件。
+    keywords: ipv4 地址转换器、ipv4 地址转换器在线、在线 ipv4 地址转换器
 
   text-statistics:
+    name: '文本统计'
     title: 文本统计
-    description: 获取有关文本、字符数、字数、大小等的信息
+    description: 获取有关文本、字符数、字数、大小等的信息。
+    keywords: 文本统计、文本统计在线、在线文本统计
 
   text-to-nato-alphabet:
+    name: '文本转北约字母表'
     title: 文本转北约字母表
     description: 将文本转换为北约拼音字母以进行口头传播。
+    keywords: 文本转北约字母表、文本转北约字母表在线、在线文本转北约字母表
 
   basic-auth-generator:
+    name: '基本身份验证生成器'
     title: 基本身份验证生成器
     description: 从用户名和密码生成 base64 基本身份验证标头。
+    keywords: 基本身份验证生成器、基本身份验证生成器在线、在线基本身份验证生成器
 
   text-to-unicode:
+    name: '文本转 Unicode'
     title: 文本转 Unicode
-    description: 解析文本并将其转换为 unicode，反之亦然
+    description: 解析文本并将其转换为 unicode，反之亦然。
+    keywords: 文本转 unicode、文本转 unicode 在线、在线文本转 unicode
 
   ipv4-range-expander:
+    name: 'IPv4 范围扩展器'
     title: IPv4范围扩展器
     description: 给定起始和结束IPv4地址，此工具使用其CIDR表示法计算有效的IPv4网络。
+    keywords: ipv4 范围扩展器、ipv4 范围扩展器在线、在线 ipv4 范围扩展器
 
   text-diff:
+    name: '文本比较'
     title: 文本比较
     description: 比较两个文本并查看它们之间的差异。
+    keywords: 文本比较、文本比较在线、在线文本比较
 
   otp-generator:
+    name: 'OTP 代码生成器'
     title: OTP代码生成器
     description: 为多因素身份验证生成和验证基于时间的OTP（一次性密码）。
+    keywords: otp 代码生成器、otp 代码生成器在线、在线 otp 代码生成器
 
   url-encoder:
+    name: 'URL 编码器/解码器'
     title: 编码/解码url格式的字符串
     description: 编码为url编码格式（也称为“百分比编码”）或从中解码。
+    keywords: url 编码器、url 编码器在线、在线 url 编码器
 
   text-to-binary:
-    title: 文本到 ASCII 二进制
+    name: '文本转ASCII二进制'
+    title: 文本转 ASCII 二进制
     description: 将文本转换为其 ASCII 二进制表示形式，反之亦然。
+    keywords: 文本转 ASCII 二进制、文本转 ASCII 二进制在线、在线文本转 ASCII 二进制
+  
+  safelink-decoder:
+    name: '安全链接解码器'
+    title: 安全链接解码器
+    description: 解码安全链接以获取原始链接。
+    keywords: 安全链接解码器、安全链接解码器在线、在线安全链接解码器

@@ -14,7 +14,8 @@ export const useToolStore = defineStore('tools', () => {
 
     return ({
       ...tool,
-      name: t(`tools.${toolI18nKey}.title`, tool.name),
+      name: t(`tools.${toolI18nKey}.name`, tool.name),
+      title: t(`tools.${toolI18nKey}.title`, tool.title),
       description: t(`tools.${toolI18nKey}.description`, tool.description),
       category: t(`tools.categories.${tool.category.toLowerCase()}`, tool.category),
     });

@@ -1,4 +1,4 @@
 /* TEAM */
 Developer: inRemark
 Site: https://github.com/inRemark
-Twitter: @youdayly
+Twitter: @in_remark

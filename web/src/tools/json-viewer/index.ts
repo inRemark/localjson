@@ -3,10 +3,11 @@ import { defineTool } from '../tool';
 import { translate } from '@/plugins/i18n.plugin';
 
 export const tool = defineTool({
-  name: translate('tools.json-prettify.title'),
+  name: translate('tools.json-prettify.name'),
+  title: translate('tools.json-prettify.title'),
   path: '/json-prettify',
   description: translate('tools.json-prettify.description'),
-  keywords: ['json', 'viewer', 'prettify', 'format'],
+  keywords: translate('tools.json-prettify.keywords'),//['json', 'viewer', 'prettify', 'format'],
   component: () => import('./json-viewer.vue'),
   icon: Braces,
   redirectFrom: ['/json-viewer'],

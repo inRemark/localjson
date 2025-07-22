@@ -36,9 +36,11 @@ salt
 build/bin/
 build/darwin/Info.plist
 .DS_Store
-rsync.sh
 entitlements.plist
 appstore
 mac-store-build.sh
 mac-dmg-build.sh
 windows-exe-build.bat
+rsync-localjson.cn.sh
+rsync-localjson.com.sh
+analysis.md

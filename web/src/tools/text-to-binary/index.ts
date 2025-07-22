@@ -3,10 +3,12 @@ import { defineTool } from '../tool';
 import { translate } from '@/plugins/i18n.plugin';
 
 export const tool = defineTool({
-  name: translate('tools.text-to-binary.title'),
+  name: translate('tools.text-to-binary.name'),
+  title: translate('tools.text-to-binary.title'),
   path: '/text-to-binary',
   description: translate('tools.text-to-binary.description'),
-  keywords: ['text', 'to', 'binary', 'converter', 'encode', 'decode', 'ascii'],
+  keywords: translate('tools.text-to-binary.keywords'),
+  // ['text', 'to', 'binary', 'converter', 'encode', 'decode', 'ascii'],
   component: () => import('./text-to-binary.vue'),
   icon: Binary,
   createdAt: new Date('2023-10-15'),

@@ -3,10 +3,11 @@ import { defineTool } from '../tool';
 import { translate } from '@/plugins/i18n.plugin';
 
 export const tool = defineTool({
-  name: translate('tools.color-converter.title'),
+  name: translate('tools.color-converter.name'),
+  title: translate('tools.color-converter.title'),
   path: '/color-converter',
   description: translate('tools.color-converter.description'),
-  keywords: ['color', 'converter'],
+  keywords: translate('tools.color-converter.keywords'), // ['color', 'converter'],
   component: () => import('./color-converter.vue'),
   icon: Palette,
   redirectFrom: ['/color-picker-converter'],
