@@ -78,6 +78,11 @@ const tools = computed<ToolCategory[]>(() => [
               inRemark
             </c-link>
           </div>
+          <div>
+            <c-link target="_blank" rel="noopener" href="https://beian.miit.gov.cn/">
+              京ICP备17009713号-8
+            </c-link>
+          </div>
         </div>
       </div>
     </template>
