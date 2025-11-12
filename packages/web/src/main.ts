@@ -10,7 +10,8 @@ import 'virtual:uno.css';
 
 import { naive } from '@/core/plugins/naive.plugin';
 import App from '@/core/App.vue';
-import { setPlatformAdapter, webAdapter } from '@/core/adapters';
+import { setPlatformAdapter } from '@/core/adapters';
+import { webAdapter } from '@/core/adapters/web';
 
 import { i18nPlugin } from '@/core/plugins/i18n.plugin';
 import { config } from '@/core/config';

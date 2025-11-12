@@ -6,7 +6,8 @@ import { createRouter, createWebHashHistory } from 'vue-router';
 import 'virtual:uno.css';
 import { naive } from '@/core/plugins/naive.plugin';
 import App from '@/core/App.vue';
-import { setPlatformAdapter, desktopAdapter } from '@/core/adapters/index';
+import { setPlatformAdapter } from '@/core/adapters';
+import { desktopAdapter } from '@/core/adapters/desktop';
 import { i18nPlugin } from '@/core/plugins/i18n.plugin';
 import { plausible } from '@/core/plugins/plausible.plugin';
 

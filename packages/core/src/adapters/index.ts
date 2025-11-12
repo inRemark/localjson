@@ -1,10 +1,6 @@
-import type { PlatformAdapter } from './types';
-import { webAdapter } from './web';
-import { desktopAdapter } from './desktop';
 
 export * from './types';
-export { webAdapter } from './web';
-export { desktopAdapter } from './desktop';
+import type { PlatformAdapter } from './types';
 
 /**
  * 当前激活的平台适配器
@@ -54,14 +50,3 @@ export function isDesktopPlatform(): boolean {
   return currentAdapter?.type === 'desktop';
 }
 
-/**
- * 自动检测并设置适配器（仅用于开发测试）
- * 生产环境应该显式调用 setPlatformAdapter
- */
-export function autoDetectPlatform(): void {
-  if (typeof globalThis.window !== 'undefined' && (globalThis.window as any).wails) {
-    setPlatformAdapter(desktopAdapter);
-  } else {
-    setPlatformAdapter(webAdapter);
-  }
-}

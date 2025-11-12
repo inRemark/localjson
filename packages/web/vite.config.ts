@@ -1,4 +1,4 @@
-import path, { resolve } from 'node:path';
+import { resolve } from 'node:path';
 import { URL, fileURLToPath } from 'node:url';
 
 import VueI18n from '@intlify/unplugin-vue-i18n/vite';
@@ -22,25 +22,6 @@ const baseUrl = process.env.BASE_URL ?? '/';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    // 自定义插件:处理 Wails 导入(仅在 web 环境中)
-    {
-      name: 'wails-stub',
-      resolveId(id) {
-        if (id === '@wailsjs/runtime/runtime' || id === '@wailsjs/go/services/fileService') {
-          return '\0wails-stub';
-        }
-      },
-      load(id) {
-        if (id === '\0wails-stub') {
-          return `
-            export const BrowserOpenURL = () => {};
-            export const SaveBase64File = async () => {};
-            export const Environment = async () => ({});
-            export default {};
-          `;
-        }
-      },
-    },
     VueI18n({
       runtimeOnly: true,
       compositionOnly: true,
