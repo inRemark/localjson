@@ -2,10 +2,13 @@
   "$schema": "https://wails.io/schemas/config.v2.json",
   "name": "LocalJson",
   "outputfilename": "LocalJson",
+  "frontend:dir": "packages/desktop",
   "frontend:install": "pnpm --filter @localjson/desktop install",
   "frontend:build": "pnpm --filter @localjson/desktop build",
+  "frontend:build:dir": "packages/desktop/dist",
   "frontend:dev:watcher": "pnpm --filter @localjson/desktop dev",
   "frontend:dev:serverUrl": "auto",
+  
   "author": {
     "name": "remark",
     "email": "inremark@outlook.com"

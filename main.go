@@ -18,7 +18,7 @@ import (
 	"github.com/wailsapp/wails/v2/pkg/options/assetserver"
 )
 
-//go:embed all:frontend/dist
+//go:embed all:packages/desktop/dist
 var assets embed.FS
 
 const appName = "LocalJson"

@@ -9,35 +9,35 @@ The electron alternative for Go
 */
 
 export function LogPrint(message) {
-    globalThis.runtime.LogPrint(message);
+    window.runtime.LogPrint(message);
 }
 
 export function LogTrace(message) {
-    globalThis.runtime.LogTrace(message);
+    window.runtime.LogTrace(message);
 }
 
 export function LogDebug(message) {
-    globalThis.runtime.LogDebug(message);
+    window.runtime.LogDebug(message);
 }
 
 export function LogInfo(message) {
-    globalThis.runtime.LogInfo(message);
+    window.runtime.LogInfo(message);
 }
 
 export function LogWarning(message) {
-    globalThis.runtime.LogWarning(message);
+    window.runtime.LogWarning(message);
 }
 
 export function LogError(message) {
-    globalThis.runtime.LogError(message);
+    window.runtime.LogError(message);
 }
 
 export function LogFatal(message) {
-    globalThis.runtime.LogFatal(message);
+    window.runtime.LogFatal(message);
 }
 
 export function EventsOnMultiple(eventName, callback, maxCallbacks) {
-    return globalThis.runtime.EventsOnMultiple(eventName, callback, maxCallbacks);
+    return window.runtime.EventsOnMultiple(eventName, callback, maxCallbacks);
 }
 
 export function EventsOn(eventName, callback) {
@@ -45,11 +45,11 @@ export function EventsOn(eventName, callback) {
 }
 
 export function EventsOff(eventName, ...additionalEventNames) {
-    return globalThis.runtime.EventsOff(eventName, ...additionalEventNames);
+    return window.runtime.EventsOff(eventName, ...additionalEventNames);
 }
 
 export function EventsOffAll() {
-  return globalThis.runtime.EventsOffAll();
+  return window.runtime.EventsOffAll();
 }
 
 export function EventsOnce(eventName, callback) {
@@ -58,151 +58,151 @@ export function EventsOnce(eventName, callback) {
 
 export function EventsEmit(eventName) {
     let args = [eventName].slice.call(arguments);
-    return globalThis.runtime.EventsEmit.apply(null, args);
+    return window.runtime.EventsEmit.apply(null, args);
 }
 
 export function WindowReload() {
-    globalThis.runtime.WindowReload();
+    window.runtime.WindowReload();
 }
 
 export function WindowReloadApp() {
-    globalThis.runtime.WindowReloadApp();
+    window.runtime.WindowReloadApp();
 }
 
 export function WindowSetAlwaysOnTop(b) {
-    globalThis.runtime.WindowSetAlwaysOnTop(b);
+    window.runtime.WindowSetAlwaysOnTop(b);
 }
 
 export function WindowSetSystemDefaultTheme() {
-    globalThis.runtime.WindowSetSystemDefaultTheme();
+    window.runtime.WindowSetSystemDefaultTheme();
 }
 
 export function WindowSetLightTheme() {
-    globalThis.runtime.WindowSetLightTheme();
+    window.runtime.WindowSetLightTheme();
 }
 
 export function WindowSetDarkTheme() {
-    globalThis.runtime.WindowSetDarkTheme();
+    window.runtime.WindowSetDarkTheme();
 }
 
 export function WindowCenter() {
-    globalThis.runtime.WindowCenter();
+    window.runtime.WindowCenter();
 }
 
 export function WindowSetTitle(title) {
-    globalThis.runtime.WindowSetTitle(title);
+    window.runtime.WindowSetTitle(title);
 }
 
 export function WindowFullscreen() {
-    globalThis.runtime.WindowFullscreen();
+    window.runtime.WindowFullscreen();
 }
 
 export function WindowUnfullscreen() {
-    globalThis.runtime.WindowUnfullscreen();
+    window.runtime.WindowUnfullscreen();
 }
 
 export function WindowIsFullscreen() {
-    return globalThis.runtime.WindowIsFullscreen();
+    return window.runtime.WindowIsFullscreen();
 }
 
 export function WindowGetSize() {
-    return globalThis.runtime.WindowGetSize();
+    return window.runtime.WindowGetSize();
 }
 
 export function WindowSetSize(width, height) {
-    globalThis.runtime.WindowSetSize(width, height);
+    window.runtime.WindowSetSize(width, height);
 }
 
 export function WindowSetMaxSize(width, height) {
-    globalThis.runtime.WindowSetMaxSize(width, height);
+    window.runtime.WindowSetMaxSize(width, height);
 }
 
 export function WindowSetMinSize(width, height) {
-    globalThis.runtime.WindowSetMinSize(width, height);
+    window.runtime.WindowSetMinSize(width, height);
 }
 
 export function WindowSetPosition(x, y) {
-    globalThis.runtime.WindowSetPosition(x, y);
+    window.runtime.WindowSetPosition(x, y);
 }
 
 export function WindowGetPosition() {
-    return globalThis.runtime.WindowGetPosition();
+    return window.runtime.WindowGetPosition();
 }
 
 export function WindowHide() {
-    globalThis.runtime.WindowHide();
+    window.runtime.WindowHide();
 }
 
 export function WindowShow() {
-    globalThis.runtime.WindowShow();
+    window.runtime.WindowShow();
 }
 
 export function WindowMaximise() {
-    globalThis.runtime.WindowMaximise();
+    window.runtime.WindowMaximise();
 }
 
 export function WindowToggleMaximise() {
-    globalThis.runtime.WindowToggleMaximise();
+    window.runtime.WindowToggleMaximise();
 }
 
 export function WindowUnmaximise() {
-    globalThis.runtime.WindowUnmaximise();
+    window.runtime.WindowUnmaximise();
 }
 
 export function WindowIsMaximised() {
-    return globalThis.runtime.WindowIsMaximised();
+    return window.runtime.WindowIsMaximised();
 }
 
 export function WindowMinimise() {
-    globalThis.runtime.WindowMinimise();
+    window.runtime.WindowMinimise();
 }
 
 export function WindowUnminimise() {
-    globalThis.runtime.WindowUnminimise();
+    window.runtime.WindowUnminimise();
 }
 
 export function WindowSetBackgroundColour(R, G, B, A) {
-    globalThis.runtime.WindowSetBackgroundColour(R, G, B, A);
+    window.runtime.WindowSetBackgroundColour(R, G, B, A);
 }
 
 export function ScreenGetAll() {
-    return globalThis.runtime.ScreenGetAll();
+    return window.runtime.ScreenGetAll();
 }
 
 export function WindowIsMinimised() {
-    return globalThis.runtime.WindowIsMinimised();
+    return window.runtime.WindowIsMinimised();
 }
 
 export function WindowIsNormal() {
-    return globalThis.runtime.WindowIsNormal();
+    return window.runtime.WindowIsNormal();
 }
 
 export function BrowserOpenURL(url) {
-    globalThis.runtime.BrowserOpenURL(url);
+    window.runtime.BrowserOpenURL(url);
 }
 
 export function Environment() {
-    return globalThis.runtime.Environment();
+    return window.runtime.Environment();
 }
 
 export function Quit() {
-    globalThis.runtime.Quit();
+    window.runtime.Quit();
 }
 
 export function Hide() {
-    globalThis.runtime.Hide();
+    window.runtime.Hide();
 }
 
 export function Show() {
-    globalThis.runtime.Show();
+    window.runtime.Show();
 }
 
 export function ClipboardGetText() {
-    return globalThis.runtime.ClipboardGetText();
+    return window.runtime.ClipboardGetText();
 }
 
 export function ClipboardSetText(text) {
-    return globalThis.runtime.ClipboardSetText(text);
+    return window.runtime.ClipboardSetText(text);
 }
 
 /**
@@ -223,20 +223,20 @@ export function ClipboardSetText(text) {
  * @param {boolean} [useDropTarget=true] - Only call the callback when the drop finished on an element that has the drop target style. (--wails-drop-target)
  */
 export function OnFileDrop(callback, useDropTarget) {
-    return globalThis.runtime.OnFileDrop(callback, useDropTarget);
+    return window.runtime.OnFileDrop(callback, useDropTarget);
 }
 
 /**
  * OnFileDropOff removes the drag and drop listeners and handlers.
  */
 export function OnFileDropOff() {
-    return globalThis.runtime.OnFileDropOff();
+    return window.runtime.OnFileDropOff();
 }
 
 export function CanResolveFilePaths() {
-    return globalThis.runtime.CanResolveFilePaths();
+    return window.runtime.CanResolveFilePaths();
 }
 
 export function ResolveFilePaths(files) {
-    return globalThis.runtime.ResolveFilePaths(files);
+    return window.runtime.ResolveFilePaths(files);
 }
