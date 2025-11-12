@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { codesByCategories } from './http-status-codes.constants';
-import { useFuzzySearch } from '@/composable/fuzzySearch';
+import { useFuzzySearch } from '../../composable/fuzzySearch';
 
 const search = ref('');
 

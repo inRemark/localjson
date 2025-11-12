@@ -1,5 +1,5 @@
 import { defineTool } from '../tool';
-import { translate } from '@/plugins/i18n.plugin';
+import { translate } from '../../plugins/i18n.plugin';
 import FileCertIcon from '~icons/mdi/file-certificate-outline';
 
 export const tool = defineTool({

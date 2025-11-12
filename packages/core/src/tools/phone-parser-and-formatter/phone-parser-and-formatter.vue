@@ -6,9 +6,9 @@ import {
   getDefaultCountryCode,
   getFullCountryName,
 } from './phone-parser-and-formatter.models';
-import { withDefaultOnError } from '@/utils/defaults';
-import { booleanToHumanReadable } from '@/utils/boolean';
-import { useValidation } from '@/composable/validation';
+import { withDefaultOnError } from '../../utils/defaults';
+import { booleanToHumanReadable } from '../../utils/boolean';
+import { useValidation } from '../../composable/validation';
 
 const rawPhone = ref('');
 const defaultCountryCode = ref(getDefaultCountryCode());

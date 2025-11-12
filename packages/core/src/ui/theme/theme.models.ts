@@ -1,4 +1,4 @@
-import { useStyleStore } from '@/stores/style.store';
+import { useStyleStore } from '../../stores/style.store';
 
 export { defineThemes };
 

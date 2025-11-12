@@ -1,10 +1,10 @@
 import type { RouteRecordRaw } from 'vue-router';
-import { layouts } from '@/core/src/layouts/index';
-import HomePage from '@/core/src/pages/Home.page.vue';
-import NotFound from '@/core/src/pages/404.page.vue';
-import { tools } from '@/core/src/tools';
-import { config } from '@/core/src/config';
-import { routes as demoRoutes } from '@/core/src/ui/demo/demo.routes';
+import { layouts } from '@/core/layouts/index';
+import HomePage from '@/core/pages/Home.page.vue';
+import NotFound from '@/core/pages/404.page.vue';
+import { tools } from '@/core/tools';
+import { config } from '@/core/config';
+import { routes as demoRoutes } from '@/core/ui/demo/demo.routes';
 
 const toolsRoutes = tools.map(({ path, name, component, ...config }) => ({
   path,
@@ -27,17 +27,17 @@ export const routes: RouteRecordRaw[] = [
   {
     path: '/about',
     name: 'about',
-    component: () => import('@/core/src/pages/About.vue'),
+    component: () => import('@/core/pages/About.vue'),
   },
   {
     path: '/apps',
     name: 'apps',
-    component: () => import('@/core/src/pages/Apps.vue'),
+    component: () => import('@/core/pages/Apps.vue'),
   },
   {
     path: '/download',
     name: 'download',
-    component: () => import('@/core/src/pages/Download.vue'),
+    component: () => import('@/core/pages/Download.vue'),
   },
   ...toolsRoutes,
   ...toolsRedirectRoutes,

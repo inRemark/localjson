@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useObfuscateString } from './string-obfuscator.model';
-import { useCopy } from '@/composable/copy';
+import { useCopy } from '../../composable/copy';
 
 const str = ref('Lorem ipsum dolor sit amet');
 const keepFirst = ref(4);

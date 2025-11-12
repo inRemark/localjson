@@ -1,9 +1,9 @@
 import { defineStore } from 'pinia';
 import _ from 'lodash';
 import type { PaletteOption } from './command-palette.types';
-import { useToolStore } from '@/tools/tools.store';
-import { useFuzzySearch } from '@/composable/fuzzySearch';
-import { useStyleStore } from '@/stores/style.store';
+import { useToolStore } from '../../tools/tools.store';
+import { useFuzzySearch } from '../../composable/fuzzySearch';
+import { useStyleStore } from '../../stores/style.store';
 
 import SunIcon from '~icons/mdi/white-balance-sunny';
 import GithubIcon from '~icons/mdi/github';

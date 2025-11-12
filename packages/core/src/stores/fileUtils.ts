@@ -1,6 +1,6 @@
 import {defineStore} from 'pinia';
-import {isBrowser, isWebView} from "@/utils/runtime.type";
-import {useDownloadFileFromBase64} from "@/composable/downloadBase64";
+import {isBrowser, isWebView} from "../utils/runtime.type";
+import {useDownloadFileFromBase64} from "../composable/downloadBase64";
 import { usePlatform } from '../adapters';
 
 export const useFileStore = defineStore('file', () => {

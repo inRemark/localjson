@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { useCopy } from '@/composable/copy';
-import { useValidation } from '@/composable/validation';
-import { isNotThrowing } from '@/utils/boolean';
-import { withDefaultOnError } from '@/utils/defaults';
+import { useCopy } from '../../composable/copy';
+import { useValidation } from '../../composable/validation';
+import { isNotThrowing } from '../../utils/boolean';
+import { withDefaultOnError } from '../../utils/defaults';
 
 const encodeInput = ref('Hello world :)');
 const encodeOutput = computed(() => withDefaultOnError(() => encodeURIComponent(encodeInput.value), ''));

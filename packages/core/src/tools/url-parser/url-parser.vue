@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import InputCopyable from '../../components/InputCopyable.vue';
-import { isNotThrowing } from '@/utils/boolean';
-import { withDefaultOnError } from '@/utils/defaults';
+import { isNotThrowing } from '../../utils/boolean';
+import { withDefaultOnError } from '../../utils/defaults';
 
 const urlToParse = ref('https://me:pwd@ilocaljson.com:3000/url-parser?key1=value&key2=value2#the-hash');
 

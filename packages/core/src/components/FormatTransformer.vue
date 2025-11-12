@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import _ from 'lodash';
-import type { UseValidationRule } from '@/composable/validation';
-import CInputText from '@/ui/c-input-text/c-input-text.vue';
+import type { UseValidationRule } from '../composable/validation';
+import CInputText from '../ui/c-input-text/c-input-text.vue';
 
 const props = withDefaults(
   defineProps<{

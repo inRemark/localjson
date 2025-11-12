@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import figlet from 'figlet';
-import TextareaCopyable from '@/components/TextareaCopyable.vue';
+import TextareaCopyable from '../../components/TextareaCopyable.vue';
 
 const input = ref('Ascii ART');
 const font = useStorage('ascii-text-drawer:font', 'Standard');

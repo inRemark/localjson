@@ -6,8 +6,8 @@ import {
   isValidRomanNumber,
   romanToArabic,
 } from './roman-numeral-converter.service';
-import { useCopy } from '@/composable/copy';
-import { useValidation } from '@/composable/validation';
+import { useCopy } from '../../composable/copy';
+import { useValidation } from '../../composable/validation';
 
 const inputNumeral = ref(42);
 const outputRoman = computed(() => arabicToRoman(inputNumeral.value));

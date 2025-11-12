@@ -2,9 +2,9 @@
 import yaml from 'yaml';
 import { useStorage } from '@vueuse/core';
 import { formatYaml } from './yaml-models';
-import { withDefaultOnError } from '@/utils/defaults';
-import { useValidation } from '@/composable/validation';
-import TextareaCopyable from '@/components/TextareaCopyable.vue';
+import { withDefaultOnError } from '../../utils/defaults';
+import { useValidation } from '../../composable/validation';
+import TextareaCopyable from '../../components/TextareaCopyable.vue';
 
 const inputElement = ref<HTMLElement>();
 

@@ -2,9 +2,9 @@
 import JSON5 from 'json5';
 import { useStorage } from '@vueuse/core';
 import { formatJson } from './json.models';
-import { withDefaultOnError } from '@/utils/defaults';
-import { useValidation } from '@/composable/validation';
-import TextareaCopyable from '@/components/TextareaCopyable.vue';
+import { withDefaultOnError } from '../../utils/defaults';
+import { useValidation } from '../../composable/validation';
+import TextareaCopyable from '../../components/TextareaCopyable.vue';
 
 const inputElement = ref<HTMLElement>();
 

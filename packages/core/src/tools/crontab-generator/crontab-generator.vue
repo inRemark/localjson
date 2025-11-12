@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import cronstrue from 'cronstrue';
 import { isValidCron } from 'cron-validator';
-import { useStyleStore } from '@/stores/style.store';
+import { useStyleStore } from '../../stores/style.store';
 
 function isCronValid(v: string) {
   return isValidCron(v, { allowBlankDay: true, alias: true, seconds: true });

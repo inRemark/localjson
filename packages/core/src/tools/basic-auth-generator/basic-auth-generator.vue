@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { useCopy } from '@/composable/copy';
-import { textToBase64 } from '@/utils/base64';
+import { useCopy } from '../../composable/copy';
+import { textToBase64 } from '../../utils/base64';
 
 const username = ref('');
 const password = ref('');

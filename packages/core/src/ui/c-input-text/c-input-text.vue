@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 import { useAppTheme } from '../theme/themes';
 import { useTheme } from './c-input-text.theme';
-import { generateRandomId } from '@/utils/random';
-import { type UseValidationRule, useValidation } from '@/composable/validation';
+import { generateRandomId } from '../../utils/random';
+import { type UseValidationRule, useValidation } from '../../composable/validation';
 
 const props = withDefaults(
   defineProps<{

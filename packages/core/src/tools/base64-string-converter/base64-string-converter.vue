@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { useCopy } from '@/composable/copy';
-import { base64ToText, isValidBase64, textToBase64 } from '@/utils/base64';
-import { withDefaultOnError } from '@/utils/defaults';
+import { useCopy } from '../../composable/copy';
+import { base64ToText, isValidBase64, textToBase64 } from '../../utils/base64';
+import { withDefaultOnError } from '../../utils/defaults';
 
 const encodeUrlSafe = useStorage('base64-string-converter--encode-url-safe', false);
 const decodeUrlSafe = useStorage('base64-string-converter--decode-url-safe', false);

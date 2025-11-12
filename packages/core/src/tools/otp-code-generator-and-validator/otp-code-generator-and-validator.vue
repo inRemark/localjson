@@ -4,11 +4,11 @@ import { useThemeVars } from 'naive-ui';
 import { useQRCode } from '../qr-code-generator/useQRCode';
 import { base32toHex, buildKeyUri, generateSecret, generateTOTP, getCounterFromTime } from './otp.service';
 import TokenDisplay from './token-display.vue';
-import { useStyleStore } from '@/stores/style.store';
-import InputCopyable from '@/components/InputCopyable.vue';
-import { computedRefreshable } from '@/composable/computedRefreshable';
+import { useStyleStore } from '../../stores/style.store';
+import InputCopyable from '../../components/InputCopyable.vue';
+import { computedRefreshable } from '../../composable/computedRefreshable';
 import { usePlatform } from '../../adapters';
-import {isBrowser, isWebView} from "@/utils/runtime.type";
+
 const now = useTimestamp();
 const interval = computed(() => (now.value / 1000) % 30);
 const theme = useThemeVars();

@@ -1,5 +1,5 @@
 import { defineTool } from '../tool';
-import { translate } from '@/plugins/i18n.plugin';
+import { translate } from '../../plugins/i18n.plugin';
 import BracketIcon from '~icons/mdi/code-brackets';
 
 export const tool = defineTool({

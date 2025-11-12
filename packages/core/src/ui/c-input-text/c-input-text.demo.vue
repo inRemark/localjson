@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { useValidation } from '@/composable/validation';
+import { useValidation } from '../../composable/validation';
 
 const value = ref('value');
 const valueLong = ref(

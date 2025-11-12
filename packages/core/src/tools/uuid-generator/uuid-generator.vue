@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { v1 as generateUuidV1, v3 as generateUuidV3, v4 as generateUuidV4, v5 as generateUuidV5, NIL as nilUuid } from 'uuid';
-import { useCopy } from '@/composable/copy';
-import { computedRefreshable } from '@/composable/computedRefreshable';
-import { withDefaultOnError } from '@/utils/defaults';
+import { useCopy } from '../../composable/copy';
+import { computedRefreshable } from '../../composable/computedRefreshable';
+import { withDefaultOnError } from '../../utils/defaults';
 
 const versions = ['NIL', 'v1', 'v3', 'v4', 'v5'] as const;
 

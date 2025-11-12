@@ -1,5 +1,5 @@
 import type { Ref } from 'vue';
-import { useValidation } from '@/composable/validation';
+import { useValidation } from '../composable/validation';
 
 const macAddressValidationRules = [
   {

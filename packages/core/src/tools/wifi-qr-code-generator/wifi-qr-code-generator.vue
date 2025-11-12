@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import useFileStore from '@/stores/fileUtils';
+import useFileStore from '../../stores/fileUtils';
 import {
   EAPMethods,
   EAPPhase2Methods,
   useWifiQRCode,
 } from './useQRCode';
-import { useDownloadFileFromBase64 } from '@/composable/downloadBase64';
+import { useDownloadFileFromBase64 } from '../../composable/downloadBase64';
 
 const foreground = ref('#000000ff');
 const background = ref('#ffffffff');

@@ -1,5 +1,5 @@
 import xmlFormat, { type XMLFormatterOptions } from 'xml-formatter';
-import { withDefaultOnError } from '@/utils/defaults';
+import { withDefaultOnError } from '../../utils/defaults';
 
 export { formatXml, isValidXML };
 

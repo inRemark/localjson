@@ -3,9 +3,9 @@ import { Netmask } from 'netmask';
 import { useStorage } from '@vueuse/core';
 import { ArrowLeft, ArrowRight } from '@vicons/tabler';
 import { getIPClass } from './ipv4-subnet-calculator.models';
-import { withDefaultOnError } from '@/utils/defaults';
-import { isNotThrowing } from '@/utils/boolean';
-import SpanCopyable from '@/components/SpanCopyable.vue';
+import { withDefaultOnError } from '../../utils/defaults';
+import { isNotThrowing } from '../../utils/boolean';
+import SpanCopyable from '../../components/SpanCopyable.vue';
 
 const ip = useStorage('ipv4-subnet-calculator:ip', '192.168.0.1/24');
 

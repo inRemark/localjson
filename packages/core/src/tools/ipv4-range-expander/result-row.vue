@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import _ from 'lodash';
-import SpanCopyable from '@/components/SpanCopyable.vue';
+import SpanCopyable from '../../components/SpanCopyable.vue';
 
 const props = withDefaults(defineProps<{ label: string; oldValue?: string; newValue?: string }>(), {
   label: '',

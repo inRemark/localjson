@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import verifyPDF from 'pdf-signature-reader';
 import type { SignatureInfo } from './pdf-signature-checker.types';
-import { formatBytes } from '@/utils/convert';
+import { formatBytes } from '../../utils/convert';
 
 const signatures = ref<SignatureInfo[]>([]);
 const status = ref<'idle' | 'parsed' | 'error' | 'loading'>('idle');

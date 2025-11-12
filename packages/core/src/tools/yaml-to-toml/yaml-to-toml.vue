@@ -2,7 +2,7 @@
 import { stringify as stringifyToml } from 'iarna-toml-esm';
 import { parse as parseYaml } from 'yaml';
 import { withDefaultOnError } from '../../utils/defaults';
-import type { UseValidationRule } from '@/composable/validation';
+import type { UseValidationRule } from '../../composable/validation';
 
 const convertYamlToToml = (value: string) => [stringifyToml(parseYaml(value))].flat().join('\n').trim();
 

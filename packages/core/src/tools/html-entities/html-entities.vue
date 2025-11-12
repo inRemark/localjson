@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { escape, unescape } from 'lodash';
 
-import { useCopy } from '@/composable/copy';
+import { useCopy } from '../../composable/copy';
 
 const escapeInput = ref('<title>IT Tool</title>');
 const escapeOutput = computed(() => escape(escapeInput.value));

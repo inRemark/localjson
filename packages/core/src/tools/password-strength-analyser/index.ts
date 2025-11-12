@@ -1,5 +1,5 @@
 import { defineTool } from '../tool';
-import { translate } from '@/plugins/i18n.plugin';
+import { translate } from '../../plugins/i18n.plugin';
 import PasswordIcon from '~icons/mdi/form-textbox-password';
 
 export const tool = defineTool({

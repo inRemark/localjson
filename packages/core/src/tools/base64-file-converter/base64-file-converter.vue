@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import { useBase64 } from '@vueuse/core';
 import type { Ref } from 'vue';
-import { useCopy } from '@/composable/copy';
-import { getExtensionFromMimeType, getMimeTypeFromBase64, previewImageFromBase64, useDownloadFileFromBase64Refs } from '@/composable/downloadBase64';
-import { useValidation } from '@/composable/validation';
-import { isValidBase64 } from '@/utils/base64';
-import useFileStore from '@/stores/fileUtils';
+import { useCopy } from '../../composable/copy';
+import { getExtensionFromMimeType, getMimeTypeFromBase64, previewImageFromBase64, useDownloadFileFromBase64Refs } from '../../composable/downloadBase64';
+import { useValidation } from '../../composable/validation';
+import { isValidBase64 } from '../../utils/base64';
+import useFileStore from '../../stores/fileUtils';
 
 const fileName = ref('file');
 const fileExtension = ref('');

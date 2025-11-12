@@ -3,7 +3,7 @@ import { UAParser } from 'ua-parser-js';
 import { Adjustments, Browser, Cpu, Devices, Engine } from '@vicons/tabler';
 import UserAgentResultCards from './user-agent-result-cards.vue';
 import type { UserAgentResultSection } from './user-agent-parser.types';
-import { withDefaultOnError } from '@/utils/defaults';
+import { withDefaultOnError } from '../../utils/defaults';
 
 const ua = ref(navigator.userAgent as string);
 

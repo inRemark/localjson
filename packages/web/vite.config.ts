@@ -124,8 +124,10 @@ export default defineConfig({
   base: baseUrl,
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('..', import.meta.url))
+      '@/core': fileURLToPath(new URL('../core/src', import.meta.url)),
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
+    extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json', '.vue'],
   },
   define: {
     'import.meta.env.PACKAGE_VERSION': JSON.stringify(process.env.npm_package_version),

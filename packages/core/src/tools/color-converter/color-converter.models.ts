@@ -1,6 +1,6 @@
 import { type Colord, colord } from 'colord';
-import { withDefaultOnError } from '@/utils/defaults';
-import { useValidation } from '@/composable/validation';
+import { withDefaultOnError } from '../../utils/defaults';
+import { useValidation } from '../../composable/validation';
 
 export { removeAlphaChannelWhenOpaque, buildColorFormat };
 

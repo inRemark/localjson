@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { ulid } from 'ulid';
 import _ from 'lodash';
-import { computedRefreshable } from '@/composable/computedRefreshable';
-import { useCopy } from '@/composable/copy';
+import { computedRefreshable } from '../../composable/computedRefreshable';
+import { useCopy } from '../../composable/copy';
 
 const amount = useStorage('ulid-generator-amount', 1);
 const formats = [{ label: 'Raw', value: 'raw' }, { label: 'JSON', value: 'json' }] as const;

@@ -5,8 +5,8 @@ import type { HeadObject } from '@vueuse/head';
 
 import BaseLayout from './base.layout.vue';
 import FavoriteButton from '@/components/FavoriteButton.vue';
-import type { Tool } from '@/tools/tools.types';
-import { translate } from '@/plugins/i18n.plugin';
+import type { Tool } from '@/core/tools/tools.types';
+import { translate } from '@/core/plugins/i18n.plugin';
 
 const route = useRoute();
 

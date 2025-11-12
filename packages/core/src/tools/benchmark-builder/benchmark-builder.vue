@@ -5,7 +5,7 @@ import _ from 'lodash';
 
 import { arrayToMarkdownTable, computeAverage, computeVariance } from './benchmark-builder.models';
 import DynamicValues from './dynamic-values.vue';
-import { useCopy } from '@/composable/copy';
+import { useCopy } from '../../composable/copy';
 
 const suites = useStorage('benchmark-builder:suites', [
   { title: 'Suite 1', data: [5, 10] },

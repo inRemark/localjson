@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import type { ConvertOptions } from './list-converter.types';
-import { byOrder } from '@/utils/array';
+import { byOrder } from '../../utils/array';
 
 export { convert };
 

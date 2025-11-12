@@ -13,7 +13,7 @@ import {
 } from 'crypto-js';
 
 import { convertHexToBin } from '../hash-text/hash-text.service';
-import { useCopy } from '@/composable/copy';
+import { useCopy } from '../../composable/copy';
 
 const algos = {
   MD5: HmacMD5,

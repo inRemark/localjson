@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { generatePort } from './random-port-generator.model';
-import { computedRefreshable } from '@/composable/computedRefreshable';
-import { useCopy } from '@/composable/copy';
+import { computedRefreshable } from '../../composable/computedRefreshable';
+import { useCopy } from '../../composable/copy';
 
 const [port, refreshPort] = computedRefreshable(() => String(generatePort()));
 

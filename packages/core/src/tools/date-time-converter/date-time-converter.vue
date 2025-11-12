@@ -26,8 +26,8 @@ import {
   isUTCDateString,
   isUnixTimestamp,
 } from './date-time-converter.models';
-import { withDefaultOnError } from '@/utils/defaults';
-import { useValidation } from '@/composable/validation';
+import { withDefaultOnError } from '../../utils/defaults';
+import { useValidation } from '../../composable/validation';
 
 const inputDate = ref('');
 

@@ -16,10 +16,10 @@ import {
 } from '@it-tools/bip39';
 import { Copy, Refresh } from '@vicons/tabler';
 
-import { useCopy } from '@/composable/copy';
-import { useValidation } from '@/composable/validation';
-import { isNotThrowing } from '@/utils/boolean';
-import { withDefaultOnError } from '@/utils/defaults';
+import { useCopy } from '../../composable/copy';
+import { useValidation } from '../../composable/validation';
+import { isNotThrowing } from '../../utils/boolean';
+import { withDefaultOnError } from '../../utils/defaults';
 
 const languages = {
   'English': englishWordList,

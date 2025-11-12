@@ -1,4 +1,4 @@
-import { shuffleString } from '@/utils/random';
+import { shuffleString } from '../../utils/random';
 
 export function createToken({
   withUppercase = true,

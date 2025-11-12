@@ -7,20 +7,19 @@ console.log('[Desktop] Starting application initialization...');
 
 import 'virtual:uno.css';
 
-import { naive } from '@/core/src/plugins/naive.plugin';
+import { naive } from '@/core/plugins/naive.plugin';
 
-console.log('[Desktop] Importing core App...');
 // 导入核心应用
-import App from '@/core/src/App.vue';
+import App from '@/core/App.vue';
 
 console.log('[Desktop] Importing adapters...');
 // 导入并设置 Desktop 适配器
-import { setPlatformAdapter, desktopAdapter } from '@/core/src/adapters';
+import { setPlatformAdapter, desktopAdapter } from '@/core/adapters/index';
 
 // 导入路由配置
 import { routes } from './router';
-import { i18nPlugin } from '@/core/src/plugins/i18n.plugin';
-import { plausible } from '@/core/src/plugins/plausible.plugin';
+import { i18nPlugin } from '@/core/plugins/i18n.plugin';
+import { plausible } from '@/core/plugins/plausible.plugin';
 
 console.log('[Desktop] Setting platform adapter...');
 // 初始化平台适配器

@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import type { ArrayDifference, Difference, ObjectDifference } from '../json-diff.types';
-import { useCopy } from '@/composable/copy';
+import { useCopy } from '../../../composable/copy';
 
 export function DiffRootViewer({ diff }: { diff: Difference }) {
   return (

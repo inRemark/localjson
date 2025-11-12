@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { getStringSizeInBytes } from './text-statistics.service';
-import { formatBytes } from '@/utils/convert';
+import { formatBytes } from '../../utils/convert';
 
 const text = ref('');
 </script>

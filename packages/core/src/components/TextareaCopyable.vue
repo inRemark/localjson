@@ -7,7 +7,7 @@ import sqlHljs from 'highlight.js/lib/languages/sql';
 import xmlHljs from 'highlight.js/lib/languages/xml';
 import yamlHljs from 'highlight.js/lib/languages/yaml';
 import iniHljs from 'highlight.js/lib/languages/ini';
-import { useCopy } from '@/composable/copy';
+import { useCopy } from '../composable/copy';
 
 const props = withDefaults(
   defineProps<{

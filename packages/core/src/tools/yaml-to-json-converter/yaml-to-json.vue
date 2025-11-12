@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { parse as parseYaml } from 'yaml';
-import type { UseValidationRule } from '@/composable/validation';
-import { isNotThrowing } from '@/utils/boolean';
-import { withDefaultOnError } from '@/utils/defaults';
+import type { UseValidationRule } from '../../composable/validation';
+import { isNotThrowing } from '../../utils/boolean';
+import { withDefaultOnError } from '../../utils/defaults';
 
 function transformer(value: string) {
   return withDefaultOnError(() => {

@@ -8,12 +8,12 @@ import { storeToRefs } from 'pinia';
 import HeroGradient from '../assets/hero-gradient.svg?component';
 import MenuLayout from '../components/MenuLayout.vue';
 import NavbarButtons from '../components/NavbarButtons.vue';
-import { useStyleStore } from '@/stores/style.store';
-import { config } from '@/config';
-import type { ToolCategory } from '@/tools/tools.types';
-import { useToolStore } from '@/tools/tools.store';
-import { useTracker } from '@/modules/tracker/tracker.services';
-import CollapsibleToolMenu from '@/components/CollapsibleToolMenu.vue';
+import { useStyleStore } from '../stores/style.store';
+import { config } from '../config';
+import type { ToolCategory } from '../tools/tools.types';
+import { useToolStore } from '../tools/tools.store';
+import { useTracker } from '../modules/tracker/tracker.services';
+import CollapsibleToolMenu from '../components/CollapsibleToolMenu.vue';
 
 const themeVars = useThemeVars();
 const styleStore = useStyleStore();

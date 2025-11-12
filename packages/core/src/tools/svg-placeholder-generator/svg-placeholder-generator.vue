@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import TextareaCopyable from '@/components/TextareaCopyable.vue';
-import { useCopy } from '@/composable/copy';
-import { useDownloadFileFromBase64 } from '@/composable/downloadBase64';
-import useFileStore from '@/stores/fileUtils';
-import { textToBase64 } from '@/utils/base64';
+import TextareaCopyable from '../../components/TextareaCopyable.vue';
+import { useCopy } from '../../composable/copy';
+import { useDownloadFileFromBase64 } from '../../composable/downloadBase64';
+import useFileStore from '../../stores/fileUtils';
+import { textToBase64 } from '../../utils/base64';
 
 const width = ref(600);
 const height = ref(350);

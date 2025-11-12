@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useCopy } from '@/composable/copy';
+import { useCopy } from '../composable/copy';
 
 const props = withDefaults(defineProps<{ value?: string }>(), { value: '' });
 const { value } = toRefs(props);

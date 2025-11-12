@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { EmojiInfo } from './emoji.types';
-import { useCopy } from '@/composable/copy';
+import { useCopy } from '../../composable/copy';
 
 const props = (defineProps<{ emojiInfo: EmojiInfo }>());
 const { emojiInfo } = toRefs(props);

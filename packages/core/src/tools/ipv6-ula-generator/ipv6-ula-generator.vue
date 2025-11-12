@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { SHA1 } from 'crypto-js';
-import InputCopyable from '@/components/InputCopyable.vue';
-import { macAddressValidation } from '@/utils/macAddress';
+import InputCopyable from '../../components/InputCopyable.vue';
+import { macAddressValidation } from '../../utils/macAddress';
 
 const macAddress = ref('20:37:06:12:34:56');
 const calculatedSections = computed(() => {

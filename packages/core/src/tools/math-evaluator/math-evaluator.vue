@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { evaluate } from 'mathjs';
 
-import { withDefaultOnError } from '@/utils/defaults';
+import { withDefaultOnError } from '../../utils/defaults';
 
 const expression = ref('');
 

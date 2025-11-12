@@ -4,7 +4,7 @@ import { isValidIpv4 } from '../ipv4-address-converter/ipv4-address-converter.se
 import type { Ipv4RangeExpanderResult } from './ipv4-range-expander.types';
 import { calculateCidr } from './ipv4-range-expander.service';
 import ResultRow from './result-row.vue';
-import { useValidation } from '@/composable/validation';
+import { useValidation } from '../../composable/validation';
 
 const rawStartAddress = useStorage('ipv4-range-expander:startAddress', '192.168.1.1');
 const rawEndAddress = useStorage('ipv4-range-expander:endAddress', '192.168.6.255');

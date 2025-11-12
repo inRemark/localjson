@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { AES, RC4, Rabbit, TripleDES, enc } from 'crypto-js';
-import { computedCatch } from '@/composable/computed/catchedComputed';
+import { computedCatch } from '../../composable/computed/catchedComputed';
 
 const algos = { AES, TripleDES, Rabbit, RC4 };
 
