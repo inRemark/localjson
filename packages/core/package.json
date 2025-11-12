@@ -12,6 +12,16 @@
       "types": "./src/adapters/index.ts",
       "default": "./src/adapters/index.ts"
     },
+    "./layouts/index": {
+      "types": "./src/layouts/index.ts",
+      "default": "./src/layouts/index.ts"
+    },
+    "./pages/*": "./src/pages/*",
+    "./plugins/*": "./src/plugins/*",
+    "./tools": {
+      "types": "./src/tools/index.ts",
+      "default": "./src/tools/index.ts"
+    },
     "./components/*": "./src/components/*",
     "./composable/*": "./src/composable/*",
     "./tools/*": "./src/tools/*",
@@ -73,6 +83,7 @@
     "pdf-signature-reader": "^1.4.2",
     "pinia": "^3.0.2",
     "plausible-tracker": "^0.3.8",
+    "prettier": "^3.6.2",
     "qrcode": "^1.5.4",
     "sql-formatter": "^15.6.2",
     "ua-parser-js": "^2.0.1",

@@ -4,22 +4,22 @@ import { createHead } from '@vueuse/head';
 import { createRouter, createWebHistory } from 'vue-router';
 
 import { registerSW } from 'virtual:pwa-register';
-import { plausible } from '@localjson/core/plugins/plausible.plugin';
+import { plausible } from '@/plugins/plausible.plugin';
 
 import 'virtual:uno.css';
 
-import { naive } from '@localjson/core/plugins/naive.plugin';
+import { naive } from '@/plugins/naive.plugin';
 
 // 导入核心应用
-import App from '@localjson/core/App.vue';
+import App from '@/App.vue';
 
 // 导入并设置 Web 适配器
-import { setPlatformAdapter, webAdapter } from '@localjson/core/adapters';
+import { setPlatformAdapter, webAdapter } from '@/adapters';
 
 // 导入路由配置
 import { routes } from './router';
-import { i18nPlugin } from '@localjson/core/plugins/i18n.plugin';
-import { config } from '@localjson/core/config';
+import { i18nPlugin } from '@/plugins/i18n.plugin';
+import { config } from '@/config';
 
 registerSW();
 

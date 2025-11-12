@@ -1,10 +1,10 @@
 import type { RouteRecordRaw } from 'vue-router';
-import { layouts } from '@localjson/core/layouts/index';
-import HomePage from '@localjson/core/pages/Home.page.vue';
-import NotFound from '@localjson/core/pages/404.page.vue';
-import { tools } from '@localjson/core/tools';
-import { config } from '@localjson/core/config';
-import { routes as demoRoutes } from '@localjson/core/ui/demo/demo.routes';
+import { layouts } from '@/layouts/index';
+import HomePage from '@/pages/Home.page.vue';
+import NotFound from '@/pages/404.page.vue';
+import { tools } from '@/tools';
+import { config } from '@/config';
+import { routes as demoRoutes } from '@/ui/demo/demo.routes';
 
 const toolsRoutes = tools.map(({ path, name, component, ...config }) => ({
   path,

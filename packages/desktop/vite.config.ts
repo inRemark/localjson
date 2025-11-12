@@ -28,7 +28,7 @@ export default defineConfig({
       fullInstall: true,
       strictMessage: false,
       include: [
-        resolve(__dirname, 'locales/**'),
+        resolve(__dirname, '../core/locales/**'),
       ],
     }),
     AutoImport({
@@ -95,7 +95,7 @@ export default defineConfig({
       },
     }),
     Components({
-      dirs: ['src/'],
+      dirs: ['../core/src/'],
       extensions: ['vue', 'md'],
       include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
       resolvers: [NaiveUiResolver(), IconsResolver({ prefix: 'icon' })],
@@ -105,8 +105,8 @@ export default defineConfig({
   base: baseUrl,
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url)),
-      'stores': './src/stores',
+      '@': fileURLToPath(new URL('../core/src', import.meta.url)),
+      'stores': '../core/src/stores',
       '@wailsjs': path.resolve(__dirname, './wailsjs')
     },
   },

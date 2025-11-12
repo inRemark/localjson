@@ -11,6 +11,9 @@ importers:
       figue:
         specifier: ^3.1.1
         version: 3.1.1
+      prettier:
+        specifier: ^3.6.2
+        version: 3.6.2
       zod:
         specifier: ^4.1.12
         version: 4.1.12
@@ -156,6 +159,9 @@ importers:
       plausible-tracker:
         specifier: ^0.3.8
         version: 0.3.9
+      prettier:
+        specifier: ^3.6.2
+        version: 3.6.2
       qrcode:
         specifier: ^1.5.4
         version: 1.5.4

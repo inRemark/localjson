@@ -1,14 +1,19 @@
 import type { PlatformAdapter, FileDialogOptions, PlatformInfo, PlatformFeature } from './types';
 
-// 注意：这些导入在 packages/desktop 中会被正确解析
-// 在 core 包中编译时会有警告，但不影响使用
+// 注意:这些导入在 packages/desktop 中会被正确解析
+// 在 core 包中编译时会有警告,但不影响使用
 let BrowserOpenURL: ((url: string) => void) | undefined;
 let SaveBase64File: ((filename: string, data: string) => Promise<void>) | undefined;
 let Environment: (() => Promise<any>) | undefined;
 
-// 动态导入 Wails 函数（仅在 desktop 环境中可用）
-if (typeof window !== 'undefined' && (window as any).wails) {
+// 延迟初始化 promise
+let wailsInitialized = false;
+const initWails = async () => {
+  if (wailsInitialized) return;
+  if (typeof window === 'undefined' || !(window as any).wails) return;
+  
   try {
+    // 动态导入 Wails 函数(仅在 desktop 环境中可用)
     // @ts-ignore - Wails runtime 仅在 desktop 环境中可用
     const runtime = await import('@wailsjs/runtime/runtime');
     // @ts-ignore
@@ -17,13 +22,21 @@ if (typeof window !== 'undefined' && (window as any).wails) {
     BrowserOpenURL = runtime.BrowserOpenURL;
     SaveBase64File = fileService.SaveBase64File;
     Environment = runtime.Environment;
+    wailsInitialized = true;
   } catch (e) {
     console.warn('Wails runtime not available:', e);
   }
-}
+};
 
 export class DesktopPlatformAdapter implements PlatformAdapter {
   readonly type = 'desktop' as const;
+  
+  constructor() {
+    // 在构造函数中尝试初始化 Wails
+    if (typeof window !== 'undefined') {
+      initWails();
+    }
+  }
 
   openURL(url: string): void {
     if (BrowserOpenURL) {

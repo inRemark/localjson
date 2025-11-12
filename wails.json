@@ -2,9 +2,9 @@
   "$schema": "https://wails.io/schemas/config.v2.json",
   "name": "LocalJson",
   "outputfilename": "LocalJson",
-  "frontend:install": "cd packages/desktop && pnpm install",
-  "frontend:build": "cd packages/desktop && pnpm run build",
-  "frontend:dev:watcher": "cd packages/desktop && pnpm run dev",
+  "frontend:install": "pnpm --filter @localjson/desktop install",
+  "frontend:build": "pnpm --filter @localjson/desktop build",
+  "frontend:dev:watcher": "pnpm --filter @localjson/desktop dev",
   "frontend:dev:serverUrl": "auto",
   "author": {
     "name": "remark",
