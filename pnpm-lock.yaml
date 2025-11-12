@@ -7,12 +7,22 @@ settings:
 importers:
 
   .:
+    dependencies:
+      figue:
+        specifier: ^3.1.1
+        version: 3.1.1
+      zod:
+        specifier: ^4.1.12
+        version: 4.1.12
     devDependencies:
       cross-env:
         specifier: ^7.0.3
         version: 7.0.3
 
 packages:
+
+  '@standard-schema/spec@1.0.0':
+    resolution: {integrity: sha512-m2bOd0f2RT9k8QJx1JN85cZYyH1RqFBdlwtkSlf4tBDYLCiiZnv1fIIwacK6cqwXavOydf0NPToMQgpKq+dVlA==}
 
   cross-env@7.0.3:
     resolution: {integrity: sha512-+/HKd6EgcQCJGh2PSjZuUitQBQynKor4wrFbRg4DtAgS1aWO+gU52xpH7M9ScGgXSYmAVS9bIJ8EzuaGw0oNAw==}
@@ -22,6 +32,9 @@ packages:
   cross-spawn@7.0.3:
     resolution: {integrity: sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==}
     engines: {node: '>= 8'}
+
+  figue@3.1.1:
+    resolution: {integrity: sha512-LYqDGKztWh0tU5eCTzW5nK3MAp4K5ihEsnyWiNwU6jW0yVle9DqQCiMra5lMTXE21d9x882ZoOK4SitMXvaQ3Q==}
 
   isexe@2.0.0:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
@@ -43,7 +56,12 @@ packages:
     engines: {node: '>= 8'}
     hasBin: true
 
+  zod@4.1.12:
+    resolution: {integrity: sha512-JInaHOamG8pt5+Ey8kGmdcAcg3OL9reK8ltczgHTAwNhMys/6ThXHityHxVV2p3fkw/c+MAvBHFVYHFZDmjMCQ==}
+
 snapshots:
+
+  '@standard-schema/spec@1.0.0': {}
 
   cross-env@7.0.3:
     dependencies:
@@ -54,6 +72,10 @@ snapshots:
       path-key: 3.1.1
       shebang-command: 2.0.0
       which: 2.0.2
+
+  figue@3.1.1:
+    dependencies:
+      '@standard-schema/spec': 1.0.0
 
   isexe@2.0.0: {}
 
@@ -68,3 +90,5 @@ snapshots:
   which@2.0.2:
     dependencies:
       isexe: 2.0.0
+
+  zod@4.1.12: {}

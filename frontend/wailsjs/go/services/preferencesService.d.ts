@@ -33,4 +33,4 @@ export function SetPreferences(arg1:types.Preferences):Promise<types.JSResp>;
 
 export function UpdateEnv():Promise<void>;
 
-export function UpdatePreferences(arg1:{[key: string]: any}):Promise<types.JSResp>;
+export function UpdatePreferences(arg1:Record<string, any>):Promise<types.JSResp>;

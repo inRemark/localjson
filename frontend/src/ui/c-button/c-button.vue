@@ -14,7 +14,7 @@ const props = withDefaults(
     circle?: boolean
     href?: string
     to?: RouteLocationRaw
-    openUrl: string
+    openUrl?: string
     size?: 'small' | 'medium' | 'large'
   }>(),
   {

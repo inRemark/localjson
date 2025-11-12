@@ -10,7 +10,15 @@ import {
 import { presetScrollbar } from 'unocss-preset-scrollbar';
 
 export default defineConfig({
-  presets: [presetUno(), presetAttributify(), presetTypography(), presetScrollbar()],
+  presets: [
+    presetUno(),
+    presetAttributify(),
+    presetTypography(),
+    presetScrollbar({
+      scrollbarTrackColor: 'rgb(229 229 229)',
+      scrollbarThumbColor: 'rgb(209 213 219)',
+    }),
+  ],
   transformers: [transformerDirectives(), transformerVariantGroup()],
   theme: {
     colors: {
@@ -19,7 +27,7 @@ export default defineConfig({
     },
   },
   shortcuts: {
-    'pretty-scrollbar': 'scrollbar scrollbar-rounded scrollbar-thumb-color-gray-300 scrollbar-track-color-gray-100 dark:scrollbar-thumb-color-#424242 dark:scrollbar-track-color-#686868',
+    'pretty-scrollbar': 'scrollbar scrollbar-rounded',
     'divider': 'h-1px bg-current op-10',
     'bg-surface': 'bg-#ffffff dark:bg-#232323',
     'bg-background': 'bg-#f1f5f9 dark:bg-#1c1c1c',
