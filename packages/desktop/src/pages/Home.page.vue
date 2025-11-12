@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { Heart } from '@vicons/tabler';
 import { useHead } from '@vueuse/head';
-import ColoredCard from '../components/ColoredCard.vue';
-import ToolCard from '../components/ToolCard.vue';
+import ColoredCard from '@/core/components/ColoredCard.vue';
+import ToolCard from '@/core/components/ToolCard.vue';
 import { useToolStore } from '@/core/tools/tools.store';
 import { config } from '@/core/config';
 
