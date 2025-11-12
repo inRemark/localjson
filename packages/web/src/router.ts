@@ -1,10 +1,10 @@
 import type { RouteRecordRaw } from 'vue-router';
-import { layouts } from '@/layouts/index';
-import HomePage from '@/pages/Home.page.vue';
-import NotFound from '@/pages/404.page.vue';
-import { tools } from '@/tools';
-import { config } from '@/config';
-import { routes as demoRoutes } from '@/ui/demo/demo.routes';
+import { layouts } from '@/core/src/layouts/index';
+import HomePage from '@/core/src/pages/Home.page.vue';
+import NotFound from '@/core/src/pages/404.page.vue';
+import { tools } from '@/core/src/tools';
+import { config } from '@/core/src/config';
+import { routes as demoRoutes } from '@/core/src/ui/demo/demo.routes';
 
 const toolsRoutes = tools.map(({ path, name, component, ...config }) => ({
   path,
@@ -27,17 +27,17 @@ export const routes: RouteRecordRaw[] = [
   {
     path: '/about',
     name: 'about',
-    component: () => import('@/pages/About.vue'),
+    component: () => import('@/core/src/pages/About.vue'),
   },
   {
     path: '/apps',
     name: 'apps',
-    component: () => import('@/pages/Apps.vue'),
+    component: () => import('@/core/src/pages/Apps.vue'),
   },
   {
     path: '/download',
     name: 'download',
-    component: () => import('@/pages/Download.vue'),
+    component: () => import('@/core/src/pages/Download.vue'),
   },
   {
     path: '/privacy',

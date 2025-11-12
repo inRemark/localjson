@@ -1,7 +1,7 @@
 {
   "extends": "@vue/tsconfig/tsconfig.json",
-  "include": ["env.d.ts", "src/**/*", "src/**/*.vue", "**/*.d.ts", "node_modules/vite-plugin-pwa/client.d.ts", "../core/src/**/*", "../core/src/**/*.vue"],
-  "exclude": ["src/**/__tests__/*"],
+  "include": ["env.d.ts", "src/**/*", "src/**/*.vue", "**/*.d.ts", "node_modules/vite-plugin-pwa/client.d.ts", "../**/*.ts", "../**/*.vue"],
+  "exclude": ["src/**/__tests__/*", "../**/node_modules/**", "../**/dist/**"],
   "compilerOptions": {
     "lib": ["ES2022"],
     "target": "es2022",
@@ -10,7 +10,7 @@
     "composite": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["../core/src/*"]
+      "@/*": ["../*"]
     },
     "types": ["naive-ui/volar", "@intlify/unplugin-vue-i18n/messages", "unplugin-icons/types/vue"],
     "esModuleInterop": true,
