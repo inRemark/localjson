@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia';
 import _ from 'lodash';
 import type { PaletteOption } from './command-palette.types';
-import { useToolStore } from '@/tools/tools.store';
+import { useToolStore } from '@/core/tools/tools.store';
 import { useFuzzySearch } from '@/composable/fuzzySearch';
 import { useStyleStore } from '@/stores/style.store';
 

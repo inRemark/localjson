@@ -4,7 +4,7 @@ import { useHead } from '@vueuse/head';
 import type { HeadObject } from '@vueuse/head';
 
 import BaseLayout from './base.layout.vue';
-import FavoriteButton from '@/components/FavoriteButton.vue';
+import FavoriteButton from '@/core/components/FavoriteButton.vue';
 import type { Tool } from '@/core/tools/tools.types';
 import { translate } from '@/core/plugins/i18n.plugin';
 
