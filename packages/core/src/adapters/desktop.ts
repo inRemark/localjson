@@ -115,7 +115,7 @@ export class DesktopPlatformAdapter implements PlatformAdapter {
     return {
       type: 'desktop',
       os: this.detectOS(),
-      version: '3.0.1',
+      version: '4.0.0',
     };
   }
 

@@ -1,6 +1,6 @@
 {
   "name": "@localjson/web",
-  "version": "3.0.1",
+  "version": "4.0.0",
   "description": "Web version - Collection of handy online tools for developers",
   "type": "module",
   "scripts": {
