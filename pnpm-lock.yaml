@@ -8,19 +8,124 @@ importers:
 
   .:
     dependencies:
+      '@intlify/unplugin-vue-i18n':
+        specifier: ^11.0.1
+        version: 11.0.1(@vue/compiler-dom@3.5.24)(eslint@9.39.1(jiti@2.6.1))(rollup@4.53.2)(typescript@5.9.3)(vue-i18n@11.1.12(vue@3.5.24(typescript@5.9.3)))(vue@3.5.24(typescript@5.9.3))
+      '@vitejs/plugin-vue':
+        specifier: ^5.0.3
+        version: 5.2.4(vite@6.4.1(@types/node@20.19.25)(jiti@2.6.1)(less@4.4.2)(terser@5.44.1)(yaml@2.8.1))(vue@3.5.24(typescript@5.9.3))
+      '@vitejs/plugin-vue-jsx':
+        specifier: ^4.0.1
+        version: 4.2.0(vite@6.4.1(@types/node@20.19.25)(jiti@2.6.1)(less@4.4.2)(terser@5.44.1)(yaml@2.8.1))(vue@3.5.24(typescript@5.9.3))
+      '@vueuse/core':
+        specifier: ^13.6.0
+        version: 13.9.0(vue@3.5.24(typescript@5.9.3))
+      '@vueuse/head':
+        specifier: ^1.3.1
+        version: 1.3.1(vue@3.5.24(typescript@5.9.3))
+      '@vueuse/router':
+        specifier: ^13.8.0
+        version: 13.9.0(vue-router@4.6.3(vue@3.5.24(typescript@5.9.3)))(vue@3.5.24(typescript@5.9.3))
       figue:
         specifier: ^3.1.1
         version: 3.1.1
+      naive-ui:
+        specifier: ^2.42.0
+        version: 2.43.1(vue@3.5.24(typescript@5.9.3))
+      pinia:
+        specifier: ^3.0.2
+        version: 3.0.4(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3))
       prettier:
         specifier: ^3.6.2
         version: 3.6.2
+      unocss:
+        specifier: ^66.5.3
+        version: 66.5.6(postcss@8.5.6)(vite@6.4.1(@types/node@20.19.25)(jiti@2.6.1)(less@4.4.2)(terser@5.44.1)(yaml@2.8.1))
+      unplugin-auto-import:
+        specifier: ^19.1.1
+        version: 19.3.0(@vueuse/core@13.9.0(vue@3.5.24(typescript@5.9.3)))
+      unplugin-icons:
+        specifier: ^22.1.0
+        version: 22.5.0(@vue/compiler-sfc@3.5.24)
+      unplugin-vue-components:
+        specifier: ^28.7.0
+        version: 28.8.0(@babel/parser@7.28.5)(vue@3.5.24(typescript@5.9.3))
+      vite:
+        specifier: ^6.4.1
+        version: 6.4.1(@types/node@20.19.25)(jiti@2.6.1)(less@4.4.2)(terser@5.44.1)(yaml@2.8.1)
+      vite-plugin-vue-markdown:
+        specifier: ^0.23.8
+        version: 0.23.8(rollup@4.53.2)(vite@6.4.1(@types/node@20.19.25)(jiti@2.6.1)(less@4.4.2)(terser@5.44.1)(yaml@2.8.1))
+      vite-svg-loader:
+        specifier: ^5.1.0
+        version: 5.1.0(vue@3.5.24(typescript@5.9.3))
+      vue:
+        specifier: ^3.5.23
+        version: 3.5.24(typescript@5.9.3)
+      vue-i18n:
+        specifier: ^11.1.10
+        version: 11.1.12(vue@3.5.24(typescript@5.9.3))
+      vue-router:
+        specifier: ^4.6.1
+        version: 4.6.3(vue@3.5.24(typescript@5.9.3))
       zod:
         specifier: ^4.1.12
         version: 4.1.12
     devDependencies:
+      '@antfu/eslint-config':
+        specifier: ^5.3.0
+        version: 5.4.1(@unocss/eslint-plugin@66.5.6(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3))(@vue/compiler-sfc@3.5.24)(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)(vitest@4.0.8(@types/debug@4.1.12)(@types/node@20.19.25)(jiti@2.6.1)(jsdom@23.2.0)(less@4.4.2)(terser@5.44.1)(yaml@2.8.1))
+      '@iconify-json/mdi':
+        specifier: ^1.1.64
+        version: 1.2.3
+      '@playwright/test':
+        specifier: ^1.56.1
+        version: 1.56.1
+      '@rushstack/eslint-patch':
+        specifier: ^1.15.0
+        version: 1.15.0
+      '@tsconfig/node18':
+        specifier: ^18.2.0
+        version: 18.2.4
+      '@types/node':
+        specifier: ^20.19.0
+        version: 20.19.25
+      '@unocss/eslint-config':
+        specifier: ^66.5.1
+        version: 66.5.6(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)
+      '@vue/test-utils':
+        specifier: ^2.4.6
+        version: 2.4.6
+      '@vue/tsconfig':
+        specifier: ^0.8.1
+        version: 0.8.1(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3))
       cross-env:
         specifier: ^7.0.3
         version: 7.0.3
+      eslint:
+        specifier: ^9.38.0
+        version: 9.39.1(jiti@2.6.1)
+      hygen:
+        specifier: ^6.2.11
+        version: 6.2.11
+      jsdom:
+        specifier: ^23.2.0
+        version: 23.2.0
+      less:
+        specifier: ^4.4.0
+        version: 4.4.2
+      typescript:
+        specifier: ~5.9.3
+        version: 5.9.3
+      unocss-preset-scrollbar:
+        specifier: ^0.3.1
+        version: 0.3.1(unocss@66.5.6(postcss@8.5.6)(vite@6.4.1(@types/node@20.19.25)(jiti@2.6.1)(less@4.4.2)(terser@5.44.1)(yaml@2.8.1)))
+      vitest:
+        specifier: ^4.0.2
+        version: 4.0.8(@types/debug@4.1.12)(@types/node@20.19.25)(jiti@2.6.1)(jsdom@23.2.0)(less@4.4.2)(terser@5.44.1)(yaml@2.8.1)
+      vue-tsc:
+        specifier: ^3.1.1
+        version: 3.1.3(typescript@5.9.3)
 
   packages/core:
     dependencies:
@@ -205,9 +310,6 @@ importers:
         specifier: ^4.1.12
         version: 4.1.12
     devDependencies:
-      '@intlify/unplugin-vue-i18n':
-        specifier: ^11.0.1
-        version: 11.0.1(@vue/compiler-dom@3.5.24)(eslint@9.39.1(jiti@2.6.1))(rollup@4.53.2)(typescript@5.9.3)(vue-i18n@11.1.12(vue@3.5.24(typescript@5.9.3)))(vue@3.5.24(typescript@5.9.3))
       '@types/bcryptjs':
         specifier: ^3.0.0
         version: 3.0.0
@@ -238,644 +340,28 @@ importers:
       '@types/uuid':
         specifier: ^11.0.0
         version: 11.0.0
-      '@vitejs/plugin-vue':
-        specifier: ^5.0.3
-        version: 5.2.4(vite@6.4.1(@types/node@20.19.25)(jiti@2.6.1)(less@4.4.2)(terser@5.44.1)(yaml@2.8.1))(vue@3.5.24(typescript@5.9.3))
-      '@vitejs/plugin-vue-jsx':
-        specifier: ^4.0.1
-        version: 4.2.0(vite@6.4.1(@types/node@20.19.25)(jiti@2.6.1)(less@4.4.2)(terser@5.44.1)(yaml@2.8.1))(vue@3.5.24(typescript@5.9.3))
-      typescript:
-        specifier: ~5.9.3
-        version: 5.9.3
-      vite:
-        specifier: ^6.4.1
-        version: 6.4.1(@types/node@20.19.25)(jiti@2.6.1)(less@4.4.2)(terser@5.44.1)(yaml@2.8.1)
-      vue-tsc:
-        specifier: ^3.1.1
-        version: 3.1.3(typescript@5.9.3)
 
   packages/desktop:
     dependencies:
-      '@it-tools/bip39':
-        specifier: ^0.0.4
-        version: 0.0.4
-      '@it-tools/oggen':
-        specifier: ^1.3.0
-        version: 1.3.0
       '@localjson/core':
         specifier: workspace:*
         version: link:../core
-      '@sindresorhus/slugify':
-        specifier: ^3.0.0
-        version: 3.0.0
-      '@tiptap/pm':
-        specifier: ^3.10.2
-        version: 3.10.5
-      '@tiptap/starter-kit':
-        specifier: ^3.10.2
-        version: 3.10.5
-      '@tiptap/vue-3':
-        specifier: ^3.10.4
-        version: 3.10.5(@floating-ui/dom@1.7.4)(@tiptap/core@3.10.5(@tiptap/pm@3.10.5))(@tiptap/pm@3.10.5)(vue@3.5.24(typescript@5.9.3))
-      '@types/figlet':
-        specifier: ^1.5.8
-        version: 1.7.0
-      '@vicons/material':
-        specifier: ^0.12.0
-        version: 0.12.0
-      '@vicons/tabler':
-        specifier: ^0.13.0
-        version: 0.13.0
-      '@vueuse/core':
-        specifier: ^13.6.0
-        version: 13.9.0(vue@3.5.24(typescript@5.9.3))
-      '@vueuse/head':
-        specifier: ^1.3.1
-        version: 1.3.1(vue@3.5.24(typescript@5.9.3))
-      '@vueuse/router':
-        specifier: ^13.8.0
-        version: 13.9.0(vue-router@4.6.3(vue@3.5.24(typescript@5.9.3)))(vue@3.5.24(typescript@5.9.3))
-      bcryptjs:
-        specifier: ^3.0.0
-        version: 3.0.3
-      change-case:
-        specifier: ^5.4.2
-        version: 5.4.4
-      colord:
-        specifier: ^2.9.3
-        version: 2.9.3
-      composerize-ts:
-        specifier: ^0.6.2
-        version: 0.6.2
-      country-code-lookup:
-        specifier: ^0.1.2
-        version: 0.1.3
-      cron-validator:
-        specifier: ^1.3.1
-        version: 1.4.0
-      cronstrue:
-        specifier: ^3.2.0
-        version: 3.9.0
-      crypto-js:
-        specifier: ^4.2.0
-        version: 4.2.0
-      date-fns:
-        specifier: ^3.5.0
-        version: 3.6.0
-      dompurify:
-        specifier: ^3.2.4
-        version: 3.3.0
-      emojilib:
-        specifier: ^3.0.10
-        version: 3.0.12
-      figlet:
-        specifier: ^1.9.2
-        version: 1.9.3
-      figue:
-        specifier: ^3.1.0
-        version: 3.1.1
-      fuse.js:
-        specifier: ^7.0.0
-        version: 7.1.0
-      highlight.js:
-        specifier: ^11.9.0
-        version: 11.11.1
-      iarna-toml-esm:
-        specifier: ^3.0.5
-        version: 3.0.5
-      ibantools:
-        specifier: ^4.3.8
-        version: 4.5.1
-      js-base64:
-        specifier: ^3.7.6
-        version: 3.7.8
-      json5:
-        specifier: ^2.2.3
-        version: 2.2.3
-      jwt-decode:
-        specifier: ^4.0.0
-        version: 4.0.0
-      libphonenumber-js:
-        specifier: ^1.12.24
-        version: 1.12.26
-      lodash:
-        specifier: ^4.17.21
-        version: 4.17.21
-      marked:
-        specifier: ^16.0.0
-        version: 16.4.2
-      mathjs:
-        specifier: ^14.8.1
-        version: 14.9.1
-      mime-types:
-        specifier: ^3.0.0
-        version: 3.0.1
-      monaco-editor:
-        specifier: ^0.54.0
-        version: 0.54.0
-      naive-ui:
-        specifier: ^2.42.0
-        version: 2.43.1(vue@3.5.24(typescript@5.9.3))
-      netmask:
-        specifier: ^2.0.2
-        version: 2.0.2
-      node-forge:
-        specifier: ^1.3.1
-        version: 1.3.1
-      oui-data:
-        specifier: ^1.1.467
-        version: 1.1.468
-      pdf-signature-reader:
-        specifier: ^1.4.2
-        version: 1.4.3
-      pinia:
-        specifier: ^3.0.2
-        version: 3.0.4(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3))
-      plausible-tracker:
-        specifier: ^0.3.8
-        version: 0.3.9
-      qrcode:
-        specifier: ^1.5.4
-        version: 1.5.4
-      sql-formatter:
-        specifier: ^15.6.2
-        version: 15.6.10
-      ua-parser-js:
-        specifier: ^2.0.1
-        version: 2.0.6
-      ulid:
-        specifier: ^2.4.0
-        version: 2.4.0
-      unicode-emoji-json:
-        specifier: ^0.7.0
-        version: 0.7.0
-      unplugin-auto-import:
-        specifier: ^19.1.1
-        version: 19.3.0(@vueuse/core@13.9.0(vue@3.5.24(typescript@5.9.3)))
-      uuid:
-        specifier: ^11.0.4
-        version: 11.1.0
-      vue:
-        specifier: ^3.5.23
-        version: 3.5.24(typescript@5.9.3)
-      vue-i18n:
-        specifier: ^11.1.10
-        version: 11.1.12(vue@3.5.24(typescript@5.9.3))
-      vue-router:
-        specifier: ^4.6.1
-        version: 4.6.3(vue@3.5.24(typescript@5.9.3))
-      vue-tsc:
-        specifier: ^3.1.1
-        version: 3.1.3(typescript@5.9.3)
-      xml-formatter:
-        specifier: ^3.6.4
-        version: 3.6.7
-      xml-js:
-        specifier: ^1.6.11
-        version: 1.6.11
-      yaml:
-        specifier: ^2.7.0
-        version: 2.8.1
-      zod:
-        specifier: ^4.1.12
-        version: 4.1.12
-    devDependencies:
-      '@antfu/eslint-config':
-        specifier: ^5.3.0
-        version: 5.4.1(@unocss/eslint-plugin@66.5.6(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3))(@vue/compiler-sfc@3.5.24)(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)(vitest@4.0.8(@types/debug@4.1.12)(@types/node@20.19.25)(jiti@2.6.1)(jsdom@23.2.0)(less@4.4.2)(terser@5.44.1)(yaml@2.8.1))
-      '@iconify-json/mdi':
-        specifier: ^1.1.64
-        version: 1.2.3
-      '@intlify/unplugin-vue-i18n':
-        specifier: ^11.0.1
-        version: 11.0.1(@vue/compiler-dom@3.5.24)(eslint@9.39.1(jiti@2.6.1))(rollup@4.53.2)(typescript@5.9.3)(vue-i18n@11.1.12(vue@3.5.24(typescript@5.9.3)))(vue@3.5.24(typescript@5.9.3))
-      '@rushstack/eslint-patch':
-        specifier: ^1.15.0
-        version: 1.15.0
-      '@tsconfig/node18':
-        specifier: ^18.2.4
-        version: 18.2.4
-      '@types/bcryptjs':
-        specifier: ^3.0.0
-        version: 3.0.0
-      '@types/crypto-js':
-        specifier: ^4.2.0
-        version: 4.2.2
-      '@types/dompurify':
-        specifier: ^3.2.0
-        version: 3.2.0
-      '@types/jsdom':
-        specifier: ^27.0.0
-        version: 27.0.0
-      '@types/lodash':
-        specifier: ^4.17.20
-        version: 4.17.20
-      '@types/mime-types':
-        specifier: ^3.0.0
-        version: 3.0.1
-      '@types/netmask':
-        specifier: ^2.0.2
-        version: 2.0.5
-      '@types/node':
-        specifier: ^20.10.5
-        version: 20.19.25
-      '@types/node-forge':
-        specifier: ^1.3.1
-        version: 1.3.14
-      '@types/qrcode':
-        specifier: ^1.5.4
-        version: 1.5.6
-      '@types/ua-parser-js':
-        specifier: ^0.7.39
-        version: 0.7.39
-      '@types/uuid':
-        specifier: ^11.0.0
-        version: 11.0.0
-      '@unocss/eslint-config':
-        specifier: ^66.5.1
-        version: 66.5.6(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)
-      '@vitejs/plugin-vue':
-        specifier: ^5.0.3
-        version: 5.2.4(vite@6.4.1(@types/node@20.19.25)(jiti@2.6.1)(less@4.4.2)(terser@5.44.1)(yaml@2.8.1))(vue@3.5.24(typescript@5.9.3))
-      '@vitejs/plugin-vue-jsx':
-        specifier: ^4.0.1
-        version: 4.2.0(vite@6.4.1(@types/node@20.19.25)(jiti@2.6.1)(less@4.4.2)(terser@5.44.1)(yaml@2.8.1))(vue@3.5.24(typescript@5.9.3))
-      '@vue/compiler-sfc':
-        specifier: ^3.5.23
-        version: 3.5.24
-      '@vue/runtime-dom':
-        specifier: ^3.5.23
-        version: 3.5.24
-      '@vue/test-utils':
-        specifier: ^2.4.6
-        version: 2.4.6
-      '@vue/tsconfig':
-        specifier: ^0.8.1
-        version: 0.8.1(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3))
-      consola:
-        specifier: ^3.2.3
-        version: 3.4.2
-      eslint:
-        specifier: ^9.38.0
-        version: 9.39.1(jiti@2.6.1)
-      hygen:
-        specifier: ^6.2.11
-        version: 6.2.11
-      jsdom:
-        specifier: ^23.2.0
-        version: 23.2.0
-      less:
-        specifier: ^4.4.0
-        version: 4.4.2
-      prettier:
-        specifier: ^3.6.2
-        version: 3.6.2
-      typescript:
-        specifier: ~5.9.3
-        version: 5.9.3
-      unocss:
-        specifier: ^66.5.3
-        version: 66.5.6(postcss@8.5.6)(vite@6.4.1(@types/node@20.19.25)(jiti@2.6.1)(less@4.4.2)(terser@5.44.1)(yaml@2.8.1))
-      unocss-preset-scrollbar:
-        specifier: ^3.2.0
-        version: 3.2.0(unocss@66.5.6(postcss@8.5.6)(vite@6.4.1(@types/node@20.19.25)(jiti@2.6.1)(less@4.4.2)(terser@5.44.1)(yaml@2.8.1)))
-      unplugin-icons:
-        specifier: ^22.1.0
-        version: 22.5.0(@vue/compiler-sfc@3.5.24)
-      unplugin-vue-components:
-        specifier: ^28.7.0
-        version: 28.8.0(@babel/parser@7.28.5)(vue@3.5.24(typescript@5.9.3))
-      vite:
-        specifier: ^6.4.1
-        version: 6.4.1(@types/node@20.19.25)(jiti@2.6.1)(less@4.4.2)(terser@5.44.1)(yaml@2.8.1)
-      vite-plugin-vue-markdown:
-        specifier: ^0.23.8
-        version: 0.23.8(rollup@4.53.2)(vite@6.4.1(@types/node@20.19.25)(jiti@2.6.1)(less@4.4.2)(terser@5.44.1)(yaml@2.8.1))
-      vite-svg-loader:
-        specifier: ^5.1.0
-        version: 5.1.0(vue@3.5.24(typescript@5.9.3))
-      vitest:
-        specifier: ^4.0.2
-        version: 4.0.8(@types/debug@4.1.12)(@types/node@20.19.25)(jiti@2.6.1)(jsdom@23.2.0)(less@4.4.2)(terser@5.44.1)(yaml@2.8.1)
-      zx:
-        specifier: ^8.8.1
-        version: 8.8.5
 
   packages/web:
     dependencies:
-      '@it-tools/bip39':
-        specifier: ^0.0.4
-        version: 0.0.4
-      '@it-tools/oggen':
-        specifier: ^1.3.0
-        version: 1.3.0
       '@localjson/core':
         specifier: workspace:*
         version: link:../core
-      '@sindresorhus/slugify':
-        specifier: ^3.0.0
-        version: 3.0.0
-      '@tiptap/pm':
-        specifier: ^3.10.2
-        version: 3.10.5
-      '@tiptap/starter-kit':
-        specifier: ^3.10.2
-        version: 3.10.5
-      '@tiptap/vue-3':
-        specifier: ^3.10.4
-        version: 3.10.5(@floating-ui/dom@1.7.4)(@tiptap/core@3.10.5(@tiptap/pm@3.10.5))(@tiptap/pm@3.10.5)(vue@3.5.24(typescript@5.9.3))
-      '@types/figlet':
-        specifier: ^1.5.8
-        version: 1.7.0
-      '@vicons/material':
-        specifier: ^0.12.0
-        version: 0.12.0
-      '@vicons/tabler':
-        specifier: ^0.13.0
-        version: 0.13.0
-      '@vueuse/core':
-        specifier: ^13.6.0
-        version: 13.9.0(vue@3.5.24(typescript@5.9.3))
-      '@vueuse/head':
-        specifier: ^1.3.1
-        version: 1.3.1(vue@3.5.24(typescript@5.9.3))
-      '@vueuse/router':
-        specifier: ^13.8.0
-        version: 13.9.0(vue-router@4.6.3(vue@3.5.24(typescript@5.9.3)))(vue@3.5.24(typescript@5.9.3))
-      bcryptjs:
-        specifier: ^3.0.0
-        version: 3.0.3
-      change-case:
-        specifier: ^5.4.2
-        version: 5.4.4
-      colord:
-        specifier: ^2.9.3
-        version: 2.9.3
-      composerize-ts:
-        specifier: ^0.6.2
-        version: 0.6.2
-      country-code-lookup:
-        specifier: ^0.1.2
-        version: 0.1.3
-      cron-validator:
-        specifier: ^1.3.1
-        version: 1.4.0
-      cronstrue:
-        specifier: ^3.2.0
-        version: 3.9.0
-      crypto-js:
-        specifier: ^4.2.0
-        version: 4.2.0
-      date-fns:
-        specifier: ^3.5.0
-        version: 3.6.0
-      dompurify:
-        specifier: ^3.2.4
-        version: 3.3.0
-      emojilib:
-        specifier: ^3.0.10
-        version: 3.0.12
-      figlet:
-        specifier: ^1.9.2
-        version: 1.9.3
-      figue:
-        specifier: ^3.1.0
-        version: 3.1.1
-      fuse.js:
-        specifier: ^7.0.0
-        version: 7.1.0
-      highlight.js:
-        specifier: ^11.9.0
-        version: 11.11.1
-      iarna-toml-esm:
-        specifier: ^3.0.5
-        version: 3.0.5
-      ibantools:
-        specifier: ^4.3.8
-        version: 4.5.1
-      js-base64:
-        specifier: ^3.7.6
-        version: 3.7.8
-      json5:
-        specifier: ^2.2.3
-        version: 2.2.3
-      jwt-decode:
-        specifier: ^4.0.0
-        version: 4.0.0
-      libphonenumber-js:
-        specifier: ^1.12.24
-        version: 1.12.26
-      lodash:
-        specifier: ^4.17.21
-        version: 4.17.21
-      marked:
-        specifier: ^16.0.0
-        version: 16.4.2
-      mathjs:
-        specifier: ^14.8.1
-        version: 14.9.1
-      mime-types:
-        specifier: ^3.0.0
-        version: 3.0.1
-      monaco-editor:
-        specifier: ^0.54.0
-        version: 0.54.0
-      naive-ui:
-        specifier: ^2.42.0
-        version: 2.43.1(vue@3.5.24(typescript@5.9.3))
-      netmask:
-        specifier: ^2.0.2
-        version: 2.0.2
-      node-forge:
-        specifier: ^1.3.1
-        version: 1.3.1
-      oui-data:
-        specifier: ^1.1.467
-        version: 1.1.468
-      pdf-signature-reader:
-        specifier: ^1.4.2
-        version: 1.4.3
-      pinia:
-        specifier: ^3.0.2
-        version: 3.0.4(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3))
       plausible-tracker:
         specifier: ^0.3.8
         version: 0.3.9
-      qrcode:
-        specifier: ^1.5.4
-        version: 1.5.4
-      sql-formatter:
-        specifier: ^15.6.2
-        version: 15.6.10
-      ua-parser-js:
-        specifier: ^2.0.1
-        version: 2.0.6
-      ulid:
-        specifier: ^2.4.0
-        version: 2.4.0
-      unicode-emoji-json:
-        specifier: ^0.7.0
-        version: 0.7.0
-      unplugin-auto-import:
-        specifier: ^19.1.1
-        version: 19.3.0(@vueuse/core@13.9.0(vue@3.5.24(typescript@5.9.3)))
-      uuid:
-        specifier: ^11.0.4
-        version: 11.1.0
-      vue:
-        specifier: ^3.5.23
-        version: 3.5.24(typescript@5.9.3)
-      vue-i18n:
-        specifier: ^11.1.10
-        version: 11.1.12(vue@3.5.24(typescript@5.9.3))
-      vue-router:
-        specifier: ^4.6.1
-        version: 4.6.3(vue@3.5.24(typescript@5.9.3))
-      vue-tsc:
-        specifier: ^3.1.1
-        version: 3.1.3(typescript@5.9.3)
-      xml-formatter:
-        specifier: ^3.6.4
-        version: 3.6.7
-      xml-js:
-        specifier: ^1.6.11
-        version: 1.6.11
-      yaml:
-        specifier: ^2.7.0
-        version: 2.8.1
-      zod:
-        specifier: ^4.1.12
-        version: 4.1.12
-    devDependencies:
-      '@antfu/eslint-config':
-        specifier: ^5.3.0
-        version: 5.4.1(@unocss/eslint-plugin@66.5.6(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3))(@vue/compiler-sfc@3.5.24)(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)(vitest@4.0.8(@types/debug@4.1.12)(@types/node@20.19.25)(jiti@2.6.1)(jsdom@23.2.0)(less@4.4.2)(terser@5.44.1)(yaml@2.8.1))
-      '@iconify-json/mdi':
-        specifier: ^1.1.64
-        version: 1.2.3
-      '@intlify/unplugin-vue-i18n':
-        specifier: ^11.0.1
-        version: 11.0.1(@vue/compiler-dom@3.5.24)(eslint@9.39.1(jiti@2.6.1))(rollup@2.79.2)(typescript@5.9.3)(vue-i18n@11.1.12(vue@3.5.24(typescript@5.9.3)))(vue@3.5.24(typescript@5.9.3))
-      '@playwright/test':
-        specifier: ^1.56.1
-        version: 1.56.1
-      '@rushstack/eslint-patch':
-        specifier: ^1.15.0
-        version: 1.15.0
-      '@tsconfig/node18':
-        specifier: ^18.2.4
-        version: 18.2.4
-      '@types/bcryptjs':
-        specifier: ^3.0.0
-        version: 3.0.0
-      '@types/crypto-js':
-        specifier: ^4.2.0
-        version: 4.2.2
-      '@types/dompurify':
-        specifier: ^3.2.0
-        version: 3.2.0
-      '@types/jsdom':
-        specifier: ^27.0.0
-        version: 27.0.0
-      '@types/lodash':
-        specifier: ^4.17.20
-        version: 4.17.20
-      '@types/mime-types':
-        specifier: ^3.0.0
-        version: 3.0.1
-      '@types/netmask':
-        specifier: ^2.0.2
-        version: 2.0.5
-      '@types/node':
-        specifier: ^20.10.5
-        version: 20.19.25
-      '@types/node-forge':
-        specifier: ^1.3.1
-        version: 1.3.14
-      '@types/qrcode':
-        specifier: ^1.5.4
-        version: 1.5.6
-      '@types/ua-parser-js':
-        specifier: ^0.7.39
-        version: 0.7.39
-      '@types/uuid':
-        specifier: ^11.0.0
-        version: 11.0.0
-      '@unocss/eslint-config':
-        specifier: ^66.5.1
-        version: 66.5.6(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)
-      '@vitejs/plugin-vue':
-        specifier: ^5.0.3
-        version: 5.2.4(vite@6.4.1(@types/node@20.19.25)(jiti@2.6.1)(less@4.4.2)(terser@5.44.1)(yaml@2.8.1))(vue@3.5.24(typescript@5.9.3))
-      '@vitejs/plugin-vue-jsx':
-        specifier: ^4.0.1
-        version: 4.2.0(vite@6.4.1(@types/node@20.19.25)(jiti@2.6.1)(less@4.4.2)(terser@5.44.1)(yaml@2.8.1))(vue@3.5.24(typescript@5.9.3))
-      '@vue/compiler-sfc':
-        specifier: ^3.5.23
-        version: 3.5.24
-      '@vue/runtime-dom':
-        specifier: ^3.5.23
-        version: 3.5.24
-      '@vue/test-utils':
-        specifier: ^2.4.6
-        version: 2.4.6
-      '@vue/tsconfig':
-        specifier: ^0.8.1
-        version: 0.8.1(typescript@5.9.3)(vue@3.5.24(typescript@5.9.3))
-      consola:
-        specifier: ^3.2.3
-        version: 3.4.2
-      eslint:
-        specifier: ^9.38.0
-        version: 9.39.1(jiti@2.6.1)
-      hygen:
-        specifier: ^6.2.11
-        version: 6.2.11
-      jsdom:
-        specifier: ^23.2.0
-        version: 23.2.0
-      less:
-        specifier: ^4.4.0
-        version: 4.4.2
-      prettier:
-        specifier: ^3.6.2
-        version: 3.6.2
-      typescript:
-        specifier: ~5.9.3
-        version: 5.9.3
-      unocss:
-        specifier: ^66.5.3
-        version: 66.5.6(postcss@8.5.6)(vite@6.4.1(@types/node@20.19.25)(jiti@2.6.1)(less@4.4.2)(terser@5.44.1)(yaml@2.8.1))
-      unocss-preset-scrollbar:
-        specifier: ^3.2.0
-        version: 3.2.0(unocss@66.5.6(postcss@8.5.6)(vite@6.4.1(@types/node@20.19.25)(jiti@2.6.1)(less@4.4.2)(terser@5.44.1)(yaml@2.8.1)))
-      unplugin-icons:
-        specifier: ^22.1.0
-        version: 22.5.0(@vue/compiler-sfc@3.5.24)
-      unplugin-vue-components:
-        specifier: ^28.7.0
-        version: 28.8.0(@babel/parser@7.28.5)(vue@3.5.24(typescript@5.9.3))
-      vite:
-        specifier: ^6.4.1
-        version: 6.4.1(@types/node@20.19.25)(jiti@2.6.1)(less@4.4.2)(terser@5.44.1)(yaml@2.8.1)
       vite-plugin-pwa:
         specifier: ^1.0.1
         version: 1.1.0(vite@6.4.1(@types/node@20.19.25)(jiti@2.6.1)(less@4.4.2)(terser@5.44.1)(yaml@2.8.1))(workbox-build@7.3.0)(workbox-window@7.3.0)
-      vite-plugin-vue-markdown:
-        specifier: ^0.23.8
-        version: 0.23.8(rollup@2.79.2)(vite@6.4.1(@types/node@20.19.25)(jiti@2.6.1)(less@4.4.2)(terser@5.44.1)(yaml@2.8.1))
-      vite-svg-loader:
-        specifier: ^5.1.0
-        version: 5.1.0(vue@3.5.24(typescript@5.9.3))
-      vitest:
-        specifier: ^4.0.2
-        version: 4.0.8(@types/debug@4.1.12)(@types/node@20.19.25)(jiti@2.6.1)(jsdom@23.2.0)(less@4.4.2)(terser@5.44.1)(yaml@2.8.1)
+    devDependencies:
       workbox-window:
         specifier: ^7.0.0
         version: 7.3.0
-      zx:
-        specifier: ^8.8.1
-        version: 8.8.5
 
 packages:
 
@@ -2299,9 +1785,6 @@ packages:
   '@types/figlet@1.7.0':
     resolution: {integrity: sha512-KwrT7p/8Eo3Op/HBSIwGXOsTZKYiM9NpWRBJ5sVjWP/SmlS+oxxRvJht/FNAtliJvja44N3ul1yATgohnVBV0Q==}
 
-  '@types/jsdom@27.0.0':
-    resolution: {integrity: sha512-NZyFl/PViwKzdEkQg96gtnB8wm+1ljhdDay9ahn4hgb+SfVtPCbm3TlmDUFXTA+MGN3CijicnMhG18SI5H3rFw==}
-
   '@types/json-schema@7.0.15':
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
 
@@ -2358,9 +1841,6 @@ packages:
 
   '@types/resolve@1.20.2':
     resolution: {integrity: sha512-60BCwRFOZCQhDncwQdxxeOEEkbc5dIMccYLwbxsS4TUNeVECQ/pBJ0j09mrHOl/JJvpRPGwO9SvE4nR2Nb/a4Q==}
-
-  '@types/tough-cookie@4.0.5':
-    resolution: {integrity: sha512-/Ad8+nIOV7Rl++6f1BdKxFSMgmoqEoYbHRpPcx3JEfv8VRsQe9Z4mCXeJBzxs7mbHY/XOZZuXlRNfhpVPbs6ZA==}
 
   '@types/trusted-types@2.0.7':
     resolution: {integrity: sha512-ScaPdn1dQczgbl0QFTeTOmVHFULt394XJgOQNoyVhZ6r2vLnMLJfBPd53SB52T/3G36VI1/g2MZaX0cwDuXsfw==}
@@ -2471,8 +1951,8 @@ packages:
     resolution: {integrity: sha512-awJSz9i1W6KpviNT+0l+xqHouW9naWg/ksiu/Dkko1QHo8a3RCJwZ/W6MBBOjQqbFNPPcD7f+6ffTMm+jXHsaw==}
     engines: {node: '>=14'}
 
-  '@unocss/core@65.5.0':
-    resolution: {integrity: sha512-XYWdS09M2XOjZNDotGhI2TIW/6duLNiyssopwjCbv4AlPklF0bZI86SKI55syYDBt6GRadoQbuvUkhSiTV/hzQ==}
+  '@unocss/core@0.56.5':
+    resolution: {integrity: sha512-fx5VhOjSHn0HdV2D34pEwFMAHJcJQRTCp1xEE4GzxY1irXzaa+m2aYf5PZjmDxehiOC16IH7TO9FOWANXk1E0w==}
 
   '@unocss/core@66.5.6':
     resolution: {integrity: sha512-9hmpPXLi41YFTPexi7cT57PRWCgwtGLa1QHlPvRgx2kqjYicy7zEDylIY2ObwQien75VCDOcGpmQ/5XdZ473Rg==}
@@ -2485,8 +1965,8 @@ packages:
     resolution: {integrity: sha512-+muBcp6cerCUu2p3XfYsxZipc53Mj0AimNPb2P7a+DCBAYZMeJr9NGFyN05+tGy8VlwoIE61Qu1NI4uNyJKaxw==}
     engines: {node: '>=14'}
 
-  '@unocss/extractor-arbitrary-variants@65.5.0':
-    resolution: {integrity: sha512-7K3gftOdkv9jbWvbkExTcx6/FDP2Xk/NSsOYTvR9oITLnLjmdQvp+9276WSnNfKF3frBl8ZcqpkC2EsuL2Yutw==}
+  '@unocss/extractor-arbitrary-variants@0.56.5':
+    resolution: {integrity: sha512-p2pyzz/ONvc5CGcaB9OZvWE8qkRSgyuhaQqFQLdBFeUhveHC0CGP0iSnXwBgAFHWM7DJo4/JpWeZ+mBt0ogVLA==}
 
   '@unocss/extractor-arbitrary-variants@66.5.6':
     resolution: {integrity: sha512-QAzpkX5UPjTeRbA7eed+mVPGNkwnMrIgfmlV9l8GVXHJCEnroRkzDVOPv1G9bKw1T82+NjBeZT9VnbZOmpLXQA==}
@@ -2506,8 +1986,8 @@ packages:
   '@unocss/preset-icons@66.5.6':
     resolution: {integrity: sha512-VP9n/KPWfIUFlr3xrx+1NFZJEy+VlqWCi+h6EciLCjNh2oCP1hznh8M6dqirsK5WVaZSau2VsK5Ci4Uf08mGWw==}
 
-  '@unocss/preset-mini@65.5.0':
-    resolution: {integrity: sha512-oD2INmEgTOxmFsVceflv4Zs67vz9PRbpg3+CMsJLWgfX4UdQ1H4jZms72+g3N1hhXBvOFwvGvqGaMnrVMRk54g==}
+  '@unocss/preset-mini@0.56.5':
+    resolution: {integrity: sha512-/KhlThhs1ilauM7MwRSpahLbIPZ5VGeGvaUsU8+ZlNT3sis4yoVYkPtR14tL2IT6jhOU05N/uu3aBj+1bP8GjQ==}
 
   '@unocss/preset-mini@66.5.6':
     resolution: {integrity: sha512-HNCqsGlaKl572eu+lfVpLjid7aRIasxCm8qry8Dr1gGjG2XMx9uf+N3KRFsqlW5RU4WGtfvFaqmT+/KDIM7g0w==}
@@ -2536,8 +2016,8 @@ packages:
   '@unocss/reset@66.5.6':
     resolution: {integrity: sha512-FX9X20vk6zTMATINxB1P8ZE3pr5Aa2sk7vfyBb/g1WWQ/D0FBnwvejMf5wjZqwVm5LEMbYP31whrbwfFFlzSCA==}
 
-  '@unocss/rule-utils@65.5.0':
-    resolution: {integrity: sha512-xT4N0EY1dl1mqY5gTKD0H/Fg6xApe7xbfNTUwctOu02DMeJhqv9BTqfoAihH/hzGSI69+FtzVtz7hUxTypfehA==}
+  '@unocss/rule-utils@0.56.5':
+    resolution: {integrity: sha512-CXIGHCIC9B8WUl9KbbFMSZHcsIgfmI/+X0bjBv6xrgBVC1EQ2Acq4PYnJIbaRGBRAhl9wYjNL7Zq2UWOdowHAw==}
     engines: {node: '>=14'}
 
   '@unocss/rule-utils@66.5.6':
@@ -5537,10 +5017,10 @@ packages:
     resolution: {integrity: sha512-gptHNQghINnc/vTGIk0SOFGFNXw7JVrlRUtConJRlvaw6DuX0wO5Jeko9sWrMBhh+PsYAZ7oXAiOnf/UKogyiw==}
     engines: {node: '>= 10.0.0'}
 
-  unocss-preset-scrollbar@3.2.0:
-    resolution: {integrity: sha512-j8BOoh2RgPm2U8XqEjMQ+XQk4YWYPH4T+yzv3fndxS+VpdizQinMvHmfsZGLN3yMv7I4O5Qi8fVTlQDhETyzbA==}
+  unocss-preset-scrollbar@0.3.1:
+    resolution: {integrity: sha512-LhvcQA1cfwq06sqAZY++1crrLsOf/IfOPdyCkMHVyywI9WCvMhxCJlCcrySlQI8/Y2VUjOpLBDWB0w3DXS5qRA==}
     peerDependencies:
-      unocss: '>= 0.31.13'
+      unocss: '>= 0.31.13 < 1'
 
   unocss@66.5.6:
     resolution: {integrity: sha512-8ix8Cl09LNd1QdC2b22FJ5WbyBaNZ2Q0oJ3yhjj2AEe75A8pMBpb8Khd01b4coRillEzuBNBIP+fIpeot0/8EQ==}
@@ -6005,11 +5485,6 @@ packages:
 
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
-
-  zx@8.8.5:
-    resolution: {integrity: sha512-SNgDF5L0gfN7FwVOdEFguY3orU5AkfFZm9B5YSHog/UDHv+lvmd82ZAsOenOkQixigwH2+yyH198AwNdKhj+RA==}
-    engines: {node: '>= 12.17.0'}
-    hasBin: true
 
 snapshots:
 
@@ -6757,7 +6232,7 @@ snapshots:
     dependencies:
       '@babel/code-frame': 7.27.1
       '@babel/generator': 7.28.5
-      '@babel/parser': 7.27.7
+      '@babel/parser': 7.28.5
       '@babel/template': 7.27.2
       '@babel/types': 7.28.5
       debug: 4.4.3
@@ -7064,30 +6539,6 @@ snapshots:
       source-map-js: 1.2.1
 
   '@intlify/shared@11.1.12': {}
-
-  '@intlify/unplugin-vue-i18n@11.0.1(@vue/compiler-dom@3.5.24)(eslint@9.39.1(jiti@2.6.1))(rollup@2.79.2)(typescript@5.9.3)(vue-i18n@11.1.12(vue@3.5.24(typescript@5.9.3)))(vue@3.5.24(typescript@5.9.3))':
-    dependencies:
-      '@eslint-community/eslint-utils': 4.9.0(eslint@9.39.1(jiti@2.6.1))
-      '@intlify/bundle-utils': 11.0.1(vue-i18n@11.1.12(vue@3.5.24(typescript@5.9.3)))
-      '@intlify/shared': 11.1.12
-      '@intlify/vue-i18n-extensions': 8.0.0(@intlify/shared@11.1.12)(@vue/compiler-dom@3.5.24)(vue-i18n@11.1.12(vue@3.5.24(typescript@5.9.3)))(vue@3.5.24(typescript@5.9.3))
-      '@rollup/pluginutils': 5.3.0(rollup@2.79.2)
-      '@typescript-eslint/scope-manager': 8.46.4
-      '@typescript-eslint/typescript-estree': 8.46.4(typescript@5.9.3)
-      debug: 4.4.3
-      fast-glob: 3.3.3
-      pathe: 2.0.3
-      picocolors: 1.1.1
-      unplugin: 2.3.10
-      vue: 3.5.24(typescript@5.9.3)
-    optionalDependencies:
-      vue-i18n: 11.1.12(vue@3.5.24(typescript@5.9.3))
-    transitivePeerDependencies:
-      - '@vue/compiler-dom'
-      - eslint
-      - rollup
-      - supports-color
-      - typescript
 
   '@intlify/unplugin-vue-i18n@11.0.1(@vue/compiler-dom@3.5.24)(eslint@9.39.1(jiti@2.6.1))(rollup@4.53.2)(typescript@5.9.3)(vue-i18n@11.1.12(vue@3.5.24(typescript@5.9.3)))(vue@3.5.24(typescript@5.9.3))':
     dependencies:
@@ -7562,12 +7013,6 @@ snapshots:
 
   '@types/figlet@1.7.0': {}
 
-  '@types/jsdom@27.0.0':
-    dependencies:
-      '@types/node': 20.19.25
-      '@types/tough-cookie': 4.0.5
-      parse5: 7.3.0
-
   '@types/json-schema@7.0.15': {}
 
   '@types/katex@0.16.7': {}
@@ -7621,8 +7066,6 @@ snapshots:
       '@types/node': 20.19.25
 
   '@types/resolve@1.20.2': {}
-
-  '@types/tough-cookie@4.0.5': {}
 
   '@types/trusted-types@2.0.7': {}
 
@@ -7786,7 +7229,7 @@ snapshots:
       '@unocss/core': 66.5.6
       unconfig: 7.4.1
 
-  '@unocss/core@65.5.0': {}
+  '@unocss/core@0.56.5': {}
 
   '@unocss/core@66.5.6': {}
 
@@ -7811,9 +7254,9 @@ snapshots:
       - supports-color
       - typescript
 
-  '@unocss/extractor-arbitrary-variants@65.5.0':
+  '@unocss/extractor-arbitrary-variants@0.56.5':
     dependencies:
-      '@unocss/core': 65.5.0
+      '@unocss/core': 0.56.5
 
   '@unocss/extractor-arbitrary-variants@66.5.6':
     dependencies:
@@ -7849,11 +7292,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@unocss/preset-mini@65.5.0':
+  '@unocss/preset-mini@0.56.5':
     dependencies:
-      '@unocss/core': 65.5.0
-      '@unocss/extractor-arbitrary-variants': 65.5.0
-      '@unocss/rule-utils': 65.5.0
+      '@unocss/core': 0.56.5
+      '@unocss/extractor-arbitrary-variants': 0.56.5
+      '@unocss/rule-utils': 0.56.5
 
   '@unocss/preset-mini@66.5.6':
     dependencies:
@@ -7899,10 +7342,9 @@ snapshots:
 
   '@unocss/reset@66.5.6': {}
 
-  '@unocss/rule-utils@65.5.0':
+  '@unocss/rule-utils@0.56.5':
     dependencies:
-      '@unocss/core': 65.5.0
-      magic-string: 0.30.21
+      '@unocss/core': 0.56.5
 
   '@unocss/rule-utils@66.5.6':
     dependencies:
@@ -9162,7 +8604,7 @@ snapshots:
 
   execa@5.1.1:
     dependencies:
-      cross-spawn: 7.0.3
+      cross-spawn: 7.0.6
       get-stream: 6.0.1
       human-signals: 2.1.0
       is-stream: 2.0.1
@@ -11416,9 +10858,9 @@ snapshots:
 
   universalify@2.0.1: {}
 
-  unocss-preset-scrollbar@3.2.0(unocss@66.5.6(postcss@8.5.6)(vite@6.4.1(@types/node@20.19.25)(jiti@2.6.1)(less@4.4.2)(terser@5.44.1)(yaml@2.8.1))):
+  unocss-preset-scrollbar@0.3.1(unocss@66.5.6(postcss@8.5.6)(vite@6.4.1(@types/node@20.19.25)(jiti@2.6.1)(less@4.4.2)(terser@5.44.1)(yaml@2.8.1))):
     dependencies:
-      '@unocss/preset-mini': 65.5.0
+      '@unocss/preset-mini': 0.56.5
       unocss: 66.5.6(postcss@8.5.6)(vite@6.4.1(@types/node@20.19.25)(jiti@2.6.1)(less@4.4.2)(terser@5.44.1)(yaml@2.8.1))
 
   unocss@66.5.6(postcss@8.5.6)(vite@6.4.1(@types/node@20.19.25)(jiti@2.6.1)(less@4.4.2)(terser@5.44.1)(yaml@2.8.1)):
@@ -11546,19 +10988,6 @@ snapshots:
       workbox-window: 7.3.0
     transitivePeerDependencies:
       - supports-color
-
-  vite-plugin-vue-markdown@0.23.8(rollup@2.79.2)(vite@6.4.1(@types/node@20.19.25)(jiti@2.6.1)(less@4.4.2)(terser@5.44.1)(yaml@2.8.1)):
-    dependencies:
-      '@antfu/utils': 0.7.10
-      '@mdit-vue/plugin-component': 0.12.1
-      '@mdit-vue/plugin-frontmatter': 0.12.1
-      '@mdit-vue/types': 0.12.0
-      '@rollup/pluginutils': 5.3.0(rollup@2.79.2)
-      '@types/markdown-it': 13.0.9
-      markdown-it: 13.0.2
-      vite: 6.4.1(@types/node@20.19.25)(jiti@2.6.1)(less@4.4.2)(terser@5.44.1)(yaml@2.8.1)
-    transitivePeerDependencies:
-      - rollup
 
   vite-plugin-vue-markdown@0.23.8(rollup@4.53.2)(vite@6.4.1(@types/node@20.19.25)(jiti@2.6.1)(less@4.4.2)(terser@5.44.1)(yaml@2.8.1)):
     dependencies:
@@ -11978,5 +11407,3 @@ snapshots:
   zod@4.1.12: {}
 
   zwitch@2.0.4: {}
-
-  zx@8.8.5: {}

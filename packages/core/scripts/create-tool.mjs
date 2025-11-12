@@ -39,8 +39,7 @@ createToolFile(
 </script>
 
 <style lang="less" scoped>
-</style>
-`,
+</style>`,
 );
 
 createToolFile(

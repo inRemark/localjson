@@ -17,7 +17,11 @@ const { stdout: rawCommits } = await $`git log --pretty=oneline $(git describe -
 
 const markdown = rawCommitsToMarkdown({ rawCommits });
 
-consola.info(`Changelog: \n\n${markdown}\n\n`);
+consola.info(`Changelog: 
+
+${markdown}
+
+`);
 
 if (isDryRun) {
   consola.info(`[dry-run] Not creating version nor tag`);

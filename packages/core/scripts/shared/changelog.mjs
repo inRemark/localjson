@@ -1,4 +1,4 @@
-import { readFile, writeFile } from 'node:fs/promises';
+import { readFile, writeFile } from 'fs/promises';
 
 export { addToChangelog };
 
@@ -10,6 +10,10 @@ async function addToChangelog({ changelog, version, changelogPath = './CHANGELOG
     throw new Error(`Version ${version} already exists in the changelog`);
   }
 
-  const newChangeLogContent = changelogContent.replace('## ', `${versionTitle}\n\n${changelog}\n\n## `);
+  const newChangeLogContent = changelogContent.replace('## ', `${versionTitle}
+
+${changelog}
+
+## `);
   await writeFile(changelogPath, newChangeLogContent, 'utf-8');
 }
