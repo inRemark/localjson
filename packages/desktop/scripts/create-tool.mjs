@@ -1,6 +1,6 @@
-import { mkdir, readFile, writeFile } from 'fs/promises';
-import { dirname, join } from 'path';
-import { fileURLToPath } from 'url';
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
+import { dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 const currentDirname = dirname(fileURLToPath(import.meta.url));
 
@@ -9,10 +9,10 @@ const toolsDir = join(currentDirname, '..', 'src', 'tools');
 const toolName = process.argv[2];
 
 if (!toolName) {
-  throw new Error('Please specify a toolname.');
+  throw new Error('Please specify a tool name.');
 }
 
-const toolNameCamelCase = toolName.replace(/-./g, (x) => x[1].toUpperCase());
+const toolNameCamelCase = toolName.replaceAll(/-./g, (x) => x[1].toUpperCase());
 const toolNameTitleCase = toolName[0].toUpperCase() + toolName.slice(1).replace(/-/g, ' ');
 const toolDir = join(toolsDir, toolName);
 

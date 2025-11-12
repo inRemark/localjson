@@ -1,6 +1,6 @@
 {
   "extends": "@vue/tsconfig/tsconfig.json",
-  "include": ["env.d.ts", "src/**/*", "src/**/*.vue", "**/*.d.ts", "node_modules/vite-plugin-pwa/client.d.ts", "wailsjs", "../**/*.ts", "../**/*.vue"],
+  "include": ["env.d.ts", "src/**/*", "src/**/*.vue", "**/*.d.ts", "wailsjs", "../**/*.ts", "../**/*.vue"],
   "exclude": ["src/**/__tests__/*", "../**/node_modules/**", "../**/dist/**"],
   "compilerOptions": {
     "lib": ["ES2022"],

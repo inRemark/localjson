@@ -9,21 +9,16 @@ import { plausible } from '@/core/plugins/plausible.plugin';
 import 'virtual:uno.css';
 
 import { naive } from '@/core/plugins/naive.plugin';
-
-// 导入核心应用
 import App from '@/core/App.vue';
-
-// 导入并设置 Web 适配器
 import { setPlatformAdapter, webAdapter } from '@/core/adapters';
 
-// 导入路由配置
-import { routes } from './router';
 import { i18nPlugin } from '@/core/plugins/i18n.plugin';
 import { config } from '@/core/config';
 
+import { routes } from './router';
 registerSW();
 
-// 初始化平台适配器
+// initialize platform adapter
 setPlatformAdapter(webAdapter);
 
 const app = createApp(App);
@@ -32,7 +27,10 @@ app.use(createPinia());
 app.use(createHead());
 app.use(i18nPlugin);
 
-// 创建路由（Web 使用 history 模式）
+/**
+ * Create router (Web uses hash mode)
+ * TODO: Consider whether to support history mode
+ */
 const router = createRouter({
   history: createWebHistory(config.app.baseUrl),
   routes,
@@ -43,7 +41,6 @@ app.use(plausible);
 
 app.mount('#app');
 
-// 开发环境日志
 if (import.meta.env.DEV) {
   console.log('[Web] Application started');
   console.log('[Web] Platform adapter:', webAdapter.type);

@@ -36,9 +36,9 @@
     "release": "node ./scripts/release.mjs"
   },
   "dependencies": {
-    "@localjson/core": "workspace:*",
     "@it-tools/bip39": "^0.0.4",
     "@it-tools/oggen": "^1.3.0",
+    "@localjson/core": "workspace:*",
     "@sindresorhus/slugify": "^3.0.0",
     "@tiptap/pm": "^3.10.2",
     "@tiptap/starter-kit": "^3.10.2",
@@ -136,7 +136,6 @@
     "unplugin-icons": "^22.1.0",
     "unplugin-vue-components": "^28.7.0",
     "vite": "^6.4.1",
-    "vite-plugin-pwa": "^1.0.1",
     "vite-plugin-vue-markdown": "^0.23.8",
     "vite-svg-loader": "^5.1.0",
     "vitest": "^4.0.2",

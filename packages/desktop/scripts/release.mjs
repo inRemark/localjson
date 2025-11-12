@@ -10,7 +10,7 @@ const isDryRun = argv['dry-run'] ?? false;
 const now = new Date();
 const currentShortSha = (await $`git rev-parse --short HEAD`).stdout.trim();
 
-const calver = now.toISOString().slice(0, 10).replace(/-/g, '.');
+const calver = now.toISOString().slice(0, 10).replaceAll('-', '.');
 const version = `${calver}-${currentShortSha}`;
 
 const { stdout: rawCommits } = await $`git log --pretty=oneline $(git describe --tags --abbrev=0)..HEAD`;
