@@ -17,6 +17,7 @@ export default defineConfig({
     presetScrollbar({
       scrollbarTrackColor: 'rgb(229 229 229)',
       scrollbarThumbColor: 'rgb(209 213 219)',
+      noCompatible: false, // Enable compatibility mode
     }),
   ],
   transformers: [transformerDirectives(), transformerVariantGroup()],

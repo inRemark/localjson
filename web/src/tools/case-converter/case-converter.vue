@@ -4,19 +4,15 @@ import {
   capitalCase,
   constantCase,
   dotCase,
-  headerCase,
+  trainCase,
   noCase,
-  paramCase,
+  kebabCase,
   pascalCase,
   pathCase,
   sentenceCase,
   snakeCase,
 } from 'change-case';
 import InputCopyable from '../../components/InputCopyable.vue';
-
-const baseConfig = {
-  stripRegexp: /[^A-Za-zÀ-ÖØ-öø-ÿ]+/gi,
-};
 
 const input = ref('lorem ipsum dolor sit amet');
 
@@ -31,47 +27,47 @@ const formats = computed(() => [
   },
   {
     label: 'Camelcase:',
-    value: camelCase(input.value, baseConfig),
+    value: camelCase(input.value),
   },
   {
     label: 'Capitalcase:',
-    value: capitalCase(input.value, baseConfig),
+    value: capitalCase(input.value),
   },
   {
     label: 'Constantcase:',
-    value: constantCase(input.value, baseConfig),
+    value: constantCase(input.value),
   },
   {
     label: 'Dotcase:',
-    value: dotCase(input.value, baseConfig),
+    value: dotCase(input.value),
   },
   {
     label: 'Headercase:',
-    value: headerCase(input.value, baseConfig),
+    value: trainCase(input.value),
   },
   {
     label: 'Nocase:',
-    value: noCase(input.value, baseConfig),
+    value: noCase(input.value),
   },
   {
     label: 'Paramcase:',
-    value: paramCase(input.value, baseConfig),
+    value: kebabCase(input.value),
   },
   {
     label: 'Pascalcase:',
-    value: pascalCase(input.value, baseConfig),
+    value: pascalCase(input.value),
   },
   {
     label: 'Pathcase:',
-    value: pathCase(input.value, baseConfig),
+    value: pathCase(input.value),
   },
   {
     label: 'Sentencecase:',
-    value: sentenceCase(input.value, baseConfig),
+    value: sentenceCase(input.value),
   },
   {
     label: 'Snakecase:',
-    value: snakeCase(input.value, baseConfig),
+    value: snakeCase(input.value),
   },
   {
     label: 'Mockingcase:',
@@ -83,9 +79,9 @@ const formats = computed(() => [
 ]);
 
 const inputLabelAlignmentConfig = {
-  labelPosition: 'left',
+  labelPosition: 'left' as const,
   labelWidth: '120px',
-  labelAlign: 'right',
+  labelAlign: 'right' as const,
 };
 </script>
 
