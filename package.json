@@ -1,4 +1,17 @@
 {
+	"name": "localjson-monorepo",
+	"version": "3.0.1",
+	"private": true,
+	"scripts": {
+		"dev:desktop": "pnpm --filter @localjson/desktop dev",
+		"dev:web": "pnpm --filter @localjson/web dev",
+		"build:desktop": "pnpm --filter @localjson/desktop build",
+		"build:web": "pnpm --filter @localjson/web build",
+		"wails:dev": "wails dev",
+		"wails:build": "wails build",
+		"lint": "pnpm -r lint",
+		"type-check": "pnpm -r type-check"
+	},
 	"devDependencies": {
 		"cross-env": "^7.0.3"
 	},
