@@ -2,14 +2,14 @@
   "type": "module",
   "name": "@localjson/desktop",
   "version": "3.0.1",
-  "description": "Collection of handy online tools for developers, with great UX. ",
+  "description": "Desktop application with collection of handy tools for developers, built with Wails.",
   "keywords": [
     "productivity",
     "converter",
-    "website",
+    "desktop-app",
+    "wails",
     "vuejs",
     "tools",
-    "frontend",
     "tool",
     "developer-tools",
     "developer-productivity"
@@ -26,14 +26,9 @@
     "preview": "vite preview --port 5050",
     "test": "npm run test:unit",
     "test:unit": "vitest --environment jsdom",
-    "test:e2e": "playwright test",
-    "test:e2e:dev": "BASE_URL=http://localhost:5173 NO_WEB_SERVER=true playwright test",
     "coverage": "vitest run --coverage",
     "typecheck": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
-    "lint": "eslint src --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --ignore-path .gitignore",
-    "script:create:tool": "node scripts/create-tool.mjs",
-    "script:create:ui": "hygen generator ui-component",
-    "release": "node ./scripts/release.mjs"
+    "lint": "eslint src --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --ignore-path .gitignore"
   },
   "dependencies": {
     "@it-tools/bip39": "^0.0.4",
@@ -102,7 +97,6 @@
     "@antfu/eslint-config": "^5.3.0",
     "@iconify-json/mdi": "^1.1.64",
     "@intlify/unplugin-vue-i18n": "^11.0.1",
-    "@playwright/test": "^1.56.1",
     "@rushstack/eslint-patch": "^1.15.0",
     "@tsconfig/node18": "^18.2.4",
     "@types/bcryptjs": "^3.0.0",
@@ -139,7 +133,6 @@
     "vite-plugin-vue-markdown": "^0.23.8",
     "vite-svg-loader": "^5.1.0",
     "vitest": "^4.0.2",
-    "workbox-window": "^7.0.0",
     "zx": "^8.8.1"
   }
 }
