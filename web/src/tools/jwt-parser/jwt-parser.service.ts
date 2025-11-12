@@ -1,4 +1,4 @@
-import jwtDecode, { type JwtHeader, type JwtPayload } from 'jwt-decode';
+import { jwtDecode, type JwtHeader, type JwtPayload } from 'jwt-decode';
 import _ from 'lodash';
 import { ALGORITHM_DESCRIPTIONS, CLAIM_DESCRIPTIONS } from './jwt-parser.constants';
 

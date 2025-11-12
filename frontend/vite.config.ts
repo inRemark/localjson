@@ -12,7 +12,8 @@ import { NaiveUiResolver } from 'unplugin-vue-components/resolvers';
 import Components from 'unplugin-vue-components/vite';
 import { defineConfig } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
-import markdown from 'vite-plugin-vue-markdown';
+// @ts-ignore - vite-plugin-vue-markdown has type definition issues
+import VitePluginMarkdown from 'vite-plugin-vue-markdown';
 import svgLoader from 'vite-svg-loader';
 import { configDefaults } from 'vitest/config';
 
@@ -23,7 +24,6 @@ export default defineConfig({
   plugins: [
     VueI18n({
       runtimeOnly: true,
-      jitCompilation: true,
       compositionOnly: true,
       fullInstall: true,
       strictMessage: false,
@@ -51,11 +51,15 @@ export default defineConfig({
       include: [/\.vue$/, /\.md$/],
     }),
     vueJsx(),
-    markdown(),
+    // @ts-ignore - vite-plugin-vue-markdown has type definition issues
+    VitePluginMarkdown(),
     svgLoader(),
     VitePWA({
       registerType: 'autoUpdate',
       strategies: 'generateSW',
+      workbox: {
+        maximumFileSizeToCacheInBytes: 5 * 1024 * 1024, // 5 MB
+      },
       manifest: {
         name: 'LocalJson',
         description: 'Aggregated set of useful tools for developers.',
