@@ -129,6 +129,22 @@ export default defineConfig({
     },
     extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json', '.vue'],
   },
+  optimizeDeps: {
+    include: [
+      'qrcode',
+      'mime-types',
+      'json5',
+      'pdf-signature-reader',
+      'highlight.js/lib/languages/javascript',
+      'highlight.js/lib/languages/python',
+      'highlight.js/lib/languages/sql',
+      'highlight.js/lib/languages/xml',
+      'highlight.js/lib/languages/yaml',
+      'highlight.js/lib/languages/ini',
+      'ulid',
+      '@it-tools/bip39',
+    ],
+  },
   define: {
     'import.meta.env.PACKAGE_VERSION': JSON.stringify(process.env.npm_package_version),
   },
