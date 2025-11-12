@@ -8,10 +8,10 @@ export class WebPlatformAdapter implements PlatformAdapter {
   }
 
   async saveFile(filename: string, content: string, mimeType?: string): Promise<void> {
-    // 创建下载链接
+    // Create a download link
     const link = document.createElement('a');
     
-    // 判断是否为 Base64 数据
+    // Check if the content is Base64 data
     if (content.startsWith('data:')) {
       link.href = content;
     } else {
@@ -23,8 +23,8 @@ export class WebPlatformAdapter implements PlatformAdapter {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-    
-    // 清理 Object URL
+
+    // Clean up Object URL
     if (link.href.startsWith('blob:')) {
       URL.revokeObjectURL(link.href);
     }
@@ -97,7 +97,7 @@ export class WebPlatformAdapter implements PlatformAdapter {
   }
 
   showNotification(title: string, message: string): void {
-    if ('Notification' in window && Notification.permission === 'granted') {
+    if ('Notification' in globalThis && Notification.permission === 'granted') {
       new Notification(title, { body: message });
     }
   }
@@ -105,11 +105,11 @@ export class WebPlatformAdapter implements PlatformAdapter {
   isSupported(feature: PlatformFeature): boolean {
     switch (feature) {
       case 'file-system-access':
-        return 'showOpenFilePicker' in window;
+        return 'showOpenFilePicker' in globalThis;
       case 'native-notifications':
-        return 'Notification' in window;
+        return 'Notification' in globalThis;
       case 'clipboard':
-        return !!navigator.clipboard;
+        return !!globalThis.navigator.clipboard;
       case 'custom-protocols':
         return false;
       default:
@@ -118,5 +118,5 @@ export class WebPlatformAdapter implements PlatformAdapter {
   }
 }
 
-// 导出单例实例
+// Export singleton instance
 export const webAdapter = new WebPlatformAdapter();

@@ -1,54 +1,55 @@
 /**
- * 平台适配器接口
- * 定义所有平台需要实现的功能
+ * PlatformAdapter interface
  */
 export interface PlatformAdapter {
-  /**
-   * 平台类型
-   */
+  
   readonly type: 'web' | 'desktop';
 
   /**
-   * 在外部浏览器中打开 URL
-   * @param url - 要打开的 URL
+   * Open a URL in an external browser
+   * @param url - The URL to open
    */
   openURL(url: string): void;
 
   /**
-   * 保存文件到本地
-   * @param filename - 文件名
-   * @param content - 文件内容（Base64 或文本）
-   * @param mimeType - MIME 类型
+   * Save a file to the local filesystem
+   * @param filename - The name of the file
+   * @param content - The content of the file (Base64 or text)
+   * @param mimeType - The MIME type
+   *
+   * @param filename - file name
+   * @param content - file content (Base64 or text)
+   * @param mimeType - MIME type
    */
   saveFile(filename: string, content: string, mimeType?: string): Promise<void>;
 
   /**
-   * 打开文件选择对话框
-   * @param options - 文件选择选项
-   * @returns 选中的文件
+   * Open a file dialog
+   * @param options - file dialog options
+   * @returns The selected file
    */
   openFileDialog(options?: FileDialogOptions): Promise<File | File[] | null>;
 
   /**
-   * 复制文本到剪贴板
-   * @param text - 要复制的文本
+   * Copy text to clipboard
+   * @param text - The text to copy
    */
   copyToClipboard(text: string): Promise<void>;
 
   /**
-   * 获取平台信息
+   * Get platform information
    */
   getPlatformInfo(): PlatformInfo;
 
   /**
-   * 显示通知
-   * @param title - 通知标题
-   * @param message - 通知内容
+   * Show a notification
+   * @param title - The notification title
+   * @param message - The notification message
    */
   showNotification?(title: string, message: string): void;
 
   /**
-   * 检查功能是否支持
+   * Check if a feature is supported
    */
   isSupported(feature: PlatformFeature): boolean;
 }

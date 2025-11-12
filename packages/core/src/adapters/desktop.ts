@@ -10,7 +10,7 @@ let Environment: (() => Promise<any>) | undefined;
 let wailsInitialized = false;
 const initWails = async () => {
   if (wailsInitialized) return;
-  if (typeof window === 'undefined' || !(window as any).wails) return;
+  if (typeof globalThis === 'undefined' || !(globalThis as any).wails) return;
   
   try {
     // 动态导入 Wails 函数(仅在 desktop 环境中可用)
@@ -31,9 +31,9 @@ const initWails = async () => {
 export class DesktopPlatformAdapter implements PlatformAdapter {
   readonly type = 'desktop' as const;
   
-  constructor() {
-    // 在构造函数中尝试初始化 Wails
-    if (typeof window !== 'undefined') {
+  // 静态初始化块，确保异步操作在类加载时执行
+  static {
+    if (typeof globalThis !== 'undefined') {
       initWails();
     }
   }
@@ -103,7 +103,7 @@ export class DesktopPlatformAdapter implements PlatformAdapter {
 
   async copyToClipboard(text: string): Promise<void> {
     // 使用浏览器 API 作为 fallback
-    if (navigator.clipboard && navigator.clipboard.writeText) {
+    if (navigator.clipboard?.writeText) {
       await navigator.clipboard.writeText(text);
     } else {
       throw new Error('Clipboard not supported');
@@ -129,7 +129,7 @@ export class DesktopPlatformAdapter implements PlatformAdapter {
   showNotification(title: string, message: string): void {
     // Desktop 应该使用系统原生通知
     // 这里使用浏览器通知作为 fallback
-    if ('Notification' in window) {
+    if ('Notification' in globalThis) {
       new Notification(title, { body: message });
     }
   }
