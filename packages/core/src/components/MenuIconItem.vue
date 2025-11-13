@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useThemeVars } from 'naive-ui';
 import type { Tool } from '../tools/tools.types';
+import { toRefs } from 'vue';
 
 const props = defineProps<{ tool: Tool }>();
 const { tool } = toRefs(props);

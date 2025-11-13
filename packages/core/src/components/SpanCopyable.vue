@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { computed, toRefs } from 'vue';
 import { useCopy } from '../composable/copy';
 
 const props = withDefaults(defineProps<{ value?: string }>(), { value: '' });

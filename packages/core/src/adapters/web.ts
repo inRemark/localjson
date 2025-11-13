@@ -50,7 +50,11 @@ export class WebPlatformAdapter implements PlatformAdapter {
           return;
         }
         
-        resolve(options?.multiple ? Array.from(files) : files[0]);
+        if (options?.multiple) {
+          resolve(Array.from(files));
+        } else {
+          resolve(files[0] ?? null);
+        }
       };
       
       input.oncancel = () => {

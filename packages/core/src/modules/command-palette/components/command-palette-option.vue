@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { toRefs } from 'vue';
 import type { PaletteOption } from '../command-palette.types';
 
 const props = withDefaults(defineProps<{ option: PaletteOption; selected?: boolean }>(), {

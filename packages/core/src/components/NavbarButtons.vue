@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { BrandGithub, BrandTwitter, InfoCircle, Moon, Sun } from '@vicons/tabler';
 import { useStyleStore } from '../stores/style.store';
+import { toRefs } from 'vue';
 
 const styleStore = useStyleStore();
 const { isDarkTheme } = toRefs(styleStore);

@@ -3,11 +3,14 @@ import { storeToRefs } from 'pinia';
 import _ from 'lodash';
 import { useCommandPaletteStore } from './command-palette.store';
 import type { PaletteOption } from './command-palette.types';
+import { useMagicKeys, whenever } from '@vueuse/core';
+import { ref, computed } from 'vue';
+import { useRouter } from 'vue-router';
 
 const isModalOpen = ref(false);
 const inputRef = ref();
 const router = useRouter();
-const isMac = computed(() => window.navigator.userAgent.toLowerCase().includes('mac'));
+const isMac = computed(() => globalThis.navigator.userAgent.toLowerCase().includes('mac'));
 
 const commandPaletteStore = useCommandPaletteStore();
 const { searchPrompt, filteredSearchResult } = storeToRefs(commandPaletteStore);

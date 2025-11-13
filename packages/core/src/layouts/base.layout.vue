@@ -5,7 +5,7 @@ import { RouterLink } from 'vue-router';
 import { Heart, Home2, Menu2 } from '@vicons/tabler';
 
 import { storeToRefs } from 'pinia';
-import HeroGradient from '../assets/hero-gradient.svg?component';
+import HeroGradient from '../assets/hero-gradient.svg';
 import MenuLayout from '../components/MenuLayout.vue';
 import NavbarButtons from '../components/NavbarButtons.vue';
 import { useStyleStore } from '../stores/style.store';
@@ -14,6 +14,8 @@ import type { ToolCategory } from '../tools/tools.types';
 import { useToolStore } from '../tools/tools.store';
 import { useTracker } from '../modules/tracker/tracker.services';
 import CollapsibleToolMenu from '../components/CollapsibleToolMenu.vue';
+import { useI18n } from 'vue-i18n';
+import { computed } from 'vue';
 
 const themeVars = useThemeVars();
 const styleStore = useStyleStore();
@@ -36,7 +38,7 @@ const tools = computed<ToolCategory[]>(() => [
   <MenuLayout class="menu-layout" style="--wails-draggable:drag" :class="{ isSmallScreen: styleStore.isSmallScreen }">
     <template #sider>
       <div class="sider">
-      <!--
+      
       <RouterLink to="/" class="hero-wrapper">
         <HeroGradient class="gradient" />  
         <div class="text-wrapper">
@@ -49,7 +51,7 @@ const tools = computed<ToolCategory[]>(() => [
           </div>
         </div>
       </RouterLink>
-    -->
+   
       <div class="sider-content">
         <div v-if="styleStore.isSmallScreen" flex flex-col items-center>
           <locale-selector w="90%" />
@@ -108,14 +110,13 @@ const tools = computed<ToolCategory[]>(() => [
           </c-button>
         </c-tooltip>
 
-        <!-- <c-tooltip :tooltip="$t('home.apps')" position="bottom">
+        <c-tooltip :tooltip="$t('home.apps')" position="bottom">
           <c-button v-if="config.app.env === 'production'" to="/apps" circle variant="text" :aria-label="$t('home.apps')">
             <icon-mdi:octagram-outline text-20px />
           </c-button>
-        </c-tooltip> -->
+        </c-tooltip>
 
         <command-palette />
-
         <locale-selector v-if="!styleStore.isSmallScreen" />
 
         <div>

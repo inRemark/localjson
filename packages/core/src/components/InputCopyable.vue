@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useVModel } from '@vueuse/core';
 import { useCopy } from '../composable/copy';
+import { computed } from 'vue';
 
 const props = defineProps<{ value: string }>();
 const emit = defineEmits(['update:value']);

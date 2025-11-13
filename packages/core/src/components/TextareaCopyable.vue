@@ -8,6 +8,7 @@ import xmlHljs from 'highlight.js/lib/languages/xml';
 import yamlHljs from 'highlight.js/lib/languages/yaml';
 import iniHljs from 'highlight.js/lib/languages/ini';
 import { useCopy } from '../composable/copy';
+import { computed, ref, toRefs } from 'vue';
 
 const props = withDefaults(
   defineProps<{

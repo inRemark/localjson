@@ -10,6 +10,8 @@ import GithubIcon from '~icons/mdi/github';
 import BugIcon from '~icons/mdi/bug-outline';
 import DiceIcon from '~icons/mdi/dice-5';
 import InfoIcon from '~icons/mdi/information-outline';
+import { useRouter } from 'vue-router';
+import { computed, ref } from 'vue';
 
 export const useCommandPaletteStore = defineStore('command-palette', () => {
   const toolStore = useToolStore();
@@ -17,7 +19,7 @@ export const useCommandPaletteStore = defineStore('command-palette', () => {
   const router = useRouter();
   const searchPrompt = ref('');
 
-  const toolsOptions = toolStore.tools.map(tool => ({
+  const toolsOptions = toolStore.tools.map((tool: { path: any; category: any; }) => ({
     ...tool,
     to: tool.path,
     toolCategory: tool.category,
