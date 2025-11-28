@@ -31,6 +31,7 @@ const props = withDefaults(
     autosize?: boolean
     autofocus?: boolean
     monospace?: boolean
+    size?: 'small' | 'medium' | 'large'
   }>(),
   {
     value: '',
@@ -58,6 +59,7 @@ const props = withDefaults(
     autosize: false,
     autofocus: false,
     monospace: false,
+    size: 'medium',
   },
 );
 const emit = defineEmits(['update:value']);
@@ -76,6 +78,9 @@ const validation
 
 const theme = useTheme();
 const appTheme = useAppTheme();
+
+const sizeName = computed(() => props.size);
+const size = computed(() => theme.value.sizes[sizeName.value]);
 
 const textareaRef = ref<HTMLTextAreaElement>();
 const inputRef = ref<HTMLInputElement>();
@@ -214,6 +219,7 @@ defineExpose({
   display: inline-flex;
   flex-direction: column;
   width: 100%;
+  font-size: v-bind('size.fontSize');
 
   &.label-left {
     flex-direction: row;
@@ -259,6 +265,7 @@ defineExpose({
     border-radius: 4px;
     padding: 0 4px 0 12px;
     transition: border-color 0.2s ease-in-out;
+    min-height: v-bind('size.height');
 
     .multiline& {
       resize: vertical;
@@ -295,6 +302,8 @@ defineExpose({
       box-shadow: none;
       border: none;
       color: v-bind('appTheme.text.baseColor');
+      font-size: inherit;
+      line-height: 1;
 
       &::placeholder {
         color: v-bind('appTheme.text.mutedColor');
