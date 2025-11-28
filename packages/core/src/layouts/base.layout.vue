@@ -173,9 +173,9 @@ const tools = computed<ToolCategory[]>(() => [
   padding: 20px 0;
 }
 
-.menu-layout{
-  padding: 30px auto
-}
+// .menu-layout{
+//   padding: 30px auto;
+// }
 
 .navbar {
   margin-bottom: 20px;

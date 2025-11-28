@@ -10,7 +10,7 @@ const toolsRoutes = tools.map(({ path, name, component, ...config }) => ({
   path,
   name,
   component,
-  meta: { isTool: true, layout: layouts.toolLayout, name, ...config },
+  meta: { isTool: true, layout: layouts.tool, name, ...config },
 }));
 const toolsRedirectRoutes = tools
   .filter(({ redirectFrom }) => redirectFrom && redirectFrom.length > 0)

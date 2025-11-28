@@ -2,7 +2,7 @@
 import { useRoute } from 'vue-router';
 import { useHead } from '@vueuse/head';
 import type { HeadObject } from '@vueuse/head';
-
+import { useI18n } from 'vue-i18n';
 import BaseLayout from './base.layout.vue';
 import FavoriteButton from '../components/FavoriteButton.vue';
 import type { Tool } from '../tools/tools.types';
@@ -50,10 +50,9 @@ const toolDescription = computed<string>(() => t(`tools.${i18nKey.value}.descrip
           {{ toolDescription }}
         </div>
       </div>
-    </div>
-
-    <div class="tool-content">
-      <slot />
+      <div class="tool-content">
+        <slot />
+      </div>
     </div>
   </BaseLayout>
 </template>
@@ -68,12 +67,12 @@ const toolDescription = computed<string>(() => t(`tools.${i18nKey.value}.descrip
   gap: 16px;
 
   ::v-deep(& > *) {
-    flex: 0 1 600px;
+    flex: 0 1 720px;
   }
 }
 
 .tool-layout {
-  max-width: 600px;
+  max-width: 720px;
   margin: 0 auto;
   box-sizing: border-box;
 
