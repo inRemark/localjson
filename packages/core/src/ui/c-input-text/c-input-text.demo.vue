@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import { ref } from 'vue';
 import { useValidation } from '../../composable/validation';
 
 const value = ref('value');

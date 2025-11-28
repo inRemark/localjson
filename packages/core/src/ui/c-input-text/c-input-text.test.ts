@@ -4,6 +4,7 @@ import { createPinia, setActivePinia } from 'pinia';
 import _ from 'lodash';
 import CInputText from './c-input-text.vue';
 import { useValidation } from '../../composable/validation';
+import { ref } from 'vue';
 
 describe('CInputText', () => {
   beforeEach(() => {

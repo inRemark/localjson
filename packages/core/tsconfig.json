@@ -1,6 +1,6 @@
 {
   "extends": "@vue/tsconfig/tsconfig.json",
-  "include": ["src/**/*", "src/**/*.vue", "**/*.d.ts"],
+  "include": ["src/**/*", "src/**/*.vue", "**/*.d.ts", "auto-imports.d.ts"],
   "exclude": ["src/**/__tests__/*", "node_modules/**", "dist/**"],
   "compilerOptions": {
     "lib": ["ES2022"],
