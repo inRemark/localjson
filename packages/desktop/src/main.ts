@@ -22,10 +22,7 @@ app.use(createHead());
 app.use(i18nPlugin);
 app.use(plausible);
 
-/**
- * Create router (Desktop uses hash mode)
- * TODO: Consider whether to support history mode
- */
+
 const router = createRouter({
   history: createWebHashHistory(),
   routes,

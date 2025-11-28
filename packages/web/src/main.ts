@@ -28,10 +28,6 @@ app.use(createPinia());
 app.use(createHead());
 app.use(i18nPlugin);
 
-/**
- * Create router (Web uses hash mode)
- * TODO: Consider whether to support history mode
- */
 const router = createRouter({
   history: createWebHistory(config.app.baseUrl),
   routes,

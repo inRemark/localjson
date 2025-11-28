@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { toRefs, computed } from 'vue';
 import { useStyleStore } from '../stores/style.store';
 
 const styleStore = useStyleStore();

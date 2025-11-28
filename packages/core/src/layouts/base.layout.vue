@@ -15,7 +15,6 @@ import { useToolStore } from '../tools/tools.store';
 import { useTracker } from '../modules/tracker/tracker.services';
 import CollapsibleToolMenu from '../components/CollapsibleToolMenu.vue';
 import { useI18n } from 'vue-i18n';
-import { computed } from 'vue';
 
 const themeVars = useThemeVars();
 const styleStore = useStyleStore();
@@ -88,7 +87,7 @@ const tools = computed<ToolCategory[]>(() => [
     </template>
 
     <template #content>
-      <div flex items-center justify-center gap-2>
+      <div class="navbar" flex items-center justify-center gap-2>
         <c-button
           circle
           variant="text"
@@ -175,7 +174,11 @@ const tools = computed<ToolCategory[]>(() => [
 }
 
 .menu-layout{
-  // padding: 30px auto
+  padding: 30px auto
+}
+
+.navbar {
+  margin-bottom: 20px;
 }
 
 .sider-content {
