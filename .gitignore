@@ -44,3 +44,4 @@ windows-exe-build.bat
 rsync-localjson.cn.sh
 rsync-localjson.com.sh
 analysis.md
+.vite-ssg-temp

@@ -104,38 +104,37 @@ export const createApp = ViteSSG(
 ### 步骤 4：配置 Vite SSG 与 Google Analytics
 **文件**：`packages/web/vite.config.ts`
 
-在插件数组中添加：
-```typescript
-import { ViteSSG } from 'vite-ssg';
-import Sitemap from 'vite-plugin-sitemap';
-import { routes } from './src/router';
+当前已生效的核心配置（简化版）：
+
+```ts
+// ssgOptions 关键配置
+const SSG_EXCLUDED_ROUTE_SUBSTRINGS = [
+  '/bip39-generator',
+  '/ascii-text-drawer',
+  '/device-information',
+  '/sql-prettify',
+  '/text-diff',
+] as const;
 
 export default defineConfig({
-  // ... 现有配置
-  plugins: [
-    // ... 现有插件
-    
-    // 生成 sitemap.xml
-    Sitemap({
-      hostname: 'https://yourdomain.com', // 替换为实际域名
-      dynamicRoutes: routes.map(r => r.path),
-      exclude: ['/404', '/:pathMatch(.*)*'],
-      robots: [
-        { userAgent: '*', allow: '/' }
-      ]
-    }),
-  ],
-  
+  // ... 其他 Vite 配置（插件、PWA、自动导入等）
+
+  ssr: {
+    noExternal: ['naive-ui', '@vueuse/core', '@vueuse/head', 'vue-i18n'],
+  },
+
   ssgOptions: {
     formatting: 'minify',
     dirStyle: 'nested',
-    includeAllRoutes: true,
+    mock: true,
+    // 过滤掉目前已知存在 SSR 问题的工具路由，这些页面改为纯 CSR
+    includedRoutes(paths) {
+      return paths.filter(path => !SSG_EXCLUDED_ROUTE_SUBSTRINGS.some(excluded => path.includes(excluded)));
+    },
     // 注入 Google Analytics 到所有预渲染页面
-    onPageRendered: (route, html) => {
-      // 从环境变量读取 GA ID，SSG 构建时注入
+    onPageRendered: (_route, html) => {
       const gaId = process.env.VITE_GA_MEASUREMENT_ID || 'G-PXPC8P2K6C';
-      
-      // 在 </head> 前注入 GA 脚本
+
       return html.replace(
         '</head>',
         `<!-- Google tag (gtag.js) -->
@@ -146,10 +145,66 @@ export default defineConfig({
   gtag('js', new Date());
   gtag('config', '${gaId}');
 </script>
-</head>`
+</head>`,
       );
     },
-  },
+    // 在所有页面预渲结束后，基于 dist 产物自动生成 sitemap.xml
+    async onFinished() {
+      const hostname = 'https://localjson.cn';
+      const fs = await import('node:fs');
+      const path = await import('node:path');
+
+      const distDir = path.resolve(__dirname, 'dist');
+      const routes: string[] = [];
+
+      function findHtmlFiles(dir: string, baseDir: string = dir) {
+        const files = fs.readdirSync(dir);
+
+        for (const file of files) {
+          const filePath = path.join(dir, file);
+          const stat = fs.statSync(filePath);
+
+          if (stat.isDirectory()) {
+            findHtmlFiles(filePath, baseDir);
+          } else if (file === 'index.html') {
+            let urlPath = path.relative(baseDir, dir);
+            urlPath = urlPath ? `/${urlPath}` : '/';
+            urlPath = urlPath.replace(/\\/g, '/');
+            routes.push(urlPath);
+          }
+        }
+      }
+
+      findHtmlFiles(distDir);
+
+      const now = new Date().toISOString();
+      const urlEntries = routes
+        .filter(route => !route.includes('/404'))
+        .map(route => {
+          const priority = route === '/' ? '1.0' : '0.8';
+          const url = `${hostname}${route}`;
+          return `  <url>
+    <loc>${url}</loc>
+    <lastmod>${now}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>${priority}</priority>
+  </url>`;
+        })
+        .join('\n');
+
+      const sitemapContent = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+${urlEntries}
+</urlset>`;
+
+      const sitemapPath = path.join(distDir, 'sitemap.xml');
+      fs.writeFileSync(sitemapPath, sitemapContent, 'utf-8');
+    },
+  } as ViteSSGOptions,
 });
 ```
 
@@ -371,9 +426,10 @@ npx lighthouse https://yourdomain.com --only-categories=seo --view
 # 六、Google Analytics 配置详解
 
 ### 当前状态
-项目已在 `packages/web/index.html` 和 `index_cn.html` 中硬编码了 GA ID：**G-PXPC8P2K6C**
+- 之前项目在 `packages/web/index.html` 和 `index_cn.html` 中硬编码了 GA ID：**G-PXPC8P2K6C**
+- 现在已改为 **通过 `onPageRendered` 钩子统一注入**，HTML 模板中不再直接写 GA
 
-### 选定方案：通过 `onPageRendered` 钩子统一注入 ✅
+### 选定方案：通过 `onPageRendered` 钩子统一注入 ✅（已实现）
 
 **优点**：
 - ✅ 集中管理：所有 GA 配置在 `vite.config.ts` 中统一维护

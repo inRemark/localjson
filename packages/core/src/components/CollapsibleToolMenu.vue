@@ -57,8 +57,8 @@ const themeVars = useThemeVars();
       </span>
     </div>
 
-    <n-collapse-transition :show="!isCollapsed">
-      <div class="menu-wrapper">
+    <Transition name="collapse">
+      <div v-show="!isCollapsed" class="menu-wrapper">
         <div class="toggle-bar" @click="toggleCategoryCollapse({ name })" />
 
         <n-menu
@@ -71,11 +71,29 @@ const themeVars = useThemeVars();
           :default-expand-all="true"
         />
       </div>
-    </n-collapse-transition>
+    </Transition>
   </div>
 </template>
 
 <style scoped lang="less">
+.collapse-enter-active,
+.collapse-leave-active {
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.collapse-enter-from,
+.collapse-leave-to {
+  max-height: 0;
+  opacity: 0;
+}
+
+.collapse-enter-to,
+.collapse-leave-from {
+  max-height: 1000px;
+  opacity: 1;
+}
+
 .menu-wrapper {
   display: flex;
   flex-direction: row;

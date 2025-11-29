@@ -1,7 +1,6 @@
-import { createApp } from 'vue';
+import { ViteSSG } from 'vite-ssg';
 import { createPinia } from 'pinia';
 import { createHead } from '@vueuse/head';
-import { createRouter, createWebHistory } from 'vue-router';
 
 import { registerSW } from 'virtual:pwa-register';
 import { plausible } from '@/core/plugins/plausible.plugin';
@@ -17,28 +16,34 @@ import { i18nPlugin } from '@/core/plugins/i18n.plugin';
 import { config } from '@/core/config';
 
 import { routes } from './router';
-registerSW();
 
-// initialize platform adapter
-setPlatformAdapter(webAdapter);
+// Export ViteSSG factory function
+export const createApp = ViteSSG(
+  App,
+  {
+    routes,
+    base: config.app.baseUrl,
+  },
+  ({ app, router, routes, isClient, initialState }) => {
+    // Initialize platform adapter
+    setPlatformAdapter(webAdapter);
 
-const app = createApp(App);
+    // Configure plugins (both SSR and CSR)
+    app.use(createPinia());
+    app.use(createHead());
+    app.use(i18nPlugin);
+    app.use(naive);
+    app.use(plausible);
 
-app.use(createPinia());
-app.use(createHead());
-app.use(i18nPlugin);
+    // Client-only setup
+    if (isClient) {
+      // Register PWA Service Worker
+      registerSW();
 
-const router = createRouter({
-  history: createWebHistory(config.app.baseUrl),
-  routes,
-});
-app.use(router);
-app.use(naive);
-app.use(plausible);
-
-app.mount('#app');
-
-if (import.meta.env.DEV) {
-  console.log('[Web] Application started');
-  console.log('[Web] Platform adapter:', webAdapter.type);
-}
+      if (import.meta.env.DEV) {
+        console.log('[Web] Application started');
+        console.log('[Web] Platform adapter:', webAdapter.type);
+      }
+    }
+  },
+);
