@@ -12,8 +12,6 @@ import { NaiveUiResolver } from 'unplugin-vue-components/resolvers';
 import Components from 'unplugin-vue-components/vite';
 import { defineConfig } from 'vite';
 import type { ViteSSGOptions } from 'vite-ssg';
-// PWA disabled
-// import { VitePWA } from 'vite-plugin-pwa';
 // @ts-ignore - vite-plugin-vue-markdown has type definition issues
 import VitePluginMarkdown from 'vite-plugin-vue-markdown';
 import svgLoader from 'vite-svg-loader';
@@ -72,56 +70,6 @@ export default defineConfig({
     // @ts-ignore - vite-plugin-vue-markdown has type definition issues
     VitePluginMarkdown(),
     svgLoader(),
-    // PWA disabled
-    // VitePWA({
-    //   registerType: 'autoUpdate',
-    //   strategies: 'generateSW',
-    //   workbox: {
-    //     maximumFileSizeToCacheInBytes: 5 * 1024 * 1024, // 5 MB
-    //     // Exclude static files from navigation fallback (Service Worker won't intercept them)
-    //     navigateFallbackDenylist: [
-    //       /^\/sitemap\.xml$/,
-    //       /^\/robots\.txt$/,
-    //       /\.xml$/,
-    //       /\.txt$/,
-    //     ],
-    //     // Don't cache sitemap.xml and robots.txt - let them pass through directly
-    //     // These files should be excluded from Service Worker interception
-    //   },
-    //   manifest: {
-    //     name: 'LocalJson',
-    //     description: 'Aggregated set of useful tools for developers.',
-    //     display: 'standalone',
-    //     lang: 'fr-FR',
-    //     start_url: `${baseUrl}?utm_source=pwa&utm_medium=pwa`,
-    //     orientation: 'any',
-    //     theme_color: '#18a058',
-    //     background_color: '#f1f5f9',
-    //     icons: [
-    //       {
-    //         src: '/favicon-16x16.png',
-    //         type: 'image/png',
-    //         sizes: '16x16',
-    //       },
-    //       {
-    //         src: '/favicon-32x32.png',
-    //         type: 'image/png',
-    //         sizes: '32x32',
-    //       },
-    //       {
-    //         src: '/android-chrome-192x192.png',
-    //         sizes: '192x192',
-    //         type: 'image/png',
-    //       },
-    //       {
-    //         src: '/android-chrome-512x512.png',
-    //         sizes: '512x512',
-    //         type: 'image/png',
-    //         purpose: 'any maskable',
-    //       },
-    //     ],
-    //   },
-    // }),
     Components({
       dirs: ['../core/src/'],
       extensions: ['vue', 'md'],

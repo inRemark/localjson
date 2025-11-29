@@ -2,8 +2,6 @@ import { ViteSSG } from 'vite-ssg';
 import { createPinia } from 'pinia';
 import { createHead } from '@vueuse/head';
 
-// PWA disabled
-// import { registerSW } from 'virtual:pwa-register';
 import { plausible } from '@/core/plugins/plausible.plugin';
 
 import 'virtual:uno.css';
@@ -38,10 +36,6 @@ export const createApp = ViteSSG(
 
     // Client-only setup
     if (isClient) {
-      // PWA disabled
-      // Register PWA Service Worker
-      // registerSW();
-
       if (import.meta.env.DEV) {
         console.log('[Web] Application started');
         console.log('[Web] Platform adapter:', webAdapter.type);

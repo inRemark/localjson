@@ -1,6 +1,5 @@
 /// <reference types="vite/client" />
 /// <reference types="vite-svg-loader" />
-/// <reference types="vite-plugin-pwa/client" />
 /// <reference types="vite-ssg/client" />
 
 // Google Analytics global types
