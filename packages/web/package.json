@@ -26,6 +26,8 @@
     "vite-plugin-pwa": "^1.0.1"
   },
   "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "js-yaml": "^4.1.1",
     "workbox-window": "^7.0.0"
   }
 }

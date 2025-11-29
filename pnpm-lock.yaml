@@ -381,6 +381,12 @@ importers:
         specifier: ^1.0.1
         version: 1.2.0(vite@6.4.1(@types/node@20.19.25)(jiti@2.6.1)(less@4.4.2)(terser@5.44.1)(tsx@4.20.6)(yaml@2.8.1))(workbox-build@7.4.0)(workbox-window@7.4.0)
     devDependencies:
+      '@types/js-yaml':
+        specifier: ^4.0.9
+        version: 4.0.9
+      js-yaml:
+        specifier: ^4.1.1
+        version: 4.1.1
       workbox-window:
         specifier: ^7.0.0
         version: 7.4.0
@@ -1818,6 +1824,9 @@ packages:
 
   '@types/figlet@1.7.0':
     resolution: {integrity: sha512-KwrT7p/8Eo3Op/HBSIwGXOsTZKYiM9NpWRBJ5sVjWP/SmlS+oxxRvJht/FNAtliJvja44N3ul1yATgohnVBV0Q==}
+
+  '@types/js-yaml@4.0.9':
+    resolution: {integrity: sha512-k4MGaQl5TGo/iipqb2UDG2UwjXziSWkh0uysQelTlJpX1qGlpUZYm8PnO4DxG1qBomtJUdYJ6qR6xdIah10JLg==}
 
   '@types/json-schema@7.0.15':
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
@@ -7280,6 +7289,8 @@ snapshots:
   '@types/estree@1.0.8': {}
 
   '@types/figlet@1.7.0': {}
+
+  '@types/js-yaml@4.0.9': {}
 
   '@types/json-schema@7.0.15': {}
 
