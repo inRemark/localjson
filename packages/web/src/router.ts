@@ -1,5 +1,5 @@
 import type { RouteRecordRaw } from 'vue-router';
-import { layouts } from '@/core/layouts/index';
+import { layouts } from './layouts';
 import HomePage from '@/core/pages/Home.page.vue';
 import NotFound from '@/core/pages/404.page.vue';
 import { tools } from '@/core/tools';

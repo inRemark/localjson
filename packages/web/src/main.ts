@@ -7,7 +7,7 @@ import { plausible } from '@/core/plugins/plausible.plugin';
 import 'virtual:uno.css';
 
 import { naive } from '@/core/plugins/naive.plugin';
-import App from '@/core/App.vue';
+import App from './App.vue';
 import { setPlatformAdapter } from '@/core/adapters';
 import { webAdapter } from '@/core/adapters/web';
 

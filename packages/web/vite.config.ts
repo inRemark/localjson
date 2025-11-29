@@ -83,6 +83,10 @@ export default defineConfig({
     alias: {
       '@/core': fileURLToPath(new URL('../core/src', import.meta.url)),
       '@': fileURLToPath(new URL('./src', import.meta.url)),
+      // Override core modules with web-specific implementations
+      '@/core/stores/style.store': fileURLToPath(new URL('./src/stores/style.store.ts', import.meta.url)),
+      '@/core/components/MenuLayout': fileURLToPath(new URL('./src/components/MenuLayout.vue', import.meta.url)),
+      '@/core/layouts': fileURLToPath(new URL('./src/layouts', import.meta.url)),
     },
     extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json', '.vue'],
   },
@@ -247,6 +251,48 @@ export default defineConfig({
           // If translation loading fails, continue with default HTML
           console.warn(`[SSG] Failed to load translation for route ${route}:`, error);
         }
+      }
+      
+      // Preload CSS files to prevent FOUC (Flash of Unstyled Content)
+      try {
+        const fs = await import('node:fs');
+        const path = await import('node:path');
+        const distDir = path.resolve(__dirname, 'dist');
+        const assetsDir = path.join(distDir, 'assets');
+        
+        if (fs.existsSync(assetsDir)) {
+          // Find all CSS files and sort them (app CSS first, then others)
+          const cssFiles = fs.readdirSync(assetsDir)
+            .filter(file => file.endsWith('.css'))
+            .sort((a, b) => {
+              // Prioritize app CSS file
+              if (a.startsWith('app-')) return -1;
+              if (b.startsWith('app-')) return 1;
+              return a.localeCompare(b);
+            });
+          
+          if (cssFiles.length > 0) {
+            // Generate preload link tags with async loading fallback
+            const preloadLinks = cssFiles.map(cssFile => 
+              `    <link rel="preload" href="/assets/${cssFile}" as="style" onload="this.onload=null;this.rel='stylesheet'">`
+            ).join('\n');
+            
+            // Generate noscript fallback for browsers without JavaScript
+            const noscriptLinks = cssFiles.map(cssFile => 
+              `    <link rel="stylesheet" href="/assets/${cssFile}">`
+            ).join('\n');
+            
+            // Inject preload links and noscript fallback before </head>
+            modifiedHtml = modifiedHtml.replace(
+              '</head>',
+              `${preloadLinks}
+    <noscript>${noscriptLinks}</noscript>
+</head>`,
+            );
+          }
+        }
+      } catch (error) {
+        console.warn('[SSG] Failed to preload CSS:', error);
       }
       
       // Inject GA script before </head>
