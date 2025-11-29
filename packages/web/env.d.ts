@@ -1,6 +1,8 @@
 /// <reference types="vite/client" />
 /// <reference types="vite-svg-loader" />
 /// <reference types="vite-ssg/client" />
+/// <reference types="./auto-imports.d.ts" />
+/// <reference types="./components.d.ts" />
 
 // Google Analytics global types
 interface Window {

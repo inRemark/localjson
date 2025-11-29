@@ -5,10 +5,10 @@ import { RouterLink } from 'vue-router';
 import { Home2 } from '@vicons/tabler';
 
 import { storeToRefs } from 'pinia';
-import HeroGradient from '../assets/hero-gradient.svg';
-import MenuLayout from '../components/MenuLayout.vue';
+import HeroGradient from '@/assets/hero-gradient.svg';
+import MenuLayout from '@/components/MenuLayout.vue';
 import NavbarButtons from '@/core/components/NavbarButtons.vue';
-import { useStyleStore } from '../stores/style.store';
+import { useStyleStore } from '@/stores/style.store';
 import { config } from '@/core/config';
 import type { ToolCategory } from '@/core/tools/tools.types';
 import { useToolStore } from '@/core/tools/tools.store';
@@ -144,12 +144,14 @@ const tools = computed<ToolCategory[]>(() => [
 }
 
 .sider-content {
-  padding-top: 24px;
+  padding-top: 160px;
   padding-bottom: 100px;
 }
 
 .hero-wrapper {
-  display: block;
+  position: absolute;
+  // display: block;
+  top: 0; 
   left: 0;
   width: 100%;
   z-index: 10;
@@ -163,7 +165,6 @@ const tools = computed<ToolCategory[]>(() => [
     width: 100%;
     text-align: center;
     top: 8px;
-    // color: v-bind('themeVars.primaryColor');
     color: #fff;
     .title {
       font-size: 25px;

@@ -2,8 +2,8 @@
 import { RouterView, useRoute } from 'vue-router';
 import { NGlobalStyle, NMessageProvider, NNotificationProvider, darkTheme } from 'naive-ui';
 import { darkThemeOverrides, lightThemeOverrides } from '@/core/themes';
-import { layouts } from './layouts';
-import { useStyleStore } from './stores/style.store';
+import { layouts } from '@/layouts';
+import { useStyleStore } from '@/stores/style.store';
 import { useI18n } from 'vue-i18n';
 import { syncRef, useStorage } from '@vueuse/core';
 import { computed } from 'vue';

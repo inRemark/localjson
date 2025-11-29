@@ -83,10 +83,6 @@ export default defineConfig({
     alias: {
       '@/core': fileURLToPath(new URL('../core/src', import.meta.url)),
       '@': fileURLToPath(new URL('./src', import.meta.url)),
-      // Override core modules with web-specific implementations
-      '@/core/stores/style.store': fileURLToPath(new URL('./src/stores/style.store.ts', import.meta.url)),
-      '@/core/components/MenuLayout': fileURLToPath(new URL('./src/components/MenuLayout.vue', import.meta.url)),
-      '@/core/layouts': fileURLToPath(new URL('./src/layouts', import.meta.url)),
     },
     extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json', '.vue'],
   },

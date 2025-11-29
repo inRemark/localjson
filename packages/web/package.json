@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "@localjson/core": "workspace:*",
+    "@vicons/tabler": "^0.13.0",
     "plausible-tracker": "^0.3.8"
   },
   "devDependencies": {

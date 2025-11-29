@@ -7,14 +7,14 @@ import { plausible } from '@/core/plugins/plausible.plugin';
 import 'virtual:uno.css';
 
 import { naive } from '@/core/plugins/naive.plugin';
-import App from './App.vue';
+import App from '@/App.vue';
 import { setPlatformAdapter } from '@/core/adapters';
 import { webAdapter } from '@/core/adapters/web';
 
 import { i18nPlugin } from '@/core/plugins/i18n.plugin';
 import { config } from '@/core/config';
 
-import { routes } from './router';
+import { routes } from '@/router';
 
 // Export ViteSSG factory function
 export const createApp = ViteSSG(

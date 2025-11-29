@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useStyleStore } from '../stores/style.store';
+import { useStyleStore } from '@/stores/style.store';
 
 const styleStore = useStyleStore();
 const { isSmallScreen } = toRefs(styleStore);

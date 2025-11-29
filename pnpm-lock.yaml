@@ -374,6 +374,9 @@ importers:
       '@localjson/core':
         specifier: workspace:*
         version: link:../core
+      '@vicons/tabler':
+        specifier: ^0.13.0
+        version: 0.13.0
       plausible-tracker:
         specifier: ^0.3.8
         version: 0.3.9
