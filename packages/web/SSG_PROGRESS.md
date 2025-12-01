@@ -23,7 +23,7 @@
 ### 4. Vite 配置
 - ✅ 文件：`packages/web/vite.config.ts`
 - ✅ 导入 `vite-plugin-sitemap` 和类型 `ViteSSGOptions`
-- ✅ 配置 Sitemap 插件（hostname: https://localjson.cn）
+- ✅ 配置 Sitemap 插件（hostname: https://localjson.com）
 - ✅ 添加 `ssgOptions` 配置块
 - ✅ 实现 `onPageRendered` 钩子注入 Google Analytics
 

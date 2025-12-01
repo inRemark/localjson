@@ -307,7 +307,7 @@ export default defineConfig({
     },
     // Generate sitemap after all pages are rendered
     async onFinished() {
-      const hostname = 'https://localjson.cn';
+      const hostname = 'https://localjson.com';
       const fs = await import('node:fs');
       const path = await import('node:path');
       

@@ -6,7 +6,7 @@ import { dirname } from 'node:path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const hostname = 'https://localjson.cn';
+const hostname = 'https://localjson.com';
 const distDir = resolve(__dirname, '../dist');
 const routes = [];
 

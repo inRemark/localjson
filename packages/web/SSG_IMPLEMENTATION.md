@@ -150,7 +150,7 @@ export default defineConfig({
     },
     // 在所有页面预渲结束后，基于 dist 产物自动生成 sitemap.xml
     async onFinished() {
-      const hostname = 'https://localjson.cn';
+      const hostname = 'https://localjson.com';
       const fs = await import('node:fs');
       const path = await import('node:path');
 
