@@ -203,10 +203,9 @@ const tools = computed<ToolCategory[]>(() => [
     left: 0;
     width: 100%;
     text-align: center;
-    // top: 16px;
-    // color: #fff;
-    top: 8px;
-    color: v-bind('themeVars.primaryColor');
+    top: 32px;
+    color: #fff;
+    // color: v-bind('themeVars.primaryColor');
     .title {
       font-size: 25px;
       font-weight: 600;
