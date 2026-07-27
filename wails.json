@@ -8,9 +8,15 @@
   "frontend:build:dir": "packages/desktop/dist",
   "frontend:dev:watcher": "pnpm --filter @localjson/desktop dev",
   "frontend:dev:serverUrl": "auto",
-  
   "author": {
-    "name": "remark",
+    "name": "inRemark",
     "email": "inremark@outlook.com"
+  },
+  "info": {
+    "companyName": "TermiAI",
+    "productName": "LocalJson",
+    "productVersion": "4.0.1",
+    "copyright": "Copyright © 2026 TermiAI",
+    "comments": "LocalJson — A lightweight cross-platform developer tools collection. https://localjson.com"
   }
 }
