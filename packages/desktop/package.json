@@ -1,6 +1,6 @@
 {
   "name": "@localjson/desktop",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Desktop application - Collection of handy tools for developers, built with Wails",
   "type": "module",
   "scripts": {

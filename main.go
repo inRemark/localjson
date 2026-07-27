@@ -22,7 +22,7 @@ import (
 var assets embed.FS
 
 const appName = "LocalJson"
-const version = "4.0.0"
+const version = "4.0.1"
 
 var icon []byte
 
