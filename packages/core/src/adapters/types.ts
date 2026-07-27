@@ -68,5 +68,4 @@ export interface PlatformInfo {
 export type PlatformFeature = 
   | 'file-system-access'
   | 'native-notifications'
-  | 'clipboard'
-  | 'custom-protocols';
+  | 'clipboard';

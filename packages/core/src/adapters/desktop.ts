@@ -146,8 +146,6 @@ export class DesktopPlatformAdapter implements PlatformAdapter {
         return true;
       case 'clipboard':
         return true;
-      case 'custom-protocols':
-        return true;
       default:
         return false;
     }

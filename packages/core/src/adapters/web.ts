@@ -114,8 +114,6 @@ export class WebPlatformAdapter implements PlatformAdapter {
         return 'Notification' in globalThis;
       case 'clipboard':
         return !!globalThis.navigator.clipboard;
-      case 'custom-protocols':
-        return false;
       default:
         return false;
     }

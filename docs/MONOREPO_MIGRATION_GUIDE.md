@@ -280,8 +280,7 @@ export interface PlatformInfo {
 export type PlatformFeature = 
   | 'file-system-access'
   | 'native-notifications'
-  | 'clipboard'
-  | 'custom-protocols';
+  | 'clipboard';
 ```
 
 #### 2. 创建 Web 平台适配器
@@ -401,8 +400,6 @@ export class WebPlatformAdapter implements PlatformAdapter {
         return 'Notification' in window;
       case 'clipboard':
         return !!navigator.clipboard;
-      case 'custom-protocols':
-        return false;
       default:
         return false;
     }
@@ -546,8 +543,6 @@ export class DesktopPlatformAdapter implements PlatformAdapter {
       case 'native-notifications':
         return true;
       case 'clipboard':
-        return true;
-      case 'custom-protocols':
         return true;
       default:
         return false;

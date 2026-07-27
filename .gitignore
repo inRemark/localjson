@@ -46,3 +46,4 @@ rsync-localjson.com.sh
 analysis.md
 .vite-ssg-temp
 .env.production
+docker_build_localjson.sh
