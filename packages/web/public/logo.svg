@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="LocalJson">
+  <defs>
+    <linearGradient id="bg" x1="64" y1="48" x2="448" y2="464" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2563eb"/>
+      <stop offset="0.55" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#5a97fc"/>
+    </linearGradient>
+  </defs>
+
+  <!-- rounded tile -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+
+  <!-- curly braces { } -->
+  <g fill="none" stroke="#ffffff" stroke-width="44" stroke-linecap="round" stroke-linejoin="round">
+    <!-- { -->
+    <path d="M210 118
+             C168 118 148 148 148 188
+             L148 228
+             C148 252 132 266 108 272
+             C132 278 148 292 148 316
+             L148 356
+             C148 396 168 426 210 426"/>
+    <!-- } -->
+    <path d="M302 118
+             C344 118 364 148 364 188
+             L364 228
+             C364 252 380 266 404 272
+             C380 278 364 292 364 316
+             L364 356
+             C364 396 344 426 302 426"/>
+  </g>
+</svg>
