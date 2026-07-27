@@ -1,6 +1,7 @@
-import { ViteSSG } from 'vite-ssg';
+import { createApp } from 'vue';
 import { createPinia } from 'pinia';
 import { createHead } from '@vueuse/head';
+import { createRouter, createWebHistory } from 'vue-router';
 
 import { plausible } from '@/core/plugins/plausible.plugin';
 
@@ -16,30 +17,25 @@ import { config } from '@/core/config';
 
 import { routes } from '@/router';
 
-// Export ViteSSG factory function
-export const createApp = ViteSSG(
-  App,
-  {
-    routes,
-    base: config.app.baseUrl,
-  },
-  ({ app, router, routes, isClient, initialState }) => {
-    // Initialize platform adapter
-    setPlatformAdapter(webAdapter);
+setPlatformAdapter(webAdapter);
 
-    // Configure plugins (both SSR and CSR)
-    app.use(createPinia());
-    app.use(createHead());
-    app.use(i18nPlugin);
-    app.use(naive);
-    app.use(plausible);
+const app = createApp(App);
+app.use(createPinia());
+app.use(createHead());
+app.use(i18nPlugin);
+app.use(plausible);
 
-    // Client-only setup
-    if (isClient) {
-      if (import.meta.env.DEV) {
-        console.log('[Web] Application started');
-        console.log('[Web] Platform adapter:', webAdapter.type);
-      }
-    }
-  },
-);
+const router = createRouter({
+  history: createWebHistory(config.app.baseUrl),
+  routes,
+});
+
+app.use(router);
+app.use(naive);
+
+app.mount('#app');
+
+if (import.meta.env.DEV) {
+  console.log('[Web] Application started');
+  console.log('[Web] Platform adapter:', webAdapter.type);
+}

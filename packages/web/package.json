@@ -5,10 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "NODE_OPTIONS=--max_old_space_size=8192 vite-ssg build",
+    "build": "NODE_OPTIONS=--max_old_space_size=8192 vite build && node ./scripts/generate-sitemap.mjs",
     "build:legacy": "vue-tsc --noEmit && cross-env NODE_OPTIONS=--max_old_space_size=4096 vite build",
     "preview": "vite preview --port 5050",
-    "preview:ssg": "npx http-server dist -p 5050 -c-1 --cors",
+    "preview:static": "npx http-server dist -p 5050 -c-1 --cors",
     "test": "npm run test:unit",
     "test:unit": "vitest --environment jsdom",
     "test:e2e": "playwright test",

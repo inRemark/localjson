@@ -24,16 +24,16 @@ syncRef(
 </script>
 
 <template>
-    <div v-cloak>
+  <div v-cloak>
     <n-config-provider :theme="theme" :theme-overrides="themeOverrides">
-        <NGlobalStyle />
-        <NMessageProvider placement="bottom">
-            <NNotificationProvider placement="bottom-right">
-                <component :is="layout">
-                    <RouterView />
-                </component>
-            </NNotificationProvider>
-        </NMessageProvider>
+      <NGlobalStyle />
+      <NMessageProvider placement="bottom">
+        <NNotificationProvider placement="bottom-right">
+          <component :is="layout">
+            <RouterView />
+          </component>
+        </NNotificationProvider>
+      </NMessageProvider>
     </n-config-provider>
   </div>
 </template>
