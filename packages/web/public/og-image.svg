@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="LocalJson Tools - Handy online tools for developers">
+  <title>LocalJson Tools - Handy online tools for developers</title>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EFF6FF"/>
+      <stop offset="55%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F8FAFC"/>
+    </linearGradient>
+    <linearGradient id="logo-bg" x1="64" y1="48" x2="448" y2="464" gradientUnits="userSpaceOnUse" gradientTransform="translate(108 218) scale(0.34375)">
+      <stop offset="0" stop-color="#2563eb"/>
+      <stop offset="0.55" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#5a97fc"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1020" cy="90" r="200" fill="#2563eb" opacity="0.06"/>
+  <circle cx="140" cy="560" r="240" fill="#2563eb" opacity="0.05"/>
+
+  <!-- Logo mark -->
+  <rect x="108" y="218" width="176" height="176" rx="40" fill="url(#logo-bg)"/>
+  <g
+    fill="none"
+    stroke="#ffffff"
+    stroke-width="15"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    transform="translate(108 218) scale(0.34375)"
+  >
+    <path d="M210 118 C168 118 148 148 148 188 L148 228 C148 252 132 266 108 272 C132 278 148 292 148 316 L148 356 C148 396 168 426 210 426"/>
+    <path d="M302 118 C344 118 364 148 364 188 L364 228 C364 252 380 266 404 272 C380 278 364 292 364 316 L364 356 C364 396 344 426 302 426"/>
+  </g>
+
+  <!-- Wordmark + copy -->
+  <text x="330" y="300" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="88" font-weight="700">
+    <tspan fill="#0F172A">Local</tspan><tspan fill="#2563eb">Json</tspan>
+  </text>
+  <text x="330" y="372" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="36" font-weight="600" fill="#334155">Handy online tools for developers</text>
+  <text x="330" y="430" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="26" fill="#64748B">Crypto &#183; Converter &#183; Web &#183; Network &#183; Math &#183; Text</text>
+  <text x="330" y="480" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="24" fill="#94A3B8">localjson.com &#183; Web &amp; Desktop</text>
+</svg>
