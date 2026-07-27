@@ -12,8 +12,12 @@ COPY packages/core/package.json ./packages/core/
 COPY packages/web/package.json ./packages/web/
 COPY packages/desktop/package.json ./packages/desktop/
 
-# 固定 pnpm 与本地一致；勿用最新版（pnpm 11 不再读 package.json#pnpm.overrides）
-RUN npm install -g pnpm@10.21.0 \
+# 固定 pnpm 与本地一致；使用 npmmirror 避免构建机访问 registry.npmjs.org 超时
+RUN npm config set registry https://registry.npmmirror.com \
+  && npm install -g pnpm@10.21.0 \
+  && pnpm config set registry https://registry.npmmirror.com \
+  && pnpm config set fetch-timeout 600000 \
+  && pnpm config set fetch-retries 5 \
   && pnpm install --frozen-lockfile
 
 COPY packages/core ./packages/core
