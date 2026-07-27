@@ -193,10 +193,15 @@ const tools = computed<ToolCategory[]>(() => [
   display: block;
   left: 0;
   width: 100%;
+  max-height: 160px;
   z-index: 10;
   overflow: hidden;
   .gradient {
     margin-top: -65px;
+    width: 100%;
+    max-height: 220px;
+    height: auto;
+    display: block;
   }
   .text-wrapper {
     position: absolute;

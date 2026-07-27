@@ -51,6 +51,19 @@
       [v-cloak] {
         display: none !important;
       }
+      /* Critical: constrain sidebar hero before app CSS loads (prevents blue fullscreen FOUC) */
+      .hero-wrapper {
+        max-height: 160px !important;
+        overflow: hidden !important;
+        max-width: 240px;
+      }
+      .hero-wrapper svg,
+      .hero-wrapper .gradient {
+        max-height: 220px !important;
+        width: 100% !important;
+        height: auto !important;
+        display: block;
+      }
     </style>
   </head>
   <body>

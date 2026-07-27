@@ -249,48 +249,10 @@ export default defineConfig({
         }
       }
       
-      // Preload CSS files to prevent FOUC (Flash of Unstyled Content)
-      try {
-        const fs = await import('node:fs');
-        const path = await import('node:path');
-        const distDir = path.resolve(__dirname, 'dist');
-        const assetsDir = path.join(distDir, 'assets');
-        
-        if (fs.existsSync(assetsDir)) {
-          // Find all CSS files and sort them (app CSS first, then others)
-          const cssFiles = fs.readdirSync(assetsDir)
-            .filter(file => file.endsWith('.css'))
-            .sort((a, b) => {
-              // Prioritize app CSS file
-              if (a.startsWith('app-')) return -1;
-              if (b.startsWith('app-')) return 1;
-              return a.localeCompare(b);
-            });
-          
-          if (cssFiles.length > 0) {
-            // Generate preload link tags with async loading fallback
-            const preloadLinks = cssFiles.map(cssFile => 
-              `    <link rel="preload" href="/assets/${cssFile}" as="style" onload="this.onload=null;this.rel='stylesheet'">`
-            ).join('\n');
-            
-            // Generate noscript fallback for browsers without JavaScript
-            const noscriptLinks = cssFiles.map(cssFile => 
-              `    <link rel="stylesheet" href="/assets/${cssFile}">`
-            ).join('\n');
-            
-            // Inject preload links and noscript fallback before </head>
-            modifiedHtml = modifiedHtml.replace(
-              '</head>',
-              `${preloadLinks}
-    <noscript>${noscriptLinks}</noscript>
-</head>`,
-            );
-          }
-        }
-      } catch (error) {
-        console.warn('[SSG] Failed to preload CSS:', error);
-      }
-      
+      // 注意：不要把 CSS 改成 rel=preload + onload 异步加载。
+      // 那会让首屏在样式就绪前绘制，侧栏蓝色 HeroGradient 会短暂撑满全屏（FOUC）。
+      // Vite SSG 已注入阻塞式 <link rel="stylesheet">，保持即可。
+
       // Inject GA script before </head>
       return modifiedHtml.replace(
         '</head>',
