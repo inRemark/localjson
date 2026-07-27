@@ -12,8 +12,8 @@ COPY packages/core/package.json ./packages/core/
 COPY packages/web/package.json ./packages/web/
 COPY packages/desktop/package.json ./packages/desktop/
 
-# 根 package.json 含 vite-ssg 等构建依赖，需完整 install
-RUN npm install -g pnpm \
+# 固定 pnpm 与本地一致；勿用最新版（pnpm 11 不再读 package.json#pnpm.overrides）
+RUN npm install -g pnpm@10.21.0 \
   && pnpm install --frozen-lockfile
 
 COPY packages/core ./packages/core

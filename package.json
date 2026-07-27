@@ -18,6 +18,7 @@
 		"url": "https://github.com/inRemark/localjson"
 	},
 	"private": true,
+	"packageManager": "pnpm@10.21.0",
 	"scripts": {
 		"dev:web": "pnpm --filter @localjson/web dev",
 		"build:web": "pnpm --filter @localjson/web build",
